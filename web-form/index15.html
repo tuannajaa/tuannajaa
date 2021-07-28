@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Au Register Forms by Colorlib</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+   
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
+    <style type="text/css">
+
+        .demoHeaders { margin-top: 2em; }
+        #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+        #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+        ul#icons {margin: 0; padding: 0;}
+        ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+        ul#icons span.ui-icon {float: left; margin: 0 4px;}
+        ul.test {list-style:none; line-height:30px;}
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">- รายงานด่วนสาธารณภัย ปลัด.กทม. ผอ.สปภ.</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                    
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เจ้าหน้าที่ดำเนินการ</label>
+                                    <select class = "input--style-4" name="officer" id="officer">
+                                        <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
+                                        <option value="นายศุภวัฒน์ เสี้ยวทอง เจ้าพนักงานปกครองปฏิบัติการ">ศุภวัฒน์</option>
+                                        <option value="นายณรงศักดิ์ ชาวเรือ เจ้าพนักงานปกครองชำนาญการ">ณรงค์ศักดิ์</option>
+                                        <option value="นายสมพงษ์ ละลี พนักงานปกครองชำนาญงาน">สมพงษ์</option>
+                                        <option value="นางสาวกัญจนพร ทับแสง เจ้าพนักงานปกครองปฏิบัติการ">กัญจนพร</option>
+                                        <option value="นางสาวอัมรินทร์ คำบุดดี พนักงานปกครองชำนาญงาน">อัมรินทร์</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ภัยที่เกิดคือ</label>
+                                    <select class = "input--style-4" name="disater" id="disater">
+                                        <option value="เจ้าหน้าที่">กรุณาเลือก</option>
+                                        <option value="อัคคีภัย">อัคคีภัย</option>
+                                        <option value="วาตภัย">วาตภัย</option>
+                                        <option value="อุทกภัย">อุทกภัย</option>
+                                        <option value="อาคารทรุดตัว">อาคารทรุด</option>
+                                        <option value="อื่นๆ ระบุ">อื่นๆ แก้ไขในเอกสารเอง</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">คำนำหน้านาม</label>
+                                    <input class="input--style-4" type="text" name="prename" id="prename">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-นามสกุล</label>
+                                    <input class="input--style-4" type="text" name="full_name" id="full_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วัน/เดือน/ปี/เกิด</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="birthday" name="birthday" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัดที่เกิด</label>
+                                    <input class="input--style-4" type="text" name="birth_province" id="birth_province">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อบิดา</label>
+                                    <input class="input--style-4" type="text" name="father" id="father">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อมารดา</label>
+                                    <input class="input--style-4" type="text" name="mother" id="mother">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อยู่บ้านเลขที่ (ตามทะเบียนบ้าน)</label>
+                                    <input class="input--style-4" type="text" name="addresss" id="addresss">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมู่ที่</label>
+                                    <input class="input--style-4" type="text" name="moo" id="moo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road" id="road">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol" id="tambol">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="district" id="district">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                    <div class="input-group">
+                                            <label class="label">จังหวัด</label>
+                                            <input class="input--style-4" type="text" name="provice" id="provice">
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บ้านเลขที่ ที่ประสบภัย</label>
+                                    <input class="input--style-4" type="text" name="addresss_fire" id="addresss_fire">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เบอร์โทรศัพท์</label>
+                                    <input class="input--style-4" type="text" name="tel_fire" id="tel_fire">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road_fire" id="road_fire">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol_fire" id="tambol_fire">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อาชีพ</label>
+                                    <input class="input--style-4" type="text" name="job" id="job">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรประจำตัวประชาชน</label>
+                                    <input class="input--style-4" type="number" name="card" id="card">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <h3>ส่วนถาม - ตอบ</h3>
+                        <div class="row row-space">
+                            <div class="col-2" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ซึ่งข้าพเจ้ามีฐานะเป็น...</label>
+                                    <input class="input--style-4" type="text" value ="เจ้าบ้าน/ผู้อาศัย/ผู้เช่า และเป็นหัวหน้าครอบครัวที่..." name="status" id="status">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ลักษณะบ้านเป็นแบบใด?</label>
+                                    <input class="input--style-4" type="text" value ="บ้านไม้ชั้นเดียว/คอนกรีดเสริมเหล็ก 2 ชั้น/อื่นๆ" name="typeofhouse" id="typeofhouse">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เหตุเกิดวันไหน?</label>
+                                    <input class="input--style-4" type="text" name="้happen" id="happen" value="29 สิงหาคม 2562">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เวลาใดและสิ้นสุดเวลาเท่าไร</label>
+                                    <input class="input--style-4" type="text" name="้happen2" id="happen2" value="เวลาประมาณ 18.29 – 20.30 น.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ขอทราบรายละเอียดเหตุเพลิงไหม้เกิด ?</label>
+                                    <textarea class="input--style-4" name="discribtion" id="discribtion" style="width: 100%;"> บ้านหลังที่เกิดเหตุเพลิงไหม้ คือ บ้านไม้ 2 ชั้น เลขที่ 230 ซอยประชาอุทิศ 68 แขวงทุ่งครุ เขตทุ่งครุ กรุงเทพมหานคร เกิดเหตุเพลิงลุกไหม้บริเวณ ชั้น 1 และลุกลามไปยังชั้น 2 เสียหายทั้งหลัง ซึ่งขณะเกิดเหตุ ข้าพเจ้าไม่ได้พักอาศัยอยู่ที่บ้านในเวลานั้น เนื่องจากขณะนั้นอยู่ที่จังหวัดลพบุรี และได้ทราบข่าวทางโทรศัพท์ว่าบ้านถูกไฟไหม้</textarea>
+                                    <label class="label">มีความเสียหายอะไรบ้าง?</label>
+                                    <textarea class="input--style-4" name="damage" id="damage" style="width: 100%">บ้านได้รับความเสียหายทั้งหลัง โดยเป็นบ้านไม้ 2 ชั้น ทรัพย์สินเสียหายตามบันทึกประจำวันสถานีตำรวจนครบาลทุ่งครุ เลขที่ 0012 ลงวันที่ 30 สิงหาคม 2562 ดังนี้ บ้านสองชั้น ได้รับความเสียหาย เป็นเงินจำนวน 20,000 บาท และห้องน้ำอยู่ภายนอกตัวบ้าน ได้รับความเสียหาย เป็นเงิน จำนวน 6,000 บาท รวมมูลค่าความเสียหายทั้งสิ้นเป็นเงิน จำนวน 26,000 บาท</textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                                <div class="" style="width: 100%;">
+                                    <div class="input-group">
+                                        <label class="label">รายงานประจำวัน ของ สน. ไหน ?</label>
+                                        <select class = "input--style-4" name="copstation" id="copstation">
+                                            <option value="สน.">กรุณาเลือก สน. ที่แจ้งความ</option>
+                                            <option value="รายงานประจำวัน สน. ทุ่งครุ">สน. ทุ่งครุ</option>
+                                            <option value="รายงานประจำวัน สน. ราษฎร์บูรณะ">สน. ราษฎร์บูรณะ</option>
+                                          </select>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <hr noshade=""><br>
+                      
+
+                        <div class="row row-space">
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app'" style="background: darkmagenta">Back</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Thai Carlendar Format-->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.10.offset.datepicker.min.js"></script>
+		<script type="text/javascript">
+		  $(function () {
+		    var d = new Date();
+		    var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
+
+		    // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
+		    
+		    $(".datepicker-th-2").datepicker({ changeMonth: true, changeYear: true,dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay,dayNames: ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'],
+              dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+              monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+              monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+    		
+			});
+		</script>
+    
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+         
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+<script src="js/docxtemplater.js"></script>
+<script src="js/jszip.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jszip-utils.js"></script>
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.js"></script>
+-->
+<!--
+    Mandatory in IE 6, 7, 8 and 9.
+    -->
+<!--[if IE]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils-ie.js"></script>
+    <![endif]-->
+<script>
+    function loadFile(url, callback) {
+        JSZipUtils.getBinaryContent(url, callback);
+    }
+    
+    function generate() {
+
+        loadFile("https://pokkrong-2409a.web.app/basedoc/DisasterReport.docx", function (error, content) {
+            if (error) {
+                throw error
+            };
+            var zip = new JSZip(content);
+            var doc = new window.docxtemplater().loadZip(zip)
+            
+            //วัน เดือน ปี เกิด ผู้ร้อง
+            var birthday_v = document.getElementById("birthday").value.split("/");
+            var birthday_v2 = document.getElementById("birthday").value;
+            var b_date = parseInt(birthday_v[0]);
+            var b_month = parseInt(birthday_v[1]); 
+            var b_year = birthday_v[2];
+            var b_year_int = parseInt(b_year);
+                        
+            //วันที่ปัจจุบัน 
+            var to_day = new Date();
+            var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+            var dd = to_day.getDate();
+            var mm = to_day.getMonth();
+            var mmmm = parseInt(mm)+1;
+            var yy = to_day.getFullYear();
+            var yyyy = to_day.getFullYear() +543;
+            var mmm = thmonth[to_day.getMonth()];
+            var this_day = dd + ' ' + mmm + ' ' + yyyy;
+
+            //วันเกิดแบบไทย ผู้ร้อง
+            var thmonth_birth = new Array ("0","มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+            var birth_month = thmonth_birth[b_month];
+            var birth_day = b_date + ' ' + birth_month + ' ' + b_year_int;
+            
+            
+
+            //คำนวนอายุอัตโนมัติ ผู้ร้อง
+            var age_in_years;
+            if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
+            if(b_month<mmmm) {age_in_years = yyyy-b_year_int;}
+            if(b_month==mmmm) {
+                if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
+                else age_in_years = (yyyy-b_year_int)-1;
+            }
+            
+            //ใส่ขีดให้เบอร์โทร ผู้ร้อง
+            var tel_fire = document.getElementById('tel_fire').value;
+            var tel_fire_slice = tel_fire.substring(0,3) + '-' + tel_fire.substring(3,6) + '-' + tel_fire.substring(6,10);
+            //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
+            var id_card = document.getElementById('card').value;
+            var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
+                           
+            doc.setData({
+                //ตัวแปรข้อมูลผู้ร้อง เจ้าบ้าน หัวหน้าครอบครัว
+                full_name: document.getElementById("full_name").value,
+                b_date: b_date,
+                b_month: b_month,
+                b_year: b_year_int,
+                tday: this_day,
+                birth_province: document.getElementById("birth_province").value,
+                age: age_in_years,
+                father: document.getElementById("father").value,
+                mother: document.getElementById("mother").value,
+                addresss: document.getElementById("addresss").value,
+                moo: document.getElementById("moo").value,
+                road: document.getElementById("road").value,
+                tambol: document.getElementById("tambol").value,
+                district: document.getElementById("district").value,
+                provice: document.getElementById("provice").value,
+                job: document.getElementById("job").value,
+                card: id_card_slice,
+                officer: document.getElementById("officer").value,
+                status: document.getElementById("status").value,
+                typeofhouse: document.getElementById("typeofhouse").value,
+                discribtion: document.getElementById("discribtion").value,
+                damage: document.getElementById("damage").value,
+                addresss_fire: document.getElementById("addresss_fire").value,
+                tel_fire_slice,
+                road_fire: document.getElementById("road_fire").value,
+                tambol_fire: document.getElementById("tambol_fire").value,
+                disater: document.getElementById("disater").value,
+                prename: document.getElementById("prename").value,
+                copstation: document.getElementById("copstation").value,
+                happen: document.getElementById("happen").value,
+                happen2: document.getElementById("happen2").value,
+                birth_day: birth_day,
+                mmm: mmm,
+                yyyy: yyyy,
+                
+                
+            });
+            try {
+                // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+                doc.render()
+            } catch (error) {
+                var e = {
+                    message: error.message,
+                    name: error.name,
+                    stack: error.stack,
+                    properties: error.properties,
+                }
+                console.log(JSON.stringify({
+                    error: e
+                }));
+                // The error thrown here contains additional information when logged with JSON.stringify (it contains a property object).
+                throw error;
+            }
+            var out = doc.getZip().generate({
+                type: "blob",
+                mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            }) //Output the document using Data-URI
+            saveAs(out, "output.docx")
+        })
+    }
+</script>
+
+</html>
+<!-- end document-->

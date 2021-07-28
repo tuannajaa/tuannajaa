@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Page-->
+    <title>Tuannajaa Pokkrong TKDO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet"> 
+
+<style>
+* {box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Mali', cursive;
+  background-image: url("img/cool-background2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#240219 ;
+
+}
+.main{
+  width: 1000px;
+  margin: auto;
+  height: 900px;
+  box-shadow: 3px 3px 10px rgb(19, 19, 19);
+  background-color: #ffffff;
+    overflow: hidden;
+}
+.header {
+  height: 100px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  color: rgb(255, 255, 255);
+  background-image: url("https://images.unsplash.com/photo-1544015403-686d1172250d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1782&q=80");
+  
+}
+  
+.header h1{ 
+  padding-top: 20px;
+  text-align: center;
+  color: #fffbbe;
+  
+  
+  
+  
+}
+.content {
+  border-bottom:  1px solid rgb(167, 167, 167);
+  height: 740px;
+}
+.footer {
+  height: 60px;
+  background-color: #ffffff34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-l{
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.ft-l img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(87, 87, 87)
+}
+.ft-l p {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.ft-r p {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  background: #FFEEEE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DDEFBB, #ffeeee00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 45%;
+  height: auto;
+  font-family: 'Mali', cursive;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: 'Mali', cursive;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: bold;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  
+  width: 55%;
+  border-left: none;
+  height: 300px;
+  display: none;
+  font-size: 18px;
+  font-family: 'Mali', cursive;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  font-weight: bold;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.clearfix {
+  background-color: #fdfffd;
+}
+
+
+</style>
+
+    
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>Print Document ฝ่ายปกครอง ทุ่งครุ</h1>
+            
+    </div>
+
+    <div class="content">
+        
+        <div class="navbar">
+          <a href="https://drive.google.com/drive/folders/0B4KMjM9YQskIdnZUVmpfU0packk?resourcekey=0-EC5KgTH5pqN7xmkY4D4kaw">คู่มือ</a>
+          <a href="#">สมาคม</a>
+          <a href="#">Link</a>
+          <a href="#" class="right">Link</a>
+        </div>
+
+            <div class="tab" style="font-family: 'Mali', cursive;">
+              <button class="tablinks" onmouseover="openCity(event, 'kidgoaboard')">1.ยินยอมให้บุตรเดินทางไปต่างประเทศ</button>
+              <button class="tablinks" onmouseover="openCity(event, 'sameperson')"><a href="/index3.html">2.รับรองว่าเป็นบุคคลคนเดียวกัน</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'status')">3.รับรองสถานภาพสมรส</button>
+              <button class="tablinks" onmouseover="openCity(event, 'momonly')">4.มารดาใช้อำนาจปกครองบุตรเพียงฝ่ายเดียว</button>
+              <button class="tablinks" onmouseover="openCity(event, 'behavior')"><a href="/index6.html">5.รับรองความประพฤติ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'victim')"><a href="/index8.html">6.หนังสือรับรองผู้ประสบภัย</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'deadplace')"><a href="/index16.html">7.หนังสือรับรองสถานที่ตาย</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'getmoney')"><a href="/index19.html">8.รับรองการได้รับเงินจากต่างประเทศ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'quickreport')"><a href="/index15.html">9.รายงานด่วนสาธารณภัย ปลัด สปภ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'testament')">10.พินัยกรรม</button>
+              <button class="tablinks" onmouseover="openCity(event, 'quickreport')"><a href="/index18.html">11.เอกสารรับรองความจำเป็นฯ ออกนอกเคหะสถาน</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'downloadform')">Download แบบฟอร์มต่างๆ</button>
+            </div>
+
+            <div id="kidgoaboard" class="tabcontent">
+              <h3>หนังสือยินยอมให้บุตรเดินทางไปต่างประเทศ</h3>
+                <a href="/index1.html" >1.1 บุตรไปต่างประเทศ บุตรคนเดียว</a><br>
+                <a href="/index12.html" >1.2 บุตรไปต่างประเทศ บุตร 2 คน</a><br>
+                <a href="/index13.html" >1.3 พ่อทำคนเดียว บุตรคนเดียว</a><br>
+                <a href="/index14.html" >1.4 แม่ทำคนเดียว บุตรคนเดียว</a>
+            </div>
+            <div id="status" class="tabcontent">
+                <h3>หนังสือรับรองสถานภาพการสมรส (รับรองโสด)</h3>
+                <a href="/index2.html">3.1 รับรองโสด (ไม่ได้จดสมรส)</a><br>
+                <a href="/index7.html">3.2 รับรองโสด (จดสมรสและหย่าแล้ว)</a><br>
+                <a href="/index9.html">3.3 รับรองโสด มอบอำนาจ (ไม่ได้จดสมรส)</a><br>
+                <a href="/index10.html">3.4 รับรองโสด มอบอำนาจ (จดสมรสและหย่าแล้ว)</a>
+            </div>
+            <div id="momonly" class="tabcontent">
+              <h3>หนังสือรับรองมารดาใช้อำนาจปกครองบุตร</h3>
+              <a href="/index4.html" >4.1 มารดาอุปการะบุตรเพียงผู้เดียว (ไม่ได้สมรส)</a><br>
+              <a href="/index5.html" >4.2 มารดาอุปการะบุตรเพียงผู้เดียว (สมรสและหย่าแล้ว)</a><br>
+              <a href="/index11.html" >4.3 มารดาอุปการะบุตรเพียงผู้เดียว + ยินยอมบุตรไป ตปท.</a>
+            </div>
+            <div id="downloadform" class="tabcontent">
+              <h3>Download แบบฟอร์มอื่นที่เกี่ยวข้อง</h3>
+              <a href="/basedoc/Request.docx" >แบบฟอร์ม ขออนุญาตการต่างๆ</a><br>
+              <a href="http://pokkrong-2409a.web.app/descendant/RestPunishment.pdf" >สอบสวน พักการลงโทษ</a><br>
+              <a href="/descendant/transfer_vehicle.doc" >สอบทายาทโอนรถ ขนส่งฯ</a><br>
+              <a href="/descendant/omsin_bank.doc" >สอบทายาท ธนาคารออมสิน</a><br>
+              <a href="/descendant/officer.doc" >สอบทายาท ขรก. ตำรวจ ทหาร ลูกจ้าง กทม.</a><br>
+            </div>
+            <div id="testament" class="tabcontent">
+              <h3>กระบวนงานพินัยกรรมต่างๆ</h3>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.1 ทำพินัยกรรมเอกสารลับ</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.2 ทำพินัยกรรมเอกสารฝ่ายเมือง</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.3 สละมรดก</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.4 ตัดทายาทโดยธรรมมิให้รับมรดก</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.5 ถอนการตัดทายาทโดยธรรมมิให้รับมรดก</a><br>
+            </div>
+            <div class="clearfix"></div>
+
+        
+
+    </div>
+    
+    <div class="footer">
+      <div class="ft-l">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLQihvcU9EsqfnXXw-uYwT0UtcBWiINENdo6LI_BqQ=s900-c-k-c0x00ffffff-no-rj">
+        <p>Supawat</p>
+      </div>
+      <div class="ft-r">
+        <p><a href="mailto:teambabana@gmail.com">teambabana@gmail.com</a></p>
+      </div>
+    </div>
+
+
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+  </div>
+</body>
+
+
+</html>
+<!-- end document-->
