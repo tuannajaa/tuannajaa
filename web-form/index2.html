@@ -50,13 +50,20 @@
                         </div>
 
                         <div class="row row-space">
+                            <div class="col-2">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">เจ้าหน้าที่ดำเนินการ</label>
                                     <select class = "input--style-4" name="officer" id="officer">
                                         <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
-                                        
                                       </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เลขที่หนังสือ</label>
+                                    <input class="input--style-4" type="text" name="docNo" id="docNo">
                                 </div>
                             </div>
                         </div>
@@ -854,6 +861,8 @@
                 init_card: issue_card,
                 exp_card: exp_card,
                 forwhat: document.getElementById("forwhat").value,
+                docNo: document.getElementById("docNo").value,
+                yyyy:yyyy,
                 
                 //ตัวแปรข้อมูลสมรสและหย่า
                 mariedcard: document.getElementById("mariedcard").value,
