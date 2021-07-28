@@ -50,13 +50,20 @@
                         </div>
 
                         <div class="row row-space">
+                            <div class="col-2">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">เจ้าหน้าที่ดำเนินการ</label>
                                     <select class = "input--style-4" name="officer" id="officer">
                                         <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
-                                        
                                       </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เลขที่หนังสือ</label>
+                                    <input class="input--style-4" type="text" name="docNo" id="docNo">
                                 </div>
                             </div>
                         </div>
@@ -780,6 +787,8 @@
                 wrong_name: document.getElementById("wrong_name").value,
                 right_name: document.getElementById("right_name").value,
                 cause: document.getElementById("cause").value,
+                yyyy:yyyy,
+                docNo: document.getElementById("docNo").value,
                                 
                 //ตัวแปรข้อมูลพยาน1
                 full_name_wit1: document.getElementById("full_name_wit1").value,
