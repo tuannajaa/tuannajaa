@@ -55,7 +55,7 @@
                                     <div class="input-group">
                                         <label class="label">เจ้าหน้าที่ดำเนินการ</label>
                                         <select class = "input--style-4" name="officer" id="officer">
-                                            <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
+                                            <option value="">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
                                             
                                         </select>
                                     </div>
@@ -328,7 +328,7 @@
 
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate(); validateform();">Submit</button>
                             </div>
                             <div class="p-t-15">
                                 <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app'" style="background: darkmagenta">Back</button>
@@ -394,6 +394,7 @@
 <script src="js/jszip.js"></script>
 <script src="js/FileSaver.js"></script>
 <script src="js/jszip-utils.js"></script>
+<script src="js/validateForm.js"></script>
 <!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
@@ -406,7 +407,9 @@
 <!--[if IE]>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils-ie.js"></script>
     <![endif]-->
+
 <script>
+    
     function loadFile(url, callback) {
         JSZipUtils.getBinaryContent(url, callback);
     }
