@@ -483,12 +483,11 @@
                 if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
                 else age_in_years = (yyyy-b_year_int)-1;
             }
-            //alert('คุณมีอายุ : ' + age_in_years  + ' และวันเกิดของคุณคือ : ' + b_date + '/' + b_month + '/' + b_year_int + 'วันนี้คือ : ' +dd+ '/' +mmmm+ '/' +yyyy);
-            
-                       
+                                   
             //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
             var id_card = document.getElementById('card').value;
             var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
+            
             
             doc.setData({
                 //ตัวแปรข้อมูลผู้ร้อง
