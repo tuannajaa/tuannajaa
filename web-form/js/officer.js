@@ -27,6 +27,5 @@ $(document).ready(function(){
     officerList.forEach(element => {
         $('#officer').append('<option value="'+element.valueName+'">'+element.displayName+'</option>')
     });
-    
-
+       
 })
