@@ -81,7 +81,7 @@ function validateform() {
         x = x+1
     }
     if(x > 0) {
-        alert("คุณกรอกรายละเอียดไม่ครบ!!! " + x + " จุด")
+        alert("คุณกรอกรายละเอียดไม่ครบ!!! " + x + " แห่ง")
     }
     if(x == 0){
         function loadFile(url, callback) {
