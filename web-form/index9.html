@@ -376,7 +376,7 @@
 
                         <div class="row row-space">
                             <div class="col-2">
-                                <input type="button" class="copydata" id="copydata" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onClick="copy();" style="border: 2px solid rgb(255, 82, 47);" />
+                                <input type="button" class="copydata" id="copydata" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onclick="copy();" style="border: 2px solid rgb(255, 82, 47);" />
                             </div>
                             <div class="col-2">
                                 
@@ -525,7 +525,7 @@
 
                         <div class="row row-space">
                             <div class="col-2">
-                                <input type="button" class="copydata2" id="copydata2" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onClick="copy2();" style="border: 2px solid rgb(255, 82, 47);" />
+                                <input type="button" class="copydata" id="copydata2" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onclick="copy2();" style="border: 2px solid rgb(255, 82, 47);" />
                             </div>
                             <div class="col-2">
                                 
@@ -673,7 +673,7 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
     <!--Copy Same Address Data-->
-    <script type="text/javascript">
+    <script>
         function copy()
         {
             var a1 = document.getElementById("addresss");
@@ -694,10 +694,11 @@
             var f1 = document.getElementById("provice");
             var f2 = document.getElementById("provice_wit1");
             f2.value = f1.value;
-            document.getElementById("copydata").disable = true;
+            document.getElementById("copydata").disabled = true;
         }
+        
         function copy2()
-        {
+        {   
             var aa1 = document.getElementById("addresss");
             var aa2 = document.getElementById("addresss_wit2");
             aa2.value = aa1.value;
@@ -716,7 +717,7 @@
             var ff1 = document.getElementById("provice");
             var ff2 = document.getElementById("provice_wit2");
             ff2.value = ff1.value;
-            document.getElementById("copydata2").disable = true;
+            document.getElementById("copydata2").disabled = true;
         }
     </script>
 
