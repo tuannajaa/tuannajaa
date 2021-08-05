@@ -371,20 +371,40 @@
     <script src="js/global.js"></script>
     <!--Copy Same Address Data-->
     <script type="text/javascript">
+        let kick = 0
         function copy()
-        {
-            var a1 = document.getElementById("addresss");
-            var a2 = document.getElementById("addresss2");
-            a2.value = a1.value;
-            var c1 = document.getElementById("road");
-            var c2 = document.getElementById("road2");
-            c2.value = c1.value;
-            var d1 = document.getElementById("tambol");
-            var d2 = document.getElementById("tambol2");
-            d2.value = d1.value;
+        {   
+            kick = kick + 1
+            if(kick % 2 != 0)
+            {
+                var a1 = document.getElementById("addresss");
+                var a2 = document.getElementById("addresss2");
+                a2.value = a1.value;
+                var c1 = document.getElementById("road");
+                var c2 = document.getElementById("road2");
+                c2.value = c1.value;
+                var d1 = document.getElementById("tambol");
+                var d2 = document.getElementById("tambol2");
+                d2.value = d1.value;
+                document.getElementById('copydata').style.backgroundColor = "white"
+                document.getElementById('copydata').style.border = "2px solid black"
+                document.getElementById('copydata').style.color = "black"
+                document.getElementById('copydata').value = 'ลบ ข้อมูลที่อยู่ปัจจุบัน'
+            }
+            else{
+                document.getElementById("addresss2").value = ''
+                document.getElementById("road2").value = ''
+                document.getElementById("tambol2").value = ''
+                document.getElementById('copydata').style.backgroundColor = "black"
+                document.getElementById('copydata').style.color = "white"
+                document.getElementById('copydata').style.border = "2px solid grey"
+                document.getElementById('copydata').value = 'ใช้ที่อยู่ตามบัตร ปชช.'
+            }    
+                
+                
             
         }
-
+        
     </script>
 
 
