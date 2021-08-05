@@ -14,7 +14,7 @@ function validateform() {
     document.getElementById('telNo').style.backgroundColor = "#e4ffdf"
     document.getElementById('law').style.backgroundColor = "#e4ffdf"
 
-    document.getElementById('officer').style.re
+    
     if((document.getElementById('officer').value) == ''){
             document.getElementById('officer').style.backgroundColor = "#ff5c5c"
             document.getElementById('officer').scrollIntoView()
