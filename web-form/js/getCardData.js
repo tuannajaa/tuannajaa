@@ -7,9 +7,9 @@ function getCardData() {
             var dateOfBirth = getFormatedDateOfBirth(data.dob)
             var issueDate = getFormatedDateOfBirth(data.issue_date)
             var expDate = getFormatedDateOfBirth(data.expire_date)
-            let pren = data.prename
-            let repren = pren.replace(/น.ส./g,"นางสาว")
-            document.getElementById("full_name").value = repren+data.fname+" "+data.lname
+            let preN = data.prename
+            let repreN = preN.replace(/น.ส./g,"นางสาว")
+            document.getElementById("full_name").value = repreN+data.fname+" "+data.lname
             document.getElementById("birthday").value = dateOfBirth
             document.getElementById("card").value = data.cid
             document.getElementById("init-card").value = issueDate
@@ -17,11 +17,13 @@ function getCardData() {
 
             var addressData = getAddress(data.address)
             document.getElementById("addresss").value = addressData.addressNo
-            document.getElementById("moo").value = addressData.moo.substring(7) //ตัดคำว่า หมู่ที่ ออก
+            document.getElementById("moo").value = addressData.moo.substring(7)         //ตัดคำว่า หมู่ที่ ออก
             document.getElementById("road").value = addressData.road
-            document.getElementById("tambol").value = addressData.tambol.substring(4) //ตัด ตำบล แขวง
-            document.getElementById("district").value = addressData.district.substring(5) //replace() อำเภอ เขต
-            document.getElementById("provice").value = addressData.provice.substring(7) //replace() จังหวัด
+            document.getElementById("tambol").value = addressData.tambol.substring(4)   //ตัด ตำบล แขวง
+            let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
+            let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
+            document.getElementById("district").value = cutDistrict
+            document.getElementById("provice").value = addressData.provice.substring(7) 
             console.log(addressData.moo.substring(7))
 
         });
