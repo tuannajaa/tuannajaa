@@ -73,11 +73,12 @@
                         </div>
 
                         <hr noshade=""><br>
+
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(พ่อ)</b></label>
-                                    <input class="input--style-4" type="text" name="full_name" id="full_name">
+                                    <input class="input--style-4" type="text" name="full_name_dad" id="full_name_dad">
                                 </div>
                             </div>
                         </div>
@@ -170,12 +171,15 @@
                         </div>
 
                         <hr noshade=""><br>
-
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(แม่)</b></label>
-                                    <input class="input--style-4" type="text" name="full_name_mom" id="full_name_mom">
+                                    <input class="input--style-4" type="text" name="full_name" id="full_name">
                                 </div>
                             </div>
                         </div>
@@ -184,8 +188,8 @@
                                 <div class="input-group">
                                     <label class="label">วัน/เดือน/ปี/เกิด</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="birthday_mom"
-                                            id="birthday_mom" value="ClickHere">
+                                        <input class="datepicker-th-2" type="text" name="birthday"
+                                            id="birthday" value="ClickHere">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -193,7 +197,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">จังหวัดที่เกิด</label>
-                                    <input class="input--style-4" type="text" name="birth_province_mom" id="birth_province_mom">
+                                    <input class="input--style-4" type="text" name="birth_province" id="birth_province">
                                 </div>
                             </div>
                         </div>
@@ -203,13 +207,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ชื่อบิดา</label>
-                                    <input class="input--style-4" type="text" name="father_mom" id="father_mom">
+                                    <input class="input--style-4" type="text" name="father" id="father">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ชื่อมารดา</label>
-                                    <input class="input--style-4" type="text" name="mother_mom" id="mother_mom">
+                                    <input class="input--style-4" type="text" name="mother" id="mother">
                                 </div>
                             </div>
                         </div>
@@ -218,13 +222,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">อยู่บ้านเลขที่</label>
-                                    <input class="input--style-4" type="text" name="addresss_mom" id="addresss_mom">
+                                    <input class="input--style-4" type="text" name="addresss" id="addresss">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">หมู่ที่</label>
-                                    <input class="input--style-4" type="text" name="moo_mom" id="moo_mom">
+                                    <input class="input--style-4" type="text" name="moo" id="moo">
                                 </div>
                             </div>
                         </div>
@@ -233,13 +237,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ตรอก/ซอย/ถนน</label>
-                                    <input class="input--style-4" type="text" name="road_mom" id="road_mom">
+                                    <input class="input--style-4" type="text" name="road" id="road">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ตำบล/แขวง</label>
-                                    <input class="input--style-4" type="text" name="tambol_mom" id="tambol_mom">
+                                    <input class="input--style-4" type="text" name="tambol" id="tambol">
                                 </div>
                             </div>
                         </div>
@@ -248,13 +252,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">อำเภอ/เขต</label>
-                                    <input class="input--style-4" type="text" name="district_mom" id="district_mom">
+                                    <input class="input--style-4" type="text" name="district" id="district">
                                 </div>
                             </div>
                             <div class="col-2">
                                     <div class="input-group">
                                             <label class="label">จังหวัด</label>
-                                            <input class="input--style-4" type="text" name="provice_mom" id="provice_mom">
+                                            <input class="input--style-4" type="text" name="provice" id="provice">
                                         </div>
                             </div>
                         </div>
@@ -263,13 +267,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">อาชีพ</label>
-                                    <input class="input--style-4" type="text" name="job_mom" id="job_mom">
+                                    <input class="input--style-4" type="text" name="job" id="job">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">บัตรประจำตัวประชาชน</label>
-                                    <input class="input--style-4" type="number" name="card_mom" id="card_mom">
+                                    <input class="input--style-4" type="number" name="card" id="card">
                                 </div>
                             </div>
                         </div>
@@ -279,8 +283,8 @@
                                 <div class="input-group">
                                     <label class="label">วันออกบัตร</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="init-card_mom"
-                                            id="init-card_mom" value="Click Here">
+                                        <input class="datepicker-th-2" type="text" name="init-card"
+                                            id="init-card" value="Click Here">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -289,8 +293,8 @@
                                 <div class="input-group">
                                     <label class="label">บัตรหมดอายุ</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="exp-card_mom"
-                                            id="exp-card_mom" value="Click Here">
+                                        <input class="datepicker-th-2" type="text" name="exp-card"
+                                            id="exp-card" value="Click Here">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -389,12 +393,12 @@
             var zip = new JSZip(content);
             var doc = new window.docxtemplater().loadZip(zip)
             //ตัวแปร วัน เดือน ปี เกิด แม่
-            var birthday_v_mom = document.getElementById("birthday_mom").value.split("/");
-            var birthday_v2_mom = document.getElementById("birthday_mom").value;
-            var b_date_mom = parseInt(birthday_v_mom[0]);
-            var b_month_mom = parseInt(birthday_v_mom[1]);
-            var b_year_mom = birthday_v_mom[2];
-            var b_year_int_mom = parseInt(b_year_mom);
+            var birthday_v = document.getElementById("birthday").value.split("/");
+            var birthday_v2 = document.getElementById("birthday").value;
+            var b_date = parseInt(birthday_v[0]);
+            var b_month = parseInt(birthday_v[1]);
+            var b_year = birthday_v[2];
+            var b_year_int = parseInt(b_year);
                        
             //ตัวแปรวันที่ปัจจุบัน 
             var to_day = new Date();
@@ -409,42 +413,42 @@
             
             
             //วันออกบัตร แม่
-            var issue_c_mom = document.getElementById("init-card_mom").value.split("/");
-            var issue_date_mom = parseInt(issue_c_mom[0]);
-            var issue_month_mom = issue_c_mom[1];
-            var issue_year_mom = issue_c_mom[2];
-            var issue_m_mom = parseInt(issue_month_mom);
-            var issue_year_int_mom = parseInt(issue_year_mom);
-            var issue_mm_mom = thmonth[issue_m_mom-1];
-            var issue_card_mom = issue_date_mom + ' ' + issue_mm_mom + ' ' + issue_year_int_mom;
+            var issue_c = document.getElementById("init-card").value.split("/");
+            var issue_date = parseInt(issue_c[0]);
+            var issue_month = issue_c[1];
+            var issue_year = issue_c[2];
+            var issue_m = parseInt(issue_month);
+            var issue_year_int = parseInt(issue_year);
+            var issue_mm = thmonth[issue_m-1];
+            var issue_card = issue_date + ' ' + issue_mm + ' ' + issue_year_int;
                        
             
             //วันบัตรหมดอายุ แม่
-            var exp_c_mom = document.getElementById("exp-card_mom").value.split("/");
-            var exp_date_mom = parseInt(exp_c_mom[0]);
-            var exp_month_mom = parseInt(exp_c_mom[1]);
-            var exp_year_mom = parseInt(exp_c_mom[2]);
-            var exp_mm_mom = thmonth[exp_month_mom-1];
-            var exp_card_mom = exp_date_mom + ' ' + exp_mm_mom + ' ' + exp_year_mom;
+            var exp_c = document.getElementById("exp-card").value.split("/");
+            var exp_date = parseInt(exp_c[0]);
+            var exp_month = parseInt(exp_c[1]);
+            var exp_year = parseInt(exp_c[2]);
+            var exp_mm = thmonth[exp_month-1];
+            var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
             
             //AGE BY BIRTHDATE
            
             
             //คำนวนอายุอัตโนมัติ แม่
-            var age_in_years_mom;
-            if(b_month_mom>mmmm) {age_in_years_mom = (yyyy-b_year_int_mom)-1;}
-            if(b_month_mom<mmmm) {age_in_years_mom = yyyy-b_year_int_mom;}
-            if(b_month_mom==mmmm){
-                if(b_date_mom<=dd) {age_in_years_mom = yyyy-b_year_int_mom;}
-                else age_in_years_mom = (yyyy-b_year_int_mom)-1;
+            var age_in_years;
+            if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
+            if(b_month<mmmm) {age_in_years = yyyy-b_year_int;}
+            if(b_month==mmmm){
+                if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
+                else age_in_years = (yyyy-b_year_int)-1;
             }
             
             
                        
             
             //ใส่ขีดให้เลขบัตรประชาชน แม่
-            var id_card_mom = document.getElementById('card_mom').value;
-            var id_card_slice_mom = id_card_mom.substring(0,1) + '-' + id_card_mom.substring(1,5) +'-'+ id_card_mom.substring(5,10) + '-' + id_card_mom.substring(10,12) + '-' + id_card_mom.substring(12,13);
+            var id_card = document.getElementById('card').value;
+            var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
             //ใส่ขีดให้เลขบัตรประชาชน ลูก
             var id_card_son = document.getElementById('card_son').value;
             var id_card_slice_son = id_card_son.substring(0,1) + '-' + id_card_son.substring(1,5) +'-'+ id_card_son.substring(5,10) + '-' + id_card_son.substring(10,12) + '-' + id_card_son.substring(12,13);
@@ -452,8 +456,8 @@
             //หากมีการ input เลขที่ใบหย่า ให้ใส่ชื่อคู่สมรสที่จดหย่า
             
             if(document.getElementById("divorcecard").value !=='-'){
-                var couple_m = document.getElementById("full_name").value;
-                var couple_fm = document.getElementById("full_name_mom").value;
+                var couple_m = document.getElementById("full_name_dad").value;
+                var couple_fm = document.getElementById("full_name").value;
                 }
             else{
                 var couple_m = '-';
@@ -466,7 +470,7 @@
                
             doc.setData({
                 //ตัวแปรข้อมูลพ่อ
-                full_name: document.getElementById("full_name").value,
+                full_name_dad: document.getElementById("full_name_dad").value,
                 forwhat: document.getElementById("forwhat").value,
                 tday: this_day,
                 officer: document.getElementById("officer").value,
@@ -490,22 +494,22 @@
                 couple_m: couple_m,
                 
                 //ตัวแปรข้อมูลแม่
-                full_name_mom: document.getElementById("full_name_mom").value,
-                birth_province_mom: document.getElementById("birth_province_mom").value,
-                father_mom: document.getElementById("father_mom").value,
-                mother_mom: document.getElementById("mother_mom").value,
-                addresss_mom: document.getElementById("addresss_mom").value,
-                moo_mom: document.getElementById("moo_mom").value,
-                road_mom: document.getElementById("road_mom").value,
-                tambol_mom: document.getElementById("tambol_mom").value,
-                district_mom: document.getElementById("district_mom").value,
-                provice_mom: document.getElementById("provice_mom").value,
-                job_mom: document.getElementById("job_mom").value,
-                card_mom: id_card_slice_mom,
-                init_card_mom: issue_card_mom,
-                exp_card_mom: exp_card_mom,
-                b_year_mom: b_year_int_mom,
-                age_mom: age_in_years_mom,
+                full_name: document.getElementById("full_name").value,
+                birth_province: document.getElementById("birth_province").value,
+                father: document.getElementById("father").value,
+                mother: document.getElementById("mother").value,
+                addresss: document.getElementById("addresss").value,
+                moo: document.getElementById("moo").value,
+                road: document.getElementById("road").value,
+                tambol: document.getElementById("tambol").value,
+                district: document.getElementById("district").value,
+                provice: document.getElementById("provice").value,
+                job: document.getElementById("job").value,
+                card: id_card_slice,
+                init_card: issue_card,
+                exp_card: exp_card,
+                b_year: b_year_int,
+                age: age_in_years,
 
                 //ตัวแปรข้อมูลลูก
                 full_name_son: document.getElementById("full_name_son").value,
@@ -538,5 +542,6 @@
 </script>
 
 <script src="js/officer.js"></script>
+<script src="js/getCardData.js"></script>
 </html>
 <!-- end document-->
