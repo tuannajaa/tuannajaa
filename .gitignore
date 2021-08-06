@@ -65,3 +65,5 @@ node_modules/
 # dotenv environment variables file
 .env
 web-form/index18.html
+web-form/.DS_Store
+.DS_Store
