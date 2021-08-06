@@ -27,5 +27,11 @@ $(document).ready(function(){
     officerList.forEach(element => {
         $('#officer').append('<option value="'+element.valueName+'">'+element.displayName+'</option>')
     });
-       
+     
+    //Create button for read ThaiID
+    document.getElementById("ScanButton").innerHTML = "<input type='button' class='btn btn--radius-2 btn--blue' value='Scan บัตรประชาชน' onclick='getCardData()'>"
+    //var btn = document.createElement("button")
+    //btn.innerHTML = "Scan Thai ID Card..!!"
+    //document.Scan
+
 })
