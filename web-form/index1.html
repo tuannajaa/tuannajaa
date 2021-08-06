@@ -16,29 +16,62 @@
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
-    
+
     <!-- Vendor CSS-->
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-   
+
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
     <link type="text/css" href="css/checkbox.css" rel="stylesheet" media="all">
     <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
 
     <style type="text/css">
+        .demoHeaders {
+            margin-top: 2em;
+        }
 
-        .demoHeaders { margin-top: 2em; }
-        #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
-        #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
-        ul#icons {margin: 0; padding: 0;}
-        ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
-        ul#icons span.ui-icon {float: left; margin: 0 4px;}
-        ul.test {list-style:none; line-height:30px;}
+        #dialog_link {
+            padding: .4em 1em .4em 20px;
+            text-decoration: none;
+            position: relative;
+        }
+
+        #dialog_link span.ui-icon {
+            margin: 0 5px 0 0;
+            position: absolute;
+            left: .2em;
+            top: 50%;
+            margin-top: -8px;
+        }
+
+        ul#icons {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul#icons li {
+            margin: 2px;
+            position: relative;
+            padding: 4px 0;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+        }
+
+        ul#icons span.ui-icon {
+            float: left;
+            margin: 0 4px;
+        }
+
+        ul.test {
+            list-style: none;
+            line-height: 30px;
+        }
     </style>
-    	
-		
-			
+
+
+
 </head>
 
 <body>
@@ -50,20 +83,20 @@
                     <form method="POST">
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
-                                    
+
                             </div>
                         </div>
 
                         <div class="row row-space">
                             <div class="col-2">
-                            <div class="" style="width: 100%;">
-                                <div class="input-group">
-                                    <label class="label">เจ้าหน้าที่ดำเนินการ</label>
-                                    <select class = "input--style-4" name="officer" id="officer">
-                                        <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
-                                      </select>
+                                <div class="" style="width: 100%;">
+                                    <div class="input-group">
+                                        <label class="label">เจ้าหน้าที่ดำเนินการ</label>
+                                        <select class="input--style-4" name="officer" id="officer">
+                                            <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
@@ -73,6 +106,11 @@
                             </div>
                         </div>
                         <hr noshade=""><br>
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue btn-sm" type="button"
+                                onclick="getCardData()">ดึงข้อมูล</button>
+                        </div>
+                        <br>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
@@ -86,7 +124,8 @@
                                 <div class="input-group">
                                     <label class="label">วัน/เดือน/ปี/เกิด</label>
                                     <div class="input-group-icon">
-                                        <input type="text" class="datepicker-th-2" id="birthday" name="date1" value="ClickHere" />
+                                        <input type="text" class="datepicker-th-2" id="birthday" name="date1"
+                                            value="ClickHere" />
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -97,7 +136,7 @@
                                     <input class="input--style-4" type="text" name="birth_province" id="birth_province">
                                 </div>
                             </div>
-                            
+
                         </div>
 
 
@@ -154,10 +193,10 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                    <div class="input-group">
-                                            <label class="label">จังหวัด</label>
-                                            <input class="input--style-4" type="text" name="provice" id="provice">
-                                        </div>
+                                <div class="input-group">
+                                    <label class="label">จังหวัด</label>
+                                    <input class="input--style-4" type="text" name="provice" id="provice">
+                                </div>
                             </div>
                         </div>
 
@@ -175,13 +214,14 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">วันออกบัตร</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="init-card" id="init-card" value="ClickHere">
+                                        <input class="datepicker-th-2" type="text" name="init-card" id="init-card"
+                                            value="ClickHere">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -190,7 +230,8 @@
                                 <div class="input-group">
                                     <label class="label">บัตรหมดอายุ</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="exp-card" id="exp-card" value="ClickHere">
+                                        <input class="datepicker-th-2" type="text" name="exp-card" id="exp-card"
+                                            value="ClickHere">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -203,7 +244,7 @@
                                     <label class="label">ต้องการออกหนังสือรับรองเพื่อ..</label>
                                     <input class="input--style-4" type="text" name="forwhat" id="forwhat">
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <hr noshade=""><br>
                         <h3>ข้อมูลทะเบียนสมรส และ ทะเบียนการหย่า (ไม่มีไส่ขีด -)</h3>
@@ -282,7 +323,7 @@
                                     <label class="label">(หย่า)วันที่ออกใบหย่า</label>
                                     <input class="input--style-4" type="text" name="dcard_date" id="dcard_date">
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
 
                         <hr noshade=""><br>
@@ -300,8 +341,8 @@
                                 <div class="input-group">
                                     <label class="label">วัน/เดือน/ปี/เกิด</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="birthday_mom"
-                                            id="birthday_mom" value="ClickHere">
+                                        <input class="datepicker-th-2" type="text" name="birthday_mom" id="birthday_mom"
+                                            value="ClickHere">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -309,7 +350,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">จังหวัดที่เกิด</label>
-                                    <input class="input--style-4" type="text" name="birth_province_mom" id="birth_province_mom">
+                                    <input class="input--style-4" type="text" name="birth_province_mom"
+                                        id="birth_province_mom">
                                 </div>
                             </div>
                         </div>
@@ -332,10 +374,12 @@
 
                         <div class="row row-space">
                             <div class="col-2">
-                                <input type="button" class="copydata" id="copydata" value="&#x2611; ที่อยู่เดียวกับพ่อ หรือ Scanบัตร" onClick="copy();" style="border: 2px solid rgb(255, 82, 47);" />
+                                <input type="button" class="copydata" id="copydata"
+                                    value="&#x2611; ที่อยู่เดียวกับพ่อ หรือ Scanบัตร" onClick="copy();"
+                                    style="border: 2px solid rgb(255, 82, 47);" />
                             </div>
                             <div class="col-2">
-                                
+
                             </div>
                         </div>
 
@@ -377,10 +421,10 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                    <div class="input-group">
-                                            <label class="label">จังหวัด</label>
-                                            <input class="input--style-4" type="text" name="provice_mom" id="provice_mom">
-                                        </div>
+                                <div class="input-group">
+                                    <label class="label">จังหวัด</label>
+                                    <input class="input--style-4" type="text" name="provice_mom" id="provice_mom">
+                                </div>
                             </div>
                         </div>
 
@@ -398,7 +442,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -414,8 +458,8 @@
                                 <div class="input-group">
                                     <label class="label">บัตรหมดอายุ</label>
                                     <div class="input-group-icon">
-                                        <input class="datepicker-th-2" type="text" name="exp-card_mom"
-                                            id="exp-card_mom" value="Click Here">
+                                        <input class="datepicker-th-2" type="text" name="exp-card_mom" id="exp-card_mom"
+                                            value="Click Here">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -442,14 +486,17 @@
 
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button"
+                                    onclick="generate()">Submit</button>
                             </div>
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app/index.html'" style="background: darkmagenta">Back</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button"
+                                    onclick="location.href='https://pokkrong-2409a.web.app/index.html'"
+                                    style="background: darkmagenta">Back</button>
                             </div>
                         </div>
                     </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -462,31 +509,32 @@
     <script type="text/javascript" src="js/jquery-ui-1.8.10.offset.datepicker.min.js"></script>
     <!-- CheckBox SameData-->
     <script type="text/javascript" src="js/checkbox.js"></script>
-		<script type="text/javascript">
-		  $(function () {
-		    var d = new Date();
-		    var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
+    <script type="text/javascript">
+        $(function () {
+            var d = new Date();
+            var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
 
-		    // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
-		    
-		    $(".datepicker-th-2").datepicker({ changeMonth: true, changeYear: true,dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay,dayNames: ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'],
-              dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
-              monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
-              monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
-    		
-			});
-		</script>
+            // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
+
+            $(".datepicker-th-2").datepicker({
+                changeMonth: true, changeYear: true, dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay, dayNames: ['อาทิตย์', 'จันทร์', 'อังคาร', 'พุธ', 'พฤหัสบดี', 'ศุกร์', 'เสาร์'],
+                dayNamesMin: ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'],
+                monthNames: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม'],
+                monthNamesShort: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.']
+            });
+
+        });
+    </script>
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
     <script src="vendor/datepicker/daterangepicker.js"></script>
-         
+
     <!-- Main JS-->
     <script src="js/global.js"></script>
     <!--Copy Same Address Data-->
     <script type="text/javascript">
-        function copy()
-        {
+        function copy() {
             var a1 = document.getElementById("addresss");
             var a2 = document.getElementById("addresss_mom");
             a2.value = a1.value;
@@ -507,7 +555,7 @@
             f2.value = f1.value;
             document.getElementById("copydata").disabled = true;
         }
-        
+
     </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
@@ -532,7 +580,7 @@
     function loadFile(url, callback) {
         JSZipUtils.getBinaryContent(url, callback);
     }
-    
+
     function generate() {
 
         loadFile("https://pokkrong-2409a.web.app/basedoc/KidGoAbroad.docx", function (error, content) {
@@ -545,7 +593,7 @@
             var birthday_v = document.getElementById("birthday").value.split("/");
             var birthday_v2 = document.getElementById("birthday").value;
             var b_date = parseInt(birthday_v[0]);
-            var b_month = parseInt(birthday_v[1]); 
+            var b_month = parseInt(birthday_v[1]);
             var b_year = birthday_v[2];
             var b_year_int = parseInt(b_year);
             //ตัวแปร วัน เดือน ปี เกิด แม่
@@ -555,18 +603,18 @@
             var b_month_mom = parseInt(birthday_v_mom[1]);
             var b_year_mom = birthday_v_mom[2];
             var b_year_int_mom = parseInt(b_year_mom);
-                       
+
             //ตัวแปรวันที่ปัจจุบัน 
             var to_day = new Date();
-            var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+            var thmonth = new Array("มกราคม", "กุมภาพันธ์", "มีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม");
             var dd = to_day.getDate();
             var mm = to_day.getMonth();
-            var mmmm = parseInt(mm)+1;
+            var mmmm = parseInt(mm) + 1;
             var yy = to_day.getFullYear();
-            var yyyy = to_day.getFullYear() +543;
+            var yyyy = to_day.getFullYear() + 543;
             var mmm = thmonth[to_day.getMonth()];
             var this_day = dd + ' ' + mmm + ' ' + yyyy;
-            
+
             //วันออกบัตร พ่อ
             var issue_c = document.getElementById("init-card").value.split("/");
             var issue_date = parseInt(issue_c[0]);
@@ -574,9 +622,9 @@
             var issue_year = issue_c[2];
             var issue_m = parseInt(issue_month);
             var issue_year_int = parseInt(issue_year);
-            var issue_mm = thmonth[issue_m-1];
+            var issue_mm = thmonth[issue_m - 1];
             var issue_card = issue_date + ' ' + issue_mm + ' ' + issue_year_int;
-            
+
             //วันออกบัตร แม่
             var issue_c_mom = document.getElementById("init-card_mom").value.split("/");
             var issue_date_mom = parseInt(issue_c_mom[0]);
@@ -584,71 +632,71 @@
             var issue_year_mom = issue_c_mom[2];
             var issue_m_mom = parseInt(issue_month_mom);
             var issue_year_int_mom = parseInt(issue_year_mom);
-            var issue_mm_mom = thmonth[issue_m_mom-1];
+            var issue_mm_mom = thmonth[issue_m_mom - 1];
             var issue_card_mom = issue_date_mom + ' ' + issue_mm_mom + ' ' + issue_year_int_mom;
-                       
+
             //วันบัตรหมดอายุ พ่อ
             var exp_c = document.getElementById("exp-card").value.split("/");
             var exp_date = parseInt(exp_c[0]);
             var exp_month = parseInt(exp_c[1]);
             var exp_year = parseInt(exp_c[2]);
-            var exp_mm = thmonth[exp_month-1];
+            var exp_mm = thmonth[exp_month - 1];
             var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
             //วันบัตรหมดอายุ แม่
             var exp_c_mom = document.getElementById("exp-card_mom").value.split("/");
             var exp_date_mom = parseInt(exp_c_mom[0]);
             var exp_month_mom = parseInt(exp_c_mom[1]);
             var exp_year_mom = parseInt(exp_c_mom[2]);
-            var exp_mm_mom = thmonth[exp_month_mom-1];
+            var exp_mm_mom = thmonth[exp_month_mom - 1];
             var exp_card_mom = exp_date_mom + ' ' + exp_mm_mom + ' ' + exp_year_mom;
-            
+
             //AGE BY BIRTHDATE
             //คำนวนอายุอัตโนมัติ พ่อ
             var age_in_years;
-            if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
-            if(b_month<mmmm) {age_in_years = yyyy-b_year_int;}
-            if(b_month==mmmm) {
-                if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
-                else age_in_years = (yyyy-b_year_int)-1;
+            if (b_month > mmmm) { age_in_years = (yyyy - b_year_int) - 1; }
+            if (b_month < mmmm) { age_in_years = yyyy - b_year_int; }
+            if (b_month == mmmm) {
+                if (b_date <= dd) { age_in_years = yyyy - b_year_int; }
+                else age_in_years = (yyyy - b_year_int) - 1;
             }
-            
+
             //คำนวนอายุอัตโนมัติ แม่
             var age_in_years_mom;
-            if(b_month_mom>mmmm) {age_in_years_mom = (yyyy-b_year_int_mom)-1;}
-            if(b_month_mom<mmmm) {age_in_years_mom = yyyy-b_year_int_mom;}
-            if(b_month_mom==mmmm){
-                if(b_date_mom<=dd) {age_in_years_mom = yyyy-b_year_int_mom;}
-                else age_in_years_mom = (yyyy-b_year_int_mom)-1;
+            if (b_month_mom > mmmm) { age_in_years_mom = (yyyy - b_year_int_mom) - 1; }
+            if (b_month_mom < mmmm) { age_in_years_mom = yyyy - b_year_int_mom; }
+            if (b_month_mom == mmmm) {
+                if (b_date_mom <= dd) { age_in_years_mom = yyyy - b_year_int_mom; }
+                else age_in_years_mom = (yyyy - b_year_int_mom) - 1;
             }
-            
-            
-                       
-            
+
+
+
+
             //ใส่ขีดให้เลขบัตรประชาชน พ่อ
             var id_card = document.getElementById('card').value;
-            var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
+            var id_card_slice = id_card.substring(0, 1) + '-' + id_card.substring(1, 5) + '-' + id_card.substring(5, 10) + '-' + id_card.substring(10, 12) + '-' + id_card.substring(12, 13);
             //ใส่ขีดให้เลขบัตรประชาชน แม่
             var id_card_mom = document.getElementById('card_mom').value;
-            var id_card_slice_mom = id_card_mom.substring(0,1) + '-' + id_card_mom.substring(1,5) +'-'+ id_card_mom.substring(5,10) + '-' + id_card_mom.substring(10,12) + '-' + id_card_mom.substring(12,13);
+            var id_card_slice_mom = id_card_mom.substring(0, 1) + '-' + id_card_mom.substring(1, 5) + '-' + id_card_mom.substring(5, 10) + '-' + id_card_mom.substring(10, 12) + '-' + id_card_mom.substring(12, 13);
             //ใส่ขีดให้เลขบัตรประชาชน ลูก
             var id_card_son = document.getElementById('card_son').value;
-            var id_card_slice_son = id_card_son.substring(0,1) + '-' + id_card_son.substring(1,5) +'-'+ id_card_son.substring(5,10) + '-' + id_card_son.substring(10,12) + '-' + id_card_son.substring(12,13);
+            var id_card_slice_son = id_card_son.substring(0, 1) + '-' + id_card_son.substring(1, 5) + '-' + id_card_son.substring(5, 10) + '-' + id_card_son.substring(10, 12) + '-' + id_card_son.substring(12, 13);
 
             //หากมีการ input เลขที่ใบหย่า ให้ใส่ชื่อคู่สมรสที่จดหย่า
-            
-            if(document.getElementById("divorcecard").value !=='-'){
+
+            if (document.getElementById("divorcecard").value !== '-') {
                 var couple_m = document.getElementById("full_name").value;
                 var couple_fm = document.getElementById("full_name_mom").value;
-                }
-            else{
+            }
+            else {
                 var couple_m = '-';
                 var couple_fm = '-';
             }
-            
-            
 
 
-               
+
+
+
             doc.setData({
                 //ตัวแปรข้อมูลพ่อ
                 full_name: document.getElementById("full_name").value,
@@ -672,10 +720,10 @@
                 init_card: issue_card,
                 exp_card: exp_card,
                 forwhat: document.getElementById("forwhat").value,
-                yyyy:yyyy,
+                yyyy: yyyy,
                 //เลขที่หนังสือ
                 docNo: document.getElementById("docNo").value,
-                
+
                 //ตัวแปรข้อมูลสมรสและหย่า
                 mariedcard: document.getElementById("mariedcard").value,
                 mcardfrom: document.getElementById("mcardfrom").value,
@@ -689,7 +737,7 @@
                 dcard_date: document.getElementById("dcard_date").value,
                 couple_fm: couple_fm,
                 couple_m: couple_m,
-                
+
                 //ตัวแปรข้อมูลแม่
                 full_name_mom: document.getElementById("full_name_mom").value,
                 birth_province_mom: document.getElementById("birth_province_mom").value,
@@ -734,12 +782,17 @@
                 mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             }) //Output the document using Data-URI
             saveAs(out, "output.docx")
-            
+
         })
     }
-    
+
+
+
 </script>
 
 <script src="js/officer.js"></script>
+<script src="js/getCardData.js"></script>
+
+
 </html>
 <!-- end document-->
