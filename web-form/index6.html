@@ -62,13 +62,17 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">เลขที่หนังสือ XXX/2565</label>
+                                    <label class="label">เลขที่หนังสือ</label>
                                     <input class="input--style-4" type="text" name="docNo" id="docNo">
                                 </div>
                             </div>
                         </div>
 
                         <hr noshade=""><br>
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
@@ -202,7 +206,10 @@
                         </div>
                                               
                         <hr noshade=""><br>
-
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardDataWit1()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
@@ -351,7 +358,10 @@
                         </div>
 
                         <hr noshade=""><br>                       
-                        
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardDataWit2()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
@@ -840,5 +850,6 @@
 </script>
 
 <script src="js/officer.js"></script>
+<script src="js/getCardData.js"></script>
 </html>
 <!-- end document-->
