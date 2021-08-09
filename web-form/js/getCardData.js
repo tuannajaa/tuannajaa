@@ -23,8 +23,10 @@ function getCardData() {
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
             document.getElementById("district").value = cutDistrict
-            document.getElementById("provice").value = addressData.provice.substring(7) 
-            console.log(addressData.moo.substring(7))
+            //document.getElementById("provice").value = addressData.provice.substring(7) 
+            let Province = addressData.provice.substring(7)            //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
+            let cutProvince = Province.replace(/มหานคร/g,'กรุงเทพมหานคร')
+            document.getElementById('provice').value = cutProvince
 
         });
 }
@@ -54,7 +56,10 @@ function getCardDataMom() {
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
             document.getElementById("district_mom").value = cutDistrict
-            document.getElementById("provice_mom").value = addressData.provice.substring(7) 
+            //document.getElementById("provice_mom").value = addressData.provice.substring(7) 
+            let Province = addressData.provice.substring(7)                 //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
+            let cutProvince = Province.replace(/มหานคร/g,'กรุงเทพมหานคร')
+            document.getElementById('provice_mom').value = cutProvince
             
 
         });
@@ -85,7 +90,10 @@ function getCardDataWit1() {
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
             document.getElementById("district_wit1").value = cutDistrict
-            document.getElementById("provice_wit1").value = addressData.provice.substring(7) 
+            //document.getElementById("provice_wit1").value = addressData.provice.substring(7)
+            let Province = addressData.provice.substring(7)                 //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
+            let cutProvince = Province.replace(/มหานคร/g,'กรุงเทพมหานคร')
+            document.getElementById('provice_wit1').value = cutProvince
             
 
         });
@@ -110,14 +118,16 @@ function getCardDataWit2() {
 
             let addressData = getAddress(data.address)
             document.getElementById("addresss_wit2").value = addressData.addressNo
-            document.getElementById("moo_wit2").value = addressData.moo.substring(7)         //ตัดคำว่า หมู่ที่ ออก
+            document.getElementById("moo_wit2").value = addressData.moo.substring(7)            //ตัดคำว่า หมู่ที่ ออก
             document.getElementById("road_wit2").value = addressData.road
-            document.getElementById("tambol_wit2").value = addressData.tambol.substring(4)   //ตัด ตำบล แขวง
-            let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
+            document.getElementById("tambol_wit2").value = addressData.tambol.substring(4)    //ตัด ตำบล แขวง
+            let district = addressData.district                                              //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
             document.getElementById("district_wit2").value = cutDistrict
-            document.getElementById("provice_wit2").value = addressData.provice.substring(7) 
-            
+            //document.getElementById("provice_wit2").value = addressData.provice.substring(7)
+            let Province = addressData.provice.substring(7)                          //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
+            let cutProvince = Province.replace(/มหานคร/g,"กรุงเทพมหานคร")
+            document.getElementById("provice_wit2").value = cutProvince
 
         });
 }
