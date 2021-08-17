@@ -1,12 +1,16 @@
 /*
  * Table styles
  */
+ .DTFC_ScrollWrapper {
+   font-size: 15px;
+ }
  table.dataTable {
     width: 100%;
     margin: 0 auto;
     clear: both;
     border-collapse: separate;
     border-spacing: 0;
+  
     /*
      * Header and footer styles
      */
@@ -269,6 +273,7 @@
   .dataTables_wrapper {
     position: relative;
     clear: both;
+    font-size: 13px;
     *zoom: 1;
     zoom: 1;
   }
