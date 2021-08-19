@@ -74,7 +74,7 @@ uploadDealcsv.prototype.getParsecsvdata = function (data) {
             scrollCollapse: true,
             fixedColumns: {
                 leftColumns: 1,
-                rightColumns: 1
+                
             }
         });
         mainTable.column( 0 ).visible( false );
@@ -89,7 +89,7 @@ uploadDealcsv.prototype.getParsecsvdata = function (data) {
             scrollCollapse: true,
             fixedColumns: {
                 leftColumns: 1,
-                rightColumns: 1
+               
             }
         });
         mainTable.column( 0 ).visible( false );
