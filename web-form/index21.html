@@ -623,7 +623,7 @@
             //วัน เดือน ปี เกิด ผู้ร้อง
             var birthday_v = document.getElementById("birthday").value.split("/");
             var birthday_v2 = document.getElementById("birthday").value;
-            var b_date = birthday_v[0];
+            var b_date = parseInt(birthday_v[0]);
             var b_month = parseInt(birthday_v[1]); 
             var b_year = birthday_v[2];
             var b_year_int = parseInt(b_year);
@@ -653,6 +653,8 @@
             var yyyy = to_day.getFullYear() +543;
             var mmm = thmonth[to_day.getMonth()];
             var this_day = dd + ' ' + mmm + ' ' + yyyy;
+            //เดือนเกิดแบบไทยของผู้ร้อง
+            var b_mm = thmonth[b_month];
 
             //วันออกบัตร ผู้ร้อง
             var issue_c = document.getElementById("init-card").value.split("/");
@@ -750,7 +752,7 @@
                 //ตัวแปรข้อมูลผู้ร้อง
                 full_name: document.getElementById("full_name").value,
                 b_date: b_date,
-                b_month: b_month,
+                b_month: b_mm,
                 b_year: b_year_int,
                 tday: this_day,
                 birth_province: document.getElementById("birth_province").value,
