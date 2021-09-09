@@ -644,14 +644,25 @@
             var exp_month = parseInt(exp_c[1]);
             var exp_year = parseInt(exp_c[2]);
             var exp_mm = thmonth[exp_month - 1];
-            var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+            if(exp_year==9999){
+                    var exp_card ="ตลอดชีพ"
+                    }
+                else{
+                    var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+                }
             //วันบัตรหมดอายุ แม่
             var exp_c_mom = document.getElementById("exp-card_mom").value.split("/");
             var exp_date_mom = parseInt(exp_c_mom[0]);
             var exp_month_mom = parseInt(exp_c_mom[1]);
             var exp_year_mom = parseInt(exp_c_mom[2]);
             var exp_mm_mom = thmonth[exp_month_mom - 1];
-            var exp_card_mom = exp_date_mom + ' ' + exp_mm_mom + ' ' + exp_year_mom;
+            if(exp_year_mom==9999){
+                    var exp_card_mom ="ตลอดชีพ"
+                    }
+                else{
+                    var exp_card_mom = exp_date_mom + ' ' + exp_mm_mom + ' ' + exp_year_mom;
+                }
+            
 
             //AGE BY BIRTHDATE
             //คำนวนอายุอัตโนมัติ พ่อ

@@ -132,7 +132,15 @@ function validateform() {
                 var exp_month = parseInt(exp_c[1])-1;
                 var exp_year = parseInt(exp_c[2]);
                 var exp_mm = thmonth[exp_month];
-                var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+                if(exp_year==9999){
+                    var exp_card ="ตลอดชีพ"
+                    console.log(exp_card)    
+                    }
+                else{
+                    var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+                    console.log(exp_card)
+                }
+                
                 
                 //วันเริ่มเดินทาง
                 var issue_c2 = document.getElementById("init-card2").value.split("/");
