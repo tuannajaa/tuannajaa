@@ -115,6 +115,8 @@ function validateform() {
                 var yyyy = to_day.getFullYear() +543;
                 var mmm = thmonth[to_day.getMonth()];
                 var this_day = dd + ' ' + mmm + ' ' + yyyy;
+                var ttday = dd + ' ' + mmm + ' พ.ศ. ' + yyyy;
+                
     
                 //วันออกบัตร ผู้ร้อง
                 var issue_c = document.getElementById("init-card").value.split("/");
@@ -212,7 +214,7 @@ function validateform() {
                     father: document.getElementById("father").value,
                     mother: document.getElementById("mother").value,
                     yyyy: yyyy,
-                    
+                    ttday:ttday,
                     
     
                 });
