@@ -795,6 +795,7 @@
             var yyyy = to_day.getFullYear() +543;
             var mmm = thmonth[to_day.getMonth()];
             var this_day = dd + ' ' + mmm + ' ' + yyyy;
+            var ttday = dd + ' ' + mmm + ' พ.ศ. ' + yyyy;
 
             //วันออกบัตร ผู้ร้อง
             var issue_c = document.getElementById("init-card").value.split("/");
@@ -906,6 +907,7 @@
                 b_month: b_month,
                 b_year: b_year_int,
                 tday: this_day,
+                ttday:ttday,
                 birth_province: document.getElementById("birth_province").value,
                 age: age_in_years,
                 father: document.getElementById("father").value,
