@@ -215,10 +215,17 @@
                         <hr noshade=""><br>
                         <h3>ส่วนถาม - ตอบ</h3>
                         <div class="row row-space">
-                            <div class="col-2" style="width: 100%;">
+                            <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ซึ่งข้าพเจ้ามีฐานะเป็น...</label>
-                                    <input class="input--style-4" type="text" value ="เจ้าบ้าน/ผู้อาศัย/ผู้เช่า และเป็นหัวหน้าครอบครัวที่..." name="status" id="status">
+                                    <input class="input--style-4" type="text" value ="เจ้าบ้าน/ผู้อาศัย/เจ้าของบ้าน/ผู้เช่า และเป็นหัวหน้าครอบครัวที่..." name="status" id="status">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เป็นเจ้าของบ้าน</label>
+                                    <input class="input--style-4" type="checkbox" value ="โดยข้าพเจ้าเป็นเจ้าของบ้านเลขที่ดังกล่าว ได้ซื้อบ้านหลังนี้แต่ยังมิได้ย้ายเข้ามาเป็นเจ้าบ้านในทะเบียนบ้าน ซึ่งขาพเจ้าเป็นผู้ดูแลจัดการซ่อมแซมบ้าน จ่ายค่าน้ำค่าไฟ และพักอาศัยอยู่จริง" name="status2" id="status2" style="width: 20px; zoom:1.5;">
+                                    <label>โดยข้าพเจ้าเป็นเจ้าของบ้านเลขที่ดังกล่าว ได้ซื้อบ้านหลังนี้แต่ยังมิได้ย้ายเข้ามาเป็นเจ้าบ้านในทะเบียนบ้าน ซึ่งขาพเจ้าเป็นผู้ดูแลจัดการซ่อมแซมบ้าน จ่ายค่าน้ำค่าไฟ และพักอาศัยอยู่จริง</label>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +554,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">เหตุเกิดวันไหน?</label>
-                                    <input class="input--style-4" type="text" name="้happen" id="happen" value="29 สิงหาคม 2562">
+                                    <input class="input--style-4" type="text" name="้happen" id="happen" value="1 มกราคม 2565">
                                 </div>
                             </div>
                             <div class="col-2">
@@ -561,9 +568,9 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">ขอทราบรายละเอียดเหตุสาธารณภัย?</label>
-                                    <textarea class="input--style-4" name="discribtion" id="discribtion" style="width: 100%;"> บ้านหลังที่เกิดเหตุเพลิงไหม้ คือ บ้านไม้ 2 ชั้น เลขที่ 230 ซอยประชาอุทิศ 68 แขวงทุ่งครุ เขตทุ่งครุ กรุงเทพมหานคร เกิดเหตุเพลิงลุกไหม้บริเวณ ชั้น 1 และลุกลามไปยังชั้น 2 เสียหายทั้งหลัง ซึ่งขณะเกิดเหตุ ข้าพเจ้าไม่ได้พักอาศัยอยู่ที่บ้านในเวลานั้น เนื่องจากขณะนั้นอยู่ที่จังหวัดลพบุรี และได้ทราบข่าวทางโทรศัพท์ว่าบ้านถูกไฟไหม้</textarea>
+                                    <textarea class="input--style-4" name="discribtion" id="discribtion" style="width: 100%;">เกิดเหตุXXX บริเวณXXX ของบ้านเลขที่XXX</textarea>
                                     <label class="label">มีความเสียหายอะไรบ้าง?</label>
-                                    <textarea class="input--style-4" name="damage" id="damage" style="width: 100%">บ้านได้รับความเสียหาย ทรัพย์สินเสียหายตามบันทึกประจำวันสถานีตำรวจนครบาลทุ่งครุ เลขที่ 0012 ลงวันที่ 30 สิงหาคม 2562 </textarea>
+                                    <textarea class="input--style-4" name="damage" id="damage" style="width: 100%">หลังคาบ้านได้รับความเสียหาย 20 แผ่น ประตู หน้าต่าง ได้รับความเสียหาย ตามรายงานประจำวันสถานตำรวจนครบาลXXX เล่มที่ XXX เลขที่ XXX ลงวันที่ XXX</textarea>
                                 </div>
                             </div>
                         </div>
@@ -571,9 +578,9 @@
                         <div class="row row-space">
                                 <div class="" style="width: 100%;">
                                     <div class="input-group">
-                                        <label class="label">รายงานประจำวัน ของ สน. ไหน ?</label>
+                                        <label class="label">ลงบันทึกประจำวันที่สถานีตำรวจพื้นที่ใด</label>
                                         <select class = "input--style-4" name="copstation" id="copstation">
-                                            <option value="สน.">กรุณาเลือก สน. ที่แจ้งความ</option>
+                                            <option value="สน.">สถานีตำรวจที่แจ้งความ</option>
                                             <option value="รายงานประจำวันสถานีตำรวจนครบาลทุ่งครุ">สน. ทุ่งครุ</option>
                                             <option value="รายงานประจำวันสถานีตำรวจนครบาลราษฎร์บูรณะ">สน. ราษฎร์บูรณะ</option>
                                           </select>
@@ -834,6 +841,7 @@
                 card: id_card_slice,
                 officer: document.getElementById("officer").value,
                 status: document.getElementById("status").value,
+                status2: document.getElementById("status2").value,
                 typeofhouse: document.getElementById("typeofhouse").value,
                 discribtion: document.getElementById("discribtion").value,
                 damage: document.getElementById("damage").value,
@@ -849,6 +857,7 @@
                 birth_day: birth_day,
                 mmm: mmm,
                 yyyy: yyyy,
+                
                 
                 //ตัวแปร สมาชิกครอบครัว คนที่ 1
                 prename1: document.getElementById("prename1").value,
