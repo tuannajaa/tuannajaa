@@ -216,9 +216,11 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ผู้ตายทำพินัยกรรมไว้หรือไม่</label>
-                                    <input type="radio" id="testament1" value="ได้ทำพินัยกรรมไว้ และเป็นพินัยกรรมฉบับสุดท้าย" name="testament1" style="width: 15px;">ทำพินัยกรรมไว้<br/>
-                                    <input type="radio" id="testament2" value="ไม่ได้ทำพินัยกรรมไว้แต่อย่างใด" name="testament2" style="width: 15px;">มิได้ทำพินัยกรรม
-                                    
+                                    <select class="input--style-4" name="testament" id="testament">
+                                        <option value="">....โปรดเลือก....</option>
+                                        <option value="ได้ทำพินัยกรรมไว้ และ เป็นพินัยกรรมฉบับสุดท้าย">ทำพินัยกรรมไว้</option>
+                                        <option value="มิได้ทำพินัยกรรมไว้แต่อย่างใด">ไม่ได้ทำพินัยกรรม</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -233,8 +235,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
-                                    <input type="radio" id="hdfalive1" name="hdfalive1" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
-                                    <input type="radio" id="hdfalive2" name="hdfalive2" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
+                                    <input type="radio" id="hdfalive" name="hdfalive" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
+                                    <input type="radio" id="hdfalive" name="hdfalive" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
                                     <input style="color:red; width:150px;" type="text" name="hdfdod" id="hdfdod" value="ระบุ ว/ด/ป ที่เสียชีวิต" onblur="if(this.value=='')this.value='ระบุ ว/ด/ป ที่เสียชีวิต';" onfocus="if(this.value=='ระบุ ว/ด/ป ที่เสียชีวิต')this.value='';" /><br/>
                                     
                                     
@@ -252,8 +254,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
-                                    <input type="radio" id="hdmalive1" name="hdmalive1" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
-                                    <input type="radio" id="hdmalive2" name="hdmalive2" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
+                                    <input type="radio" id="hdmalive" name="hdmalive" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
+                                    <input type="radio" id="hdmalive" name="hdmalive" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
                                     <input style="color:red; width:150px;" type="text" name="hdmdod" id="hdmdod" value="ระบุ ว/ด/ป ที่เสียชีวิต" onblur="if(this.value=='')this.value='ระบุ ว/ด/ป ที่เสียชีวิต';" onfocus="if(this.value=='ระบุ ว/ด/ป ที่เสียชีวิต')this.value='';" /><br/>
                                 </div>
                             </div>
@@ -264,9 +266,9 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">บิดา มารดาของผู้ตาย จดสมรสหรือไม่</label>
-                                    <input type="radio" id="marriage1" name="marriage1" value="ไม่ได้จดทะเบียนสมรสกัน" style="width: 15px;">ไม่ได้จดทะเบียนสมรสกัน<br/>
-                                    <input type="radio" id="marriage2" name="marriage2" value="ไม่ทราบข้อมูล" style="width: 15px;">ไม่ทราบข้อมูล<br/>
-                                    <input type="radio" id="marriage3" name="marriage3" value="จดทะเบียนสมรส" style="width: 15px;">จดทะเบียนสมรส
+                                    <input type="radio" id="marriage" name="marriage" value="ไม่ได้จดทะเบียนสมรสกัน" style="width: 15px;">ไม่ได้จดทะเบียนสมรสกัน<br/>
+                                    <input type="radio" id="marriage" name="marriage" value="ไม่ทราบข้อมูล" style="width: 15px;">ไม่ทราบข้อมูล<br/>
+                                    <input type="radio" id="marriage" name="marriage" value="จดทะเบียนสมรส" style="width: 15px;">จดทะเบียนสมรส
                                 </div>
                             </div>
                             <div class="col-2">
@@ -312,8 +314,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ผู้ตาย จดทะเบียนสมรสหรือไม่</label>
-                                    <input type="radio" id="whodead_marriage1" name="whodead_marriage1" value="ไม่ได้จดทะเบียนสมรสกัน" style="width: 15px;">ไม่ได้จดทะเบียน<br/>
-                                    <input type="radio" id="whodead_marriage2" name="whodead_marriage2" value="จดทะเบียนสมรส" style="width: 15px;">จดทะเบียนสมรส
+                                    <input type="radio" id="whodead_marriage" name="whodead_marriage" value="ไม่ได้จดทะเบียนสมรสกัน" style="width: 15px;">ไม่ได้จดทะเบียน<br/>
+                                    <input type="radio" id="whodead_marriage" name="whodead_marriage" value="จดทะเบียนสมรส" style="width: 15px;">จดทะเบียนสมรส
                                     <input class="input--style-4" style="color:red; width:100%;" type="text" name="whodead_mate" id="whodead_mate" value="ระบุชื่อ คู่สมรส" onblur="if(this.value=='')this.value='ระบุชื่อ คู่สมรส';" onfocus="if(this.value=='ระบุชื่อ คู่สมรส')this.value='';" />
                                 </div>
                             </div>
@@ -357,8 +359,8 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">คู่สมรสยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
-                                    <input type="radio" id="matealive1" name="matealive1" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
-                                    <input type="radio" id="matealive2" name="matealive2" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
+                                    <input type="radio" id="matealive" name="matealive" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
+                                    <input type="radio" id="matealive" name="matealive" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
                                     <input style="color:red; width:150px;" type="text" name="matedod" id="matedod" value="ระบุ ว/ด/ป ที่เสียชีวิต" onblur="if(this.value=='')this.value='ระบุ ว/ด/ป ที่เสียชีวิต';" onfocus="if(this.value=='ระบุ ว/ด/ป ที่เสียชีวิต')this.value='';" /><br/>
                                 </div>
                             </div>
@@ -999,20 +1001,15 @@
                 yyyy:yyyy,
                 whodead: document.getElementById("whodead").value,
                 docNo: document.getElementById("docNo").value,
-                testament1: document.getElementById("testament1").value,
-                testament2: document.getElementById("testament2").value,
+                testament: document.getElementById("testament").value,
                 branch: document.getElementById("branch").value,
                 whodead_father: document.getElementById("whodead_father").value,
-                hdfalive1: document.getElementById("hdfalive1").value,
-                hdfalive2: document.getElementById("hdfalive2").value,
+                hdfalive: document.getElementById("hdfalive").value,
                 hdfdod: document.getElementById("hdfdod").value,
                 whodead_mother: document.getElementById("whodead_mother").value,
-                hdmalive1: document.getElementById("hdmalive1").value,
-                hdmalive2: document.getElementById("hdmalive2").value,
+                hdmalive: document.getElementById("hdmalive").value,
                 hdmdod: document.getElementById("hdmdod").value,
-                marriage1: document.getElementById("marriage1").value,
-                marriage2: document.getElementById("marriage2").value,
-                marriage3: document.getElementById("marriage3").value,
+                marriage: document.getElementById("marriage").value,
                 mariedcard: document.getElementById("mariedcard").value,
                 mcardfrom: document.getElementById("mcardfrom").value,
                 mcard_district: document.getElementById("mcard_district").value,
@@ -1023,8 +1020,7 @@
                 mcard_district_parent: document.getElementById("mcard_district_parent").value,
                 mcard_province_parent: document.getElementById("mcard_province_parent").value,
                 mcard_date_parent: document.getElementById("mcard_date_parent").value,
-                whodead_marriage1: document.getElementById("whodead_marriage1").value,
-                whodead_marriage2: document.getElementById("whodead_marriage2").value,
+                whodead_marriage: document.getElementById("whodead_marriage").value,
                 whodead_mate:document.getElementById("whodead_mate").value,
                 whodeadson:document.getElementById("whodeadson").value,
                 sonlist:document.getElementById("sonlist").value,
@@ -1036,8 +1032,7 @@
                 brother:document.getElementById("brother").value,
                 brother_dad: document.getElementById("brother_dad").value,
                 brother_mom:document.getElementById("brother_mom").value,
-                matealive1:document.getElementById("matealive1").value,
-                matealive2:document.getElementById("matealive2").value,
+                matealive:document.getElementById("matealive").value,
                 matedod:document.getElementById("matedod").value,
 
                                 
