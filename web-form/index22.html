@@ -195,6 +195,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
+                                    <input class="input--style-4" type="text" name="relation" id="relation">
+                                </div>
+                            </div>
+                        </div>
                         
                         <hr noshade=""><br>
                         <h3>รายละเอียดผู้ตาย</h3>
@@ -591,7 +599,7 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">มีความสัมพันธ์กับผู้ร้องโดยเป็น</label>
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
                                     <input class="input--style-4" type="text" name="relation_wit1" id="relation_wit1">
                                 </div>
                             </div>
@@ -737,7 +745,7 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">มีความสัมพันธ์กับผู้ร้องโดยเป็น</label>
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
                                     <input class="input--style-4" type="text" name="relation_wit2" id="relation_wit2">
                                 </div>
                             </div>
@@ -1011,6 +1019,7 @@
                 officer: document.getElementById("officer").value,
                 init_card: issue_card,
                 exp_card: exp_card,
+                relation: document.getElementById("relation").value,
                 yyyy:yyyy,
                 whodead: document.getElementById("whodead").value,
                 docNo: document.getElementById("docNo").value,
