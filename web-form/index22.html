@@ -305,16 +305,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">คู่สมรสยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
-                                    <input type="radio" id="hdfalive" name="wifealive" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
-                                    <input type="radio" id="hdfalive" name="wifealive" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
-                                    <input style="color:red; width:150px;" type="text" name="wifedod" id="wifedod" value="ระบุ ว/ด/ป ที่เสียชีวิต" onblur="if(this.value=='')this.value='ระบุ ว/ด/ป ที่เสียชีวิต';" onfocus="if(this.value=='ระบุ ว/ด/ป ที่เสียชีวิต')this.value='';" /><br/>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <hr noshade=""><br>
                         <h3>ข้อมูล <b>การสมรสของผู้ตาย</b></h3>
                         <div class="row row-space">
@@ -362,7 +353,16 @@
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">คู่สมรสยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
+                                    <input type="radio" id="hdfalive" name="wifealive" value="ปัจจุบันยังมีชีวิตอยู่" style="width: 15px;">ยังมีชีวิตอยู่<br/>
+                                    <input type="radio" id="hdfalive" name="wifealive" value="ปัจจุบันเสียชีวิตแล้ว" style="width: 15px;">เสียชีวิตแล้ว
+                                    <input style="color:red; width:150px;" type="text" name="wifedod" id="wifedod" value="ระบุ ว/ด/ป ที่เสียชีวิต" onblur="if(this.value=='')this.value='ระบุ ว/ด/ป ที่เสียชีวิต';" onfocus="if(this.value=='ระบุ ว/ด/ป ที่เสียชีวิต')this.value='';" /><br/>
+                                </div>
+                            </div>
+                        </div>
                         <hr noshade=""><br>
                         <h3>ข้อมูล <b>บุตรของผู้ตาย</b></h3>
                         <div class="row row-space">
@@ -393,7 +393,7 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/ทะเบียนรับรองบุตรที่/ออกให้โดย/เขต/จังหวัด/เมื่อวันที่</label>
-                                    <textarea class="input--style-4" name="legalsonlist" id="legalsonlist" style="width: 100%">1.นายเอ บีซีดี ตามทะเบียนรับรองบุตรเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
+                                    <textarea class="input--style-4" name="legalsonlist" id="legalsonlist" style="width: 100%">5.1 นายเอ บีซีดี ตามทะเบียนรับรองบุตรเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
@@ -409,7 +409,7 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/ทะเบียนรับรองบุตรที่/ออกให้โดย/เขต/จังหวัด/เมื่อวันที่</label>
-                                    <textarea class="input--style-4" name="protegelist" id="protegelist" style="width: 100%">1.นายเอ บีซีดี ตามทะเบียนบุตรบุญธรรมเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
+                                    <textarea class="input--style-4" name="protegelist" id="protegelist" style="width: 100%">6.1 นายเอ บีซีดี ตามทะเบียนบุตรบุญธรรมเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +417,7 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">ผู้ตายมี <b>บุตรที่เสียชีวิตไปก่อนแล้ว</b> ได้แก่</label>
-                                    <textarea class="input--style-4" name="deadson" id="deadson" style="width: 100%">1.นายเอ บีซีดี และบุตรนั้นมีผู้สืบสันดาน คือ</textarea>
+                                    <textarea class="input--style-4" name="deadson" id="deadson" style="width: 100%">7.1 นายเอ บีซีดี และบุตรนั้นมีผู้สืบสันดาน คือ</textarea>
                                 </div>
                             </div>
                         </div>
@@ -426,11 +426,11 @@
                                 <div class="input-group">
                                     <label class="label"><b>กรณีบิดามารดาผู้ตายถึงแก่กรรมหมดแล้ว และผู้ตายไม่มีบุตร</b></label>
                                     <label class="label">พี่น้องร่วมบิดามารดาเดียวกัน ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother" id="brother" style="width: 100%">1.นายเอ บีซีดี</textarea>
+                                    <textarea class="input--style-4" name="brother" id="brother" style="width: 100%">8.1.1 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                     <label class="label">พี่น้องร่วมแต่บิดา ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother_dad" id="brother_dad" style="width: 100%">1.นายเอ บีซีดี</textarea>
+                                    <textarea class="input--style-4" name="brother_dad" id="brother_dad" style="width: 100%">8.1.2 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                     <label class="label">พี่น้องร่วมแต่มารดา ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother_mom" id="brother_mom" style="width: 100%">1.นายเอ บีซีดี</textarea>
+                                    <textarea class="input--style-4" name="brother_mom" id="brother_mom" style="width: 100%">8.1.3 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
@@ -843,7 +843,7 @@
     
     function generate() {
 
-        loadFile("https://pokkrong-2409a.web.app/basedoc/OmsinBank.doc", function (error, content) {
+        loadFile("https://pokkrong-2409a.web.app/basedoc/OmsinBank.docx", function (error, content) {
             if (error) {
                 throw error
             };
