@@ -1,0 +1,1129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Create Doc by Tuannajaa</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+   
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
+    <style type="text/css">
+
+        .demoHeaders { margin-top: 2em; }
+        #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+        #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+        ul#icons {margin: 0; padding: 0;}
+        ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+        ul#icons span.ui-icon {float: left; margin: 0 4px;}
+        ul.test {list-style:none; line-height:30px;}
+    </style>
+    
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">-สอบสวนการเป็นทายาท (หน่วยงานราชการ)</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                    
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">เจ้าหน้าที่ดำเนินการ</label>
+                                    <select class = "input--style-4" name="officer" id="officer">
+                                        <option value="เจ้าหน้าที่">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
+                                      </select>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หน่วยงานต้นสังกัด หนังสือที่ ลงวันที่</label>
+                                    <input class="input--style-4" type="text" name="docNo" id="docNo" value="อส 111/22 ลงวันที่ dd mmm yyyy" onblur="if(this.value=='')this.value='อส 111/22 ลงวันที่ dd mmm yyyy';" onfocus="if(this.value=='อส 111/22 ลงวันที่ dd mmm yyyy')this.value='';">
+                                </div>
+                            </div>
+                        </div>
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(ผู้ร้อง)</b></label>
+                                    <input class="input--style-4" type="text" name="full_name" id="full_name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วัน/เดือน/ปี/เกิด</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="birthday" name="date1" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัดที่เกิด</label>
+                                    <input class="input--style-4" type="text" name="birth_province" id="birth_province">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อบิดา</label>
+                                    <input class="input--style-4" type="text" name="father" id="father">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อมารดา</label>
+                                    <input class="input--style-4" type="text" name="mother" id="mother">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อยู่บ้านเลขที่</label>
+                                    <input class="input--style-4" type="text" name="addresss" id="addresss">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมู่ที่</label>
+                                    <input class="input--style-4" type="text" name="moo" id="moo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road" id="road">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol" id="tambol">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="district" id="district">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                    <div class="input-group">
+                                            <label class="label">จังหวัด</label>
+                                            <input class="input--style-4" type="text" name="provice" id="provice">
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อาชีพ</label>
+                                    <input class="input--style-4" type="text" name="job" id="job">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรประจำตัวประชาชน</label>
+                                    <input class="input--style-4" type="number" name="card" id="card">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันออกบัตร</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="init-card" name="init-card" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรหมดอายุ</label>
+                                    <div class="input-group-icon">
+                                        <input class="datepicker-th-2" type="text" name="exp-card" id="exp-card" value="ClickHere">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
+                                    <input class="input--style-4" type="text" name="relation" id="relation">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมายเลขโทรศัพท์</label>
+                                    <input class="input--style-4" type="text" name="relation" id="relation">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <h3>รายละเอียดผู้ตาย</h3>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-สกุล ผู้เสียชีวิต <b>(ผู้ตาย)</b></label>
+                                    <input class="input--style-4" type="text" name="whodead" id="whodead">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">1.รายการคู่สมรสของผู้ตาย ทั้งถูกต้องและไม่ถูกต้องตามกฎหมาย จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="mates" id="mates"/> คน</label>
+                                    <textarea class="input--style-4" name="mate_list" id="mate_list" style="width: 100%">1.1คู่สมรสคนที่หนึ่ง ชื่อ อยู่กินกันเมื่อ จดทะเบียนสมรสหรือไม่ เมื่อวันที่ ตามทะเบียนสมรสเลขที่ ออกให้ ณ สำนักงานทะเบียน จังหวัด เกิดบุตรด้วยกัน คน ได้จดทะเบียนหย่าหรือไม่ ตามทะเบียนหย่าเลขที่ ออกให้ ณ สำนักทะเบียน จังหวัด ลงวันที่ ปัจจุบันยังมีชีวิตอยู่หรือไม่ เสียชีวิตแล้วเมื่อ ตามมรณบัตรเลขที่ ออกให้ ณ สำนักทะเบียน จังหวัด ลงวันที่</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">2.บุตรของผู้ตายที่เกิดจากคู่สมรส โดยชอบด้วยกฎหมาย จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="whodeadson" id="whodeadson"/> คน</label>
+                                    <textarea class="input--style-4" name="whodeadson_list" id="whodeadson_list" style="width: 100%">2.1 เกิดจากคู่สมรสชื่อ.... จำนวน...คน 2.1.1 ชื่อ...เกิดเมื่อ...อายุ...ปี ปัจจุบันศึกษาหรือทำงานอยู่ที่... ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">3.บุตรของผู้ตายที่เกิดจากคู่สมรส โดยมิชอบด้วยกฎหมาย จำนวน <input style="color:red; width:50px; text-align: center;" type="text" name="outlaw_son" id="outlaw_son"/> คน</label>
+                                    <textarea class="input--style-4" name="outlaw_son_list" id="outlaw_son_list" style="width: 100%">3.1 เกิดจากคู่สมรสชื่อ.... จำนวน...คน 3.1.1 ชื่อ...เกิดเมื่อ...อายุ...ปี ปัจจุบันศึกษาหรือทำงานอยู่ที่... ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">4.จดทะเบียนรับบุตรบุญธรรมไว้ จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="protege" id="protege"/> คน</label>
+                                    <textarea class="input--style-4" name="protege_list" id="protege_list" style="width: 100%">4.1 ชื่อ...เกิดเมื่อ...อายุ...ปี ปัจจุบันศึกษาหรือทำงานอยู่ที่...ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">5.จดทะเบียนรับรองบุตรไว้ จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="legal_son" id="legal_son"/> คน</label>
+                                    <textarea class="input--style-4" name="legal_son_list" id="legal_son_list" style="width: 100%">5.1 ชื่อ...เกิดเมื่อ...อายุ...ปี ปัจจุบันศึกษาหรือทำงานอยู่ที่...ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">6.มีบุตรที่พิการหรือทุพพลภาพ จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="disabled_son" id="disabled_son"/> คน</label>
+                                    <textarea class="input--style-4" name="disabled_son_list" id="disabled_son_list" style="width: 100%">6.1 ชื่อ...เกิดเมื่อ...อายุ...ปี พิการทุพพลภาพด้วยเหตุ...ปัจจุบันยังพงพิการทุพพลภาพอยู่ ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">7.ผู้ตายมีพี่น้องร่วมบิดามารดาเดียวกัน จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="brothers" id="brothers"/> คน</label>
+                                    <textarea class="input--style-4" name="brothers_list" id="brothers_list" style="width: 100%">7.1 ชื่อ...ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ผู้ตายเป็นบุตร ลำดับที่</label>
+                                    <input class="input--style-4" type="text" name="sequence" id="sequence" value="">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ผู้ตายมีพี่น้องร่วมแต่ บิดาหรือมารดา หรือไม่</label>
+                                    <select class="input--style-4" name="half_brothers" id="half_brothers">
+                                        <option value="">....โปรดเลือก....</option>
+                                        <option value="ไม่มีพี่น้องร่วมแต่บิดา หรือ ร่วมแต่มารดา เดียวกัน">ไม่มี</option>
+                                        <option value="มีพี่น้องร่วมแต่บิดา หรือ ร่วมแต่มารดา เดียวกัน">มี</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">8.กรณีมีพี่น้องร่วมแต่บิดา หรือ ร่วมแต่มารดา เดียวกัน</label>
+                                    <label class="label">พี่น้องที่เกิดจาก บิดาเดียวกัน จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="half_brother_dad" id="half_brother_dad"/> คน</label>
+                                    <textarea class="input--style-4" name="half_brother_dad_list" id="half_brother_dad_list" style="width: 100%">8.1 ชื่อ...ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                    <label class="label">พี่น้องที่เกิดจาก มารดาเดียวกัน จำนวน<input style="color:red; width:50px; text-align: center;" type="text" name="half_brother_mom" id="half_brother_mom"/> คน</label>
+                                    <textarea class="input--style-4" name="half_brother_mom_list" id="half_brother_mom_list" style="width: 100%">8.1 ชื่อ...ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <hr noshade=""><br>
+                        <h3>ข้อมูล <b>การสมรสของบิดามารดาผู้ตาย</b></h3>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บิดาของผู้ตาย ชื่อ</label>
+                                    <input class="input--style-4" type="text" name="whodead_father" id="whodead_father">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
+                                    <select class="input--style-4" name="hdfalive" id="hdfalive">
+                                        <option value="">....โปรดเลือก....</option>
+                                        <option value="ปัจจุบันยังมีชีวิตอยู่">ยังมีชีวิตอยู่</option>
+                                        <option value="ปัจจุบันเสียชีวิตแล้ว เมื่อวันที่">เสียชีวิตแล้ว</option>
+                                    </select>
+                                    <input style="color:red; width:120px;" type="text" name="hdfdod" id="hdfdod" value="ว/ด/ป ที่เสีย" onblur="if(this.value=='')this.value='ว/ด/ป ที่เสีย';" onfocus="if(this.value=='ว/ด/ป ที่เสีย')this.value='';" /><br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">มารดาของผู้ตาย ชื่อ</label>
+                                    <input class="input--style-4" type="text" name="whodead_mother" id="whodead_mother">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ยังมีชีวิตอยู่ หรือ เสียชีวิตแล้ว</label>
+                                    <select class="input--style-4" name="hdmalive" id="hdmalive">
+                                        <option value="">....โปรดเลือก....</option>
+                                        <option value="ปัจจุบันยังมีชีวิตอยู่">ยังมีชีวิตอยู่</option>
+                                        <option value="ปัจจุบันเสียชีวิตแล้ว เมื่อวันที่">เสียชีวิตแล้ว</option>
+                                    </select>
+                                    <input style="color:red; width:120px;" type="text" name="hdmdod" id="hdmdod" value="ว/ด/ป ที่เสีย" onblur="if(this.value=='')this.value='ว/ด/ป ที่เสีย';" onfocus="if(this.value=='ว/ด/ป ที่เสีย')this.value='';" /><br/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บิดา มารดาของผู้ตาย จดสมรสหรือไม่</label>
+                                    <select class="input--style-4" id="marriage" name="marriage">
+                                        <option value="">โปรดเลือก</option>
+                                        <option value="ได้จดทะเบียนสมรสกัน">จดทะเบียนสมรส</option>
+                                        <option value="ไม่ได้จดทะเบียนสมรสกัน">ไม่ได้จดทะเบียนสมรส</option>
+                                        <option value="จดทะเบียนสมรสกันหรือไม่นั้น ไม่สามารถทราบได้แน่ชัด เนื่องจากไม่มีเอกสารหลักฐานทะเบียนสมรสและไม่สามารถสืบค้นเอกสารหลักฐานดังกล่าวได้">ไม่ทราบข้อมูล</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ทะเบียนสมรส เลขที่</label>
+                                    <input class="input--style-4" type="text" name="mariedcard_parent" id="mariedcard_parent">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ออกให้โดยสำนักทะเบียน</label>
+                                    <input class="input--style-4" type="text" name="mcardfrom_parent" id="mcardfrom_parent">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="mcard_district_parent" id="mcard_district_parent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัด</label>
+                                    <input class="input--style-4" type="text" name="mcard_province_parent" id="mcard_province_parent">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันที่สมรส</label>
+                                    <input class="input--style-4" type="text" name="mcard_date_parent" id="mcard_date_parent">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">กรณีบิดามารดาผู้ตายมิได้จดทะเบียนสมรสกัน บิดาผู้ตาย ได้จดทะเบียนรับรองผู้ตายเป็นบุตรโดยชอบด้วยกฎหมายหรือไม่</label>
+                                    <select class="input--style-4" id="legal_son_of_dad" name="legal_son_of_dad">
+                                        <option value="">โปรดเลือก</option>
+                                        <option value="ได้จดทะเบียนรับรองบุตร">ได้จดทะเบียนรับรองบุตร</option>
+                                        <option value="ไม่ได้จดทะเบียนรับรองบุตร">ไม่ได้จดทะเบียนรับรองบุตร</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ทะเบียนรับรองบุตร เลขที่</label>
+                                    <input class="input--style-4" type="text" name="lsod_no" id="lsod_no">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ออกให้โดยสำนักทะเบียน</label>
+                                    <input class="input--style-4" type="text" name="lsod_from" id="lsod_from">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัด</label>
+                                    <input class="input--style-4" type="text" name="lsod_province" id="lsod_province">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันที่รับรอง</label>
+                                    <input class="input--style-4" type="text" name="lsod_date" id="lsod_date">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">11.บุตรนอกสมรสของผู้ตาย ที่ศาลสั่งให้เป็นบุตรโดยชอบด้วยกฎหมาย หลังจากผู้ตายเสียชีวิต มีทั้งหมด<input style="color:red; width:50px; text-align: center;" type="text" name="court_order" id="court_order"/> คน</label>
+                                    <textarea class="input--style-4" name="court_order_list" id="court_order_list" style="width: 100%">11.1 เกิดจากคู่สมรสชื่อ...จำนวน...คน 11.1.1 ชื่อ...เกิดเมื่อ... อายุ...ปี ปัจจุบันศึกษาหรือทำงานอยู่ที่... ยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อ...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">12.ผู้ตายและ สามี/ภรรยา ฝ่ายหนึ่งฝ่ายใด มีสินเดิม คือ</label>
+                                    <textarea class="input--style-4" name="property" id="property" style="width: 100%">รายละเอียด...</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardDataWit1()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-สกุล <b>(พยาน คนที่ 1)</b></label>
+                                    <input class="input--style-4" type="text" name="full_name_wit1" id="full_name_wit1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วัน/เดือน/ปี/เกิด</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="birthday_wit1" name="date1" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัดที่เกิด</label>
+                                    <input class="input--style-4" type="text" name="birth_province_wit1" id="birth_province_wit1">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อบิดา</label>
+                                    <input class="input--style-4" type="text" name="father_wit1" id="father_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อมารดา</label>
+                                    <input class="input--style-4" type="text" name="mother_wit1" id="mother_wit1">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <input type="button" class="copydata" id="copydata" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onClick="copy();" style="border: 2px solid rgb(255, 82, 47);" />
+                            </div>
+                            <div class="col-2">
+                                
+                            </div>
+                        </div>
+                        
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อยู่บ้านเลขที่</label>
+                                    <input class="input--style-4" type="text" name="addresss_wit1" id="addresss_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมู่ที่</label>
+                                    <input class="input--style-4" type="text" name="moo_wit1" id="moo_wit1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road_wit1" id="road_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol_wit1" id="tambol_wit1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="district_wit1" id="district_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                    <div class="input-group">
+                                            <label class="label">จังหวัด</label>
+                                            <input class="input--style-4" type="text" name="provice_wit1" id="provice_wit1">
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อาชีพ</label>
+                                    <input class="input--style-4" type="text" name="job_wit1" id="job_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรประจำตัวประชาชน</label>
+                                    <input class="input--style-4" type="number" name="card_wit1" id="card_wit1">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันออกบัตร</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="init-card_wit1" name="date1" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรหมดอายุ</label>
+                                    <div class="input-group-icon">
+                                        <input class="datepicker-th-2" type="text" name="exp-card" id="exp-card_wit1" value="ClickHere">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
+                                    <input class="input--style-4" type="text" name="relation_wit1" id="relation_wit1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr noshade=""><br>                       
+                        <div class="row row-space">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardDataWit2()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                        </div>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-สกุล <b>(พยาน คนที่ 2)</b></label>
+                                    <input class="input--style-4" type="text" name="full_name_wit2" id="full_name_wit2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วัน/เดือน/ปี/เกิด</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="birthday_wit2" name="date1" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัดที่เกิด</label>
+                                    <input class="input--style-4" type="text" name="birth_province_wit2" id="birth_province_wit2">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อบิดา</label>
+                                    <input class="input--style-4" type="text" name="father_wit2" id="father_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อมารดา</label>
+                                    <input class="input--style-4" type="text" name="mother_wit2" id="mother_wit2">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <input type="button" class="copydata" id="copydata2" value="&#x2611; ที่อยู่เดียวกับผู้ร้อง หรือ Scanบัตร" onClick="copy2();" style="border: 2px solid rgb(255, 82, 47);" />
+                            </div>
+                            <div class="col-2">
+                                
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อยู่บ้านเลขที่</label>
+                                    <input class="input--style-4" type="text" name="addresss_wit2" id="addresss_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมู่ที่</label>
+                                    <input class="input--style-4" type="text" name="moo_wit2" id="moo_wit2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road_wit2" id="road_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol_wit2" id="tambol_wit2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="district_wit2" id="district_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                    <div class="input-group">
+                                            <label class="label">จังหวัด</label>
+                                            <input class="input--style-4" type="text" name="provice_wit2" id="provice_wit2">
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อาชีพ</label>
+                                    <input class="input--style-4" type="text" name="job_wit2" id="job_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรประจำตัวประชาชน</label>
+                                    <input class="input--style-4" type="number" name="card_wit2" id="card_wit2">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันออกบัตร</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="init-card_wit2" name="date1" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรหมดอายุ</label>
+                                    <div class="input-group-icon">
+                                        <input class="datepicker-th-2" type="text" name="exp-card" id="exp-card_wit2" value="ClickHere">
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
+                                    <input class="input--style-4" type="text" name="relation_wit2" id="relation_wit2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr noshade=""><br>                       
+
+                        <div class="row row-space">
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app/index.html'" style="background: darkmagenta">Back</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Thai Carlendar Format-->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.10.offset.datepicker.min.js"></script>
+		<script type="text/javascript">
+		  $(function () {
+		    var d = new Date();
+		    var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
+
+		    // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
+		    
+		    $(".datepicker-th-2").datepicker({ changeMonth: true, changeYear: true,dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay,dayNames: ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'],
+              dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+              monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+              monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+    		
+			});
+		</script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+         
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <!--Copy Same Address Data-->
+    <script type="text/javascript">
+        function copy()
+        {
+            var a1 = document.getElementById("addresss");
+            var a2 = document.getElementById("addresss_wit1");
+            a2.value = a1.value;
+            var b1 = document.getElementById("moo");
+            var b2 = document.getElementById("moo_wit1");
+            b2.value = b1.value;
+            var c1 = document.getElementById("road");
+            var c2 = document.getElementById("road_wit1");
+            c2.value = c1.value;
+            var d1 = document.getElementById("tambol");
+            var d2 = document.getElementById("tambol_wit1");
+            d2.value = d1.value;
+            var e1 = document.getElementById("district");
+            var e2 = document.getElementById("district_wit1");
+            e2.value = e1.value;
+            var f1 = document.getElementById("provice");
+            var f2 = document.getElementById("provice_wit1");
+            f2.value = f1.value;
+            document.getElementById("copydata").disabled = true;
+        }
+        function copy2()
+        {
+            var aa1 = document.getElementById("addresss");
+            var aa2 = document.getElementById("addresss_wit2");
+            aa2.value = aa1.value;
+            var bb1 = document.getElementById("moo");
+            var bb2 = document.getElementById("moo_wit2");
+            bb2.value = bb1.value;
+            var cc1 = document.getElementById("road");
+            var cc2 = document.getElementById("road_wit2");
+            cc2.value = cc1.value;
+            var dd1 = document.getElementById("tambol");
+            var dd2 = document.getElementById("tambol_wit2");
+            dd2.value = dd1.value;
+            var ee1 = document.getElementById("district");
+            var ee2 = document.getElementById("district_wit2");
+            ee2.value = ee1.value;
+            var ff1 = document.getElementById("provice");
+            var ff2 = document.getElementById("provice_wit2");
+            ff2.value = ff1.value;
+            document.getElementById("copydata2").disabled = true;
+        }
+    </script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+<script src="js/docxtemplater.js"></script>
+<script src="js/jszip.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jszip-utils.js"></script>
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.js"></script>
+-->
+<!--
+    Mandatory in IE 6, 7, 8 and 9.
+    -->
+<!--[if IE]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils-ie.js"></script>
+    <![endif]-->
+<script>
+    function loadFile(url, callback) {
+        JSZipUtils.getBinaryContent(url, callback);
+    }
+    
+    function generate() {
+
+        loadFile("https://pokkrong-2409a.web.app/basedoc/Offspring.docx", function (error, content) {
+            if (error) {
+                throw error
+            };
+            var zip = new JSZip(content);
+            var doc = new window.docxtemplater().loadZip(zip)
+            //วัน เดือน ปี เกิด ผู้ร้อง
+            var birthday_v = document.getElementById("birthday").value.split("/");
+            var birthday_v2 = document.getElementById("birthday").value;
+            var b_date = birthday_v[0];
+            var b_month = parseInt(birthday_v[1]); 
+            var b_year = birthday_v[2];
+            var b_year_int = parseInt(b_year);
+            //วัน เดือน ปี เกิด พยาน1
+            var birthday_v_wit1 = document.getElementById("birthday_wit1").value.split("/");
+            var birthday_v2_wit1 = document.getElementById("birthday_wit1").value;
+            var b_date_wit1 = birthday_v_wit1[0];
+            var b_month_wit1 = birthday_v_wit1[1];
+            var b_year_wit1 = birthday_v_wit1[2];
+            var b_year_int_wit1 = parseInt(b_year_wit1);
+            //วัน เดือน ปี เกิด พยาน2
+            var birthday_v_wit2 = document.getElementById("birthday_wit2").value.split("/");
+            var birthday_v2_wit2 = document.getElementById("birthday_wit2").value;
+            var b_date_wit2 = birthday_v_wit2[0];
+            var b_month_wit2 = birthday_v_wit2[1];
+            var b_year_wit2 = birthday_v_wit2[2];
+            var b_year_int_wit2 = parseInt(b_year_wit2);
+                       
+            //วันที่ปัจจุบัน 
+            var to_day = new Date();
+            var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+            var dd = to_day.getDate();
+            var mm = to_day.getMonth();
+            var mmmm = parseInt(mm)+1;
+            var yy = to_day.getFullYear();
+            var yyyy = to_day.getFullYear() +543;
+            var mmm = thmonth[to_day.getMonth()];
+            var this_day = dd + ' ' + mmm + ' ' + yyyy;
+
+            //วันออกบัตร ผู้ร้อง
+            var issue_c = document.getElementById("init-card").value.split("/");
+            var issue_date = parseInt(issue_c[0]);
+            var issue_month = issue_c[1];
+            var issue_year = issue_c[2];
+            var issue_m = parseInt(issue_month);
+            var issue_year_int = parseInt(issue_year);
+            var issue_mm = thmonth[issue_m-1];
+            var issue_card = issue_date + ' ' + issue_mm + ' ' + issue_year_int;
+            //วันออกบัตร พยาน1
+            var issue_c_wit1 = document.getElementById("init-card_wit1").value.split("/");
+            var issue_date_wit1 = parseInt(issue_c_wit1[0]);
+            var issue_month_wit1 = issue_c_wit1[1];
+            var issue_year_wit1 = issue_c_wit1[2];
+            var issue_m_wit1 = parseInt(issue_month_wit1);
+            var issue_year_int_wit1 = parseInt(issue_year_wit1);
+            var issue_mm_wit1 = thmonth[issue_m_wit1-1];
+            var issue_card_wit1 = issue_date_wit1 + ' ' + issue_mm_wit1 + ' ' + issue_year_int_wit1;
+            //วันออกบัตร พยาน2
+            var issue_c_wit2 = document.getElementById("init-card_wit2").value.split("/");
+            var issue_date_wit2 = parseInt(issue_c_wit2[0]);
+            var issue_month_wit2 = issue_c_wit2[1];
+            var issue_year_wit2 = issue_c_wit2[2];
+            var issue_m_wit2 = parseInt(issue_month_wit2);
+            var issue_year_int_wit2 = parseInt(issue_year_wit2);
+            var issue_mm_wit2 = thmonth[issue_m_wit2-1];
+            var issue_card_wit2 = issue_date_wit2 + ' ' + issue_mm_wit2 + ' ' + issue_year_int_wit2;
+                       
+            //วันบัตรหมดอายุ ผู้ร้อง
+            var exp_c = document.getElementById("exp-card").value.split("/");
+            var exp_date = parseInt(exp_c[0]);
+            var exp_month = parseInt(exp_c[1]);
+            var exp_year = parseInt(exp_c[2]);
+            var exp_mm = thmonth[exp_month-1];
+            var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+            //วันบัตรหมดอายุ พยาน1
+            var exp_c_wit1 = document.getElementById("exp-card_wit1").value.split("/");
+            var exp_date_wit1 = parseInt(exp_c_wit1[0]);
+            var exp_month_wit1 = parseInt(exp_c_wit1[1]);
+            var exp_year_wit1 = parseInt(exp_c_wit1[2]);
+            var exp_mm_wit1 = thmonth[exp_month_wit1-1];
+            var exp_card_wit1 = exp_date_wit1 + ' ' + exp_mm_wit1 + ' ' + exp_year_wit1;
+            //วันบัตรหมดอายุ พยาน2
+            var exp_c_wit2 = document.getElementById("exp-card_wit2").value.split("/");
+            var exp_date_wit2 = parseInt(exp_c_wit2[0]);
+            var exp_month_wit2 = parseInt(exp_c_wit2[1]);
+            var exp_year_wit2 = parseInt(exp_c_wit2[2]);
+            var exp_mm_wit2 = thmonth[exp_month_wit2-1];
+            var exp_card_wit2 = exp_date_wit2 + ' ' + exp_mm_wit2 + ' ' + exp_year_wit2;
+
+            //คำนวนอายุอัตโนมัติ ผู้ร้อง
+            var age_in_years;
+            if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
+            if(b_month<mmmm) {age_in_years = yyyy-b_year_int;}
+            if(b_month==mmmm) {
+                if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
+                else age_in_years = (yyyy-b_year_int)-1;
+            }
+            //alert('คุณมีอายุ : ' + age_in_years  + ' และวันเกิดของคุณคือ : ' + b_date + '/' + b_month + '/' + b_year_int + 'วันนี้คือ : ' +dd+ '/' +mmmm+ '/' +yyyy);
+
+            //คำนวนอายุอัตโนมัติ พยาน1
+            var age_in_years_wit1;
+            if(b_month_wit1>mmmm) {age_in_years_wit1 = (yyyy-b_year_int_wit1)-1;}
+            if(b_month_wit1<mmmm) {age_in_years_wit1 = yyyy-b_year_int_wit1;}
+            if(b_month_wit1==mmmm) {
+                if(b_date_wit1<=dd) {age_in_years_wit1 = yyyy-b_year_int_wit1;}
+                else age_in_years_wit1 = (yyyy-b_year_int_wit1)-1;
+            }
+            //คำนวนอายุอัตโนมัติ พยาน2
+            var age_in_years_wit2;
+            if(b_month_wit2>mmmm) {age_in_years_wit2 = (yyyy-b_year_int_wit2)-1;}
+            if(b_month_wit2<mmmm) {age_in_years_wit2 = yyyy-b_year_int_wit2;}
+            if(b_month_wit2==mmmm) {
+                if(b_date_wit2<=dd) {age_in_years_wit2 = yyyy-b_year_int_wit2;}
+                else age_in_years_wit2 = (yyyy-b_year_int_wit2)-1;
+            }
+                       
+            
+            //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
+            var id_card = document.getElementById('card').value;
+            var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
+            //ใส่ขีดให้เลขบัตรประชาชน พยาน1
+            var id_card_wit1 = document.getElementById('card_wit1').value;
+            var id_card_slice_wit1 = id_card_wit1.substring(0,1) + '-' + id_card_wit1.substring(1,5) +'-'+ id_card_wit1.substring(5,10) + '-' + id_card_wit1.substring(10,12) + '-' + id_card_wit1.substring(12,13);
+            //ใส่ขีดให้เลขบัตรประชาชน พยาน2
+            var id_card_wit2 = document.getElementById('card_wit2').value;
+            var id_card_slice_wit2 = id_card_wit2.substring(0,1) + '-' + id_card_wit2.substring(1,5) +'-'+ id_card_wit2.substring(5,10) + '-' + id_card_wit2.substring(10,12) + '-' + id_card_wit2.substring(12,13);
+
+                 
+
+
+               
+            doc.setData({
+                //ตัวแปรข้อมูลผู้ร้อง
+                full_name: document.getElementById("full_name").value,
+                b_date: b_date,
+                b_month: b_month,
+                b_year: b_year_int,
+                tday: this_day,
+                birth_province: document.getElementById("birth_province").value,
+                age: age_in_years,
+                father: document.getElementById("father").value,
+                mother: document.getElementById("mother").value,
+                addresss: document.getElementById("addresss").value,
+                moo: document.getElementById("moo").value,
+                road: document.getElementById("road").value,
+                tambol: document.getElementById("tambol").value,
+                district: document.getElementById("district").value,
+                provice: document.getElementById("provice").value,
+                job: document.getElementById("job").value,
+                card: id_card_slice,
+                officer: document.getElementById("officer").value,
+                init_card: issue_card,
+                exp_card: exp_card,
+                relation: document.getElementById("relation").value,
+                yyyy:yyyy,
+                whodead: document.getElementById("whodead").value,
+                docNo: document.getElementById("docNo").value,
+                testament: document.getElementById("testament").value,
+                branch: document.getElementById("branch").value,
+                whodead_father: document.getElementById("whodead_father").value,
+                hdfalive: document.getElementById("hdfalive").value,
+                hdfdod: document.getElementById("hdfdod").value,
+                whodead_mother: document.getElementById("whodead_mother").value,
+                hdmalive: document.getElementById("hdmalive").value,
+                hdmdod: document.getElementById("hdmdod").value,
+                marriage: document.getElementById("marriage").value,
+                mariedcard: document.getElementById("mariedcard").value,
+                mcardfrom: document.getElementById("mcardfrom").value,
+                mcard_district: document.getElementById("mcard_district").value,
+                mcard_province: document.getElementById("mcard_province").value,
+                mcard_date: document.getElementById("mcard_date").value,
+                mariedcard_parent: document.getElementById("mariedcard_parent").value,
+                mcardfrom_parent: document.getElementById("mcardfrom_parent").value,
+                mcard_district_parent: document.getElementById("mcard_district_parent").value,
+                mcard_province_parent: document.getElementById("mcard_province_parent").value,
+                mcard_date_parent: document.getElementById("mcard_date_parent").value,
+                whodead_marriage: document.getElementById("whodead_marriage").value,
+                whodead_mate: document.getElementById("whodead_mate").value,
+                whodeadson: document.getElementById("whodeadson").value,
+                sonlist: document.getElementById("sonlist").value,
+                legalson: document.getElementById("legalson").value,
+                legalsonlist: document.getElementById("legalsonlist").value,
+                protege: document.getElementById("protege").value,
+                protegelist: document.getElementById("protegelist").value,
+                deadson: document.getElementById("deadson").value,
+                brother: document.getElementById("brother").value,
+                brother_dad: document.getElementById("brother_dad").value,
+                brother_mom: document.getElementById("brother_mom").value,
+                matealive: document.getElementById("matealive").value,
+                matedod: document.getElementById("matedod").value,
+
+                                
+                //ตัวแปรข้อมูลพยาน1
+                full_name_wit1: document.getElementById("full_name_wit1").value,
+                birth_province_wit1: document.getElementById("birth_province_wit1").value,
+                father_wit1: document.getElementById("father_wit1").value,
+                mother_wit1: document.getElementById("mother_wit1").value,
+                addresss_wit1: document.getElementById("addresss_wit1").value,
+                moo_wit1: document.getElementById("moo_wit1").value,
+                road_wit1: document.getElementById("road_wit1").value,
+                tambol_wit1: document.getElementById("tambol_wit1").value,
+                district_wit1: document.getElementById("district_wit1").value,
+                provice_wit1: document.getElementById("provice_wit1").value,
+                job_wit1: document.getElementById("job_wit1").value,
+                card_wit1: id_card_slice_wit1,
+                init_card_wit1: issue_card_wit1,
+                exp_card_wit1: exp_card_wit1,
+                b_year_wit1: b_year_int_wit1,
+                age_wit1: age_in_years_wit1,
+                relation_wit1: document.getElementById("relation_wit1").value,
+
+                //ตัวแปรข้อมูลพยาน2
+                full_name_wit2: document.getElementById("full_name_wit2").value,
+                birth_province_wit2: document.getElementById("birth_province_wit2").value,
+                father_wit2: document.getElementById("father_wit2").value,
+                mother_wit2: document.getElementById("mother_wit2").value,
+                addresss_wit2: document.getElementById("addresss_wit2").value,
+                moo_wit2: document.getElementById("moo_wit2").value,
+                road_wit2: document.getElementById("road_wit2").value,
+                tambol_wit2: document.getElementById("tambol_wit2").value,
+                district_wit2: document.getElementById("district_wit2").value,
+                provice_wit2: document.getElementById("provice_wit2").value,
+                job_wit2: document.getElementById("job_wit2").value,
+                card_wit2: id_card_slice_wit2,
+                init_card_wit2: issue_card_wit2,
+                exp_card_wit2: exp_card_wit2,
+                b_year_wit2: b_year_int_wit2,
+                age_wit2: age_in_years_wit2,
+                relation_wit2: document.getElementById("relation_wit2").value
+
+                
+
+            });
+            try {
+                // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+                doc.render()
+            } catch (error) {
+                var e = {
+                    message: error.message,
+                    name: error.name,
+                    stack: error.stack,
+                    properties: error.properties,
+                }
+                console.log(JSON.stringify({
+                    error: e
+                }));
+                // The error thrown here contains additional information when logged with JSON.stringify (it contains a property object).
+                throw error;
+            }
+            var out = doc.getZip().generate({
+                type: "blob",
+                mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            }) //Output the document using Data-URI
+            saveAs(out, "oamsin.docx")
+        })
+    }
+</script>
+
+<script src="js/officer.js"></script>
+<script src="js/getCardData.js"></script>
+</html>
+<!-- end document-->
