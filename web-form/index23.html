@@ -203,7 +203,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">หมายเลขโทรศัพท์</label>
-                                    <input class="input--style-4" type="text" name="relation" id="relation">
+                                    <input class="input--style-4" type="text" name="telNo" id="telNo">
                                 </div>
                             </div>
                         </div>
@@ -602,6 +602,12 @@
                                     <input class="input--style-4" type="text" name="relation_wit1" id="relation_wit1">
                                 </div>
                             </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมายเลขโทรศัพท์</label>
+                                    <input class="input--style-4" type="text" name="telNo_wit1" id="telNo_wit1">
+                                </div>
+                            </div>
                         </div>
 
                         <hr noshade=""><br>                       
@@ -746,6 +752,12 @@
                                 <div class="input-group">
                                     <label class="label">มีความสัมพันธ์กับผู้ตายโดยเป็น</label>
                                     <input class="input--style-4" type="text" name="relation_wit2" id="relation_wit2">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมายเลขโทรศัพท์</label>
+                                    <input class="input--style-4" type="text" name="telNo_wit2" id="telNo_wit2">
                                 </div>
                             </div>
                         </div>
@@ -1018,12 +1030,31 @@
                 officer: document.getElementById("officer").value,
                 init_card: issue_card,
                 exp_card: exp_card,
+                telNo: document.getElementById("telNo").value,
                 relation: document.getElementById("relation").value,
                 yyyy:yyyy,
                 whodead: document.getElementById("whodead").value,
+                whodeadson: document.getElementById("whodeadson").value,
+                whodeadson_list: document.getElementById("whodeadson_list").value,
                 docNo: document.getElementById("docNo").value,
-                testament: document.getElementById("testament").value,
-                branch: document.getElementById("branch").value,
+                mates: document.getElementById("mates").value,
+                mate_list: document.getElementById("mate_list").value,
+                outlaw_son: document.getElementById("outlaw_son").value,
+                outlaw_son_list: document.getElementById("outlaw_son_list").value,
+                protege: document.getElementById("protege").value,
+                protege_list: document.getElementById("protege_list").value,
+                legal_son: document.getElementById("legal_son").value,
+                legal_son_list: document.getElementById("legal_son_list").value,
+                disabled_son: document.getElementById("disabled_son").value,
+                disabled_son_list: document.getElementById("disabled_son_list").value,
+                brothers: document.getElementById("brothers").value,
+                brothers_list: document.getElementById("brothers_list").value,
+                sequence: document.getElementById("sequence").value,
+                half_brothers:document.getElementById("half_brothers").value,
+                half_brother_dad: document.getElementById("half_brother_dad").value,
+                half_brother_dad_list: document.getElementById("half_brother_dad_list").value,
+                half_brother_mom: document.getElementById("half_brother_mom").value,
+                half_brother_mom_list: document.getElementById("half_brother_mom_list").value,
                 whodead_father: document.getElementById("whodead_father").value,
                 hdfalive: document.getElementById("hdfalive").value,
                 hdfdod: document.getElementById("hdfdod").value,
@@ -1031,30 +1062,20 @@
                 hdmalive: document.getElementById("hdmalive").value,
                 hdmdod: document.getElementById("hdmdod").value,
                 marriage: document.getElementById("marriage").value,
-                mariedcard: document.getElementById("mariedcard").value,
-                mcardfrom: document.getElementById("mcardfrom").value,
-                mcard_district: document.getElementById("mcard_district").value,
-                mcard_province: document.getElementById("mcard_province").value,
-                mcard_date: document.getElementById("mcard_date").value,
                 mariedcard_parent: document.getElementById("mariedcard_parent").value,
                 mcardfrom_parent: document.getElementById("mcardfrom_parent").value,
                 mcard_district_parent: document.getElementById("mcard_district_parent").value,
                 mcard_province_parent: document.getElementById("mcard_province_parent").value,
                 mcard_date_parent: document.getElementById("mcard_date_parent").value,
-                whodead_marriage: document.getElementById("whodead_marriage").value,
-                whodead_mate: document.getElementById("whodead_mate").value,
-                whodeadson: document.getElementById("whodeadson").value,
-                sonlist: document.getElementById("sonlist").value,
-                legalson: document.getElementById("legalson").value,
-                legalsonlist: document.getElementById("legalsonlist").value,
-                protege: document.getElementById("protege").value,
-                protegelist: document.getElementById("protegelist").value,
-                deadson: document.getElementById("deadson").value,
-                brother: document.getElementById("brother").value,
-                brother_dad: document.getElementById("brother_dad").value,
-                brother_mom: document.getElementById("brother_mom").value,
-                matealive: document.getElementById("matealive").value,
-                matedod: document.getElementById("matedod").value,
+                legal_son_of_dad: document.getElementById("legal_son_of_dad").value,
+                lsod_no:document.getElementById("lsod_no").value,
+                lsod_date: document.getElementById("lsod_date").value,
+                lsod_from: document.getElementById("lsod_from").value,
+                lsod_province: document.getElementById("lsod_province").value,
+                court_order: document.getElementById("court_order").value,
+                court_order_list: document.getElementById("court_order_list").value,
+                property: document.getElementById("property").value,
+
 
                                 
                 //ตัวแปรข้อมูลพยาน1
@@ -1075,6 +1096,7 @@
                 b_year_wit1: b_year_int_wit1,
                 age_wit1: age_in_years_wit1,
                 relation_wit1: document.getElementById("relation_wit1").value,
+                telNo_wit1: document.getElementById("telNo_wit1").value,
 
                 //ตัวแปรข้อมูลพยาน2
                 full_name_wit2: document.getElementById("full_name_wit2").value,
@@ -1093,7 +1115,8 @@
                 exp_card_wit2: exp_card_wit2,
                 b_year_wit2: b_year_int_wit2,
                 age_wit2: age_in_years_wit2,
-                relation_wit2: document.getElementById("relation_wit2").value
+                relation_wit2: document.getElementById("relation_wit2").value,
+                telNo_wit2: document.getElementById("telNo_wit2").value
 
                 
 
