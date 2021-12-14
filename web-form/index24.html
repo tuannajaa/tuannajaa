@@ -422,23 +422,23 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/เกิดเมื่อ/ปัจจุบันมีชีวิตอยู่ หรือ เสียชีวิตแล้ว เมื่อวันที่</label>
-                                    <textarea class="input--style-4" name="sonlist" id="sonlist" style="width: 100%">4.1 นายเอ บีซีดี เกิดเมื่อวันที่ 12 สิงหาคม 2566 ปัจจุบันยังมีชีวิตอยู่</textarea>
+                                    <textarea class="input--style-4" name="sonlist" id="sonlist" style="width: 100%">4.1 นายเอ บีซีดี เกิดเมื่อวันที่ 12 สิงหาคม 2566 ปัจจุบันยังมีชีวิตอยู่/ปัจจุบันเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">จดทะเบียน <b>รับรองบุตร</b> จำนวน กี่คน</label>
-                                    <input class="input--style-4" type="text" name="legalson" id="legalson">
+                                    <label class="label">ผู้ตายมี <b>พี่น้องร่วมบิดามารดาเดียวกัน</b> กี่คน</label>
+                                    <input class="input--style-4" type="text" name="brosis" id="brosis">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/ทะเบียนรับรองบุตรที่/ออกให้โดย/เขต/จังหวัด/เมื่อวันที่</label>
-                                    <textarea class="input--style-4" name="legalsonlist" id="legalsonlist" style="width: 100%">5.1 นายเอ บีซีดี ตามทะเบียนรับรองบุตรเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
+                                    <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล ปัจจุบันมีชีวิตอยู่/หรือเสียชีวิต เมื่อใด</label>
+                                    <textarea class="input--style-4" name="brosislist" id="brosislist" style="width: 100%">5.1 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่/เสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
@@ -1071,8 +1071,8 @@
                 whodead_mate: document.getElementById("whodead_mate").value,
                 whodeadson: document.getElementById("whodeadson").value,
                 sonlist: document.getElementById("sonlist").value,
-                legalson: document.getElementById("legalson").value,
-                legalsonlist: document.getElementById("legalsonlist").value,
+                brosis: document.getElementById("brosis").value,
+                brosislist: document.getElementById("brosislist").value,
                 protege: document.getElementById("protege").value,
                 protegelist: document.getElementById("protegelist").value,
                 deadson: document.getElementById("deadson").value,
