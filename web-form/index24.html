@@ -352,9 +352,9 @@
                                     <label class="label">ผู้ตาย จดทะเบียนสมรสหรือไม่</label>
                                     <select class="input--style-4" id="whodead_marriage" name="whodead_marriage">
                                         <option value="">โปรดเลือก</option>
-                                        <option value="ได้จดทะเบียนสมรสกัน">จดทะเบียนสมรสกัน</option>
-                                        <option value="ไม่ได้จดทะเบียนสมรส">ไม่ได้จดทะเบียนสมรส</option>
-                                        <option value="จดทะเบียนสมรสและหย่าแล้ว">จดสมรสและหย่าแล้ว</option>
+                                        <option value="การจดทะเบียนสมรส">จดทะเบียนสมรสกัน</option>
+                                        <option value="ไม่ได้จดทะเบียนสมรสกัน">ไม่ได้จดทะเบียนสมรส</option>
+                                        <option value="การหย่า">จดสมรสและหย่าแล้ว</option>
                                     </select></br></br>
                                     <input class="input--style-4" style="color:red; width:100%;" type="text" name="whodead_mate" id="whodead_mate" value="ระบุชื่อ คู่สมรส" onblur="if(this.value=='')this.value='ระบุชื่อ คู่สมรส';" onfocus="if(this.value=='ระบุชื่อ คู่สมรส')this.value='';" />
                                 </div>
@@ -409,7 +409,7 @@
                             </div>
                         </div>
                         <hr noshade=""><br>
-                        <h3>ข้อมูล <b>บุตรของผู้ตาย</b></h3>
+
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -421,7 +421,7 @@
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/เกิดเมื่อ/ปัจจุบันมีชีวิตอยู่ หรือ เสียชีวิตแล้ว เมื่อวันที่</label>
+                                    <label class="label">บุตรผู้ใดบ้าง ชื่อ-สกุล/เกิดเมื่อ/ปัจจุบันมีชีวิตอยู่ หรือ เสียชีวิตแล้ว เมื่อวันที่</label>
                                     <textarea class="input--style-4" name="sonlist" id="sonlist" style="width: 100%">4.1 นายเอ บีซีดี เกิดเมื่อวันที่ 12 สิงหาคม 2566 ปัจจุบันยังมีชีวิตอยู่/ปัจจุบันเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
@@ -437,7 +437,7 @@
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล ปัจจุบันมีชีวิตอยู่/หรือเสียชีวิต เมื่อใด</label>
+                                    <label class="label">พี่น้องผู้ใดบ้าง ชื่อ-สกุล ปัจจุบันมีชีวิตอยู่/หรือเสียชีวิต เมื่อใด</label>
                                     <textarea class="input--style-4" name="brosislist" id="brosislist" style="width: 100%">5.1 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่/เสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
@@ -445,37 +445,20 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">จดทะเบียนรับ <b>บุตรบุญธรรม</b> จำนวน กี่คน</label>
-                                    <input class="input--style-4" type="text" name="protege" id="protege">
+                                    <label class="label">ผู้ตายเป็นบุตร <b>ลำดับที่</b></label>
+                                    <input class="input--style-4" type="text" name="sequence" id="sequence">
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">มีผู้ใดบ้าง ชื่อ-สกุล/ทะเบียนรับรองบุตรที่/ออกให้โดย/เขต/จังหวัด/เมื่อวันที่</label>
-                                    <textarea class="input--style-4" name="protegelist" id="protegelist" style="width: 100%">6.1 นายเอ บีซีดี ตามทะเบียนบุตรบุญธรรมเลขที่ ออกให้โดยสำนักทะเบียน เขต จังหวัด เมื่อวันที่</textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="" style="width: 100%;">
-                                <div class="input-group">
-                                    <label class="label">ผู้ตายมี <b>บุตรที่เสียชีวิตไปก่อนแล้ว</b> ได้แก่</label>
-                                    <textarea class="input--style-4" name="deadson" id="deadson" style="width: 100%">7.1 นายเอ บีซีดี และบุตรนั้นมีผู้สืบสันดาน คือ</textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="" style="width: 100%;">
-                                <div class="input-group">
-                                    <label class="label"><b>กรณีบิดามารดาผู้ตายถึงแก่กรรมหมดแล้ว และผู้ตายไม่มีบุตร</b></label>
-                                    <label class="label">พี่น้องร่วมบิดามารดาเดียวกัน ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother" id="brother" style="width: 100%">8.1.1 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
-                                    <label class="label">พี่น้องร่วมแต่บิดา ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother_dad" id="brother_dad" style="width: 100%">8.1.2 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
-                                    <label class="label">พี่น้องร่วมแต่มารดา ได้แก่</label>
-                                    <textarea class="input--style-4" name="brother_mom" id="brother_mom" style="width: 100%">8.1.3 นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
+                                    <label class="label"><b>กรณีผู้ตาย มีพี่น้องร่วมแต่บิดา หรือ ร่วมแต่มารดา เดียวกัน</b></label>
+                                    <label class="label">พี่น้องร่วมแต่บิดา <b>จำนวน </b><input style="color:red; width:50px;" type="text" name="bro_of_dad" id="bro_of_dad" /> คน ได้แก่</label>
+                                    <textarea class="input--style-4" name="brother_dad" id="brother_dad" style="width: 100%">1.นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
+                                    <label class="label">พี่น้องร่วมแต่มารดา <b>จำนวน </b><input style="color:red; width:50px;" type="text" name="bro_of_mom" id="bro_of_mom" /> คน ได้แก่</label>
+                                    <textarea class="input--style-4" name="brother_mom" id="brother_mom" style="width: 100%">1.นายเอ บีซีดี ปัจจุบันยังมีชีวิตอยู่หรือเสียชีวิตแล้ว เมื่อวันที่</textarea>
                                 </div>
                             </div>
                         </div>
@@ -888,7 +871,7 @@
     
     function generate() {
 
-        loadFile("https://pokkrong-2409a.web.app/basedoc/OmsinBank.docx", function (error, content) {
+        loadFile("https://pokkrong-2409a.web.app/basedoc/Car.docx", function (error, content) {
             if (error) {
                 throw error
             };
@@ -1073,14 +1056,13 @@
                 sonlist: document.getElementById("sonlist").value,
                 brosis: document.getElementById("brosis").value,
                 brosislist: document.getElementById("brosislist").value,
-                protege: document.getElementById("protege").value,
-                protegelist: document.getElementById("protegelist").value,
-                deadson: document.getElementById("deadson").value,
-                brother: document.getElementById("brother").value,
+                sequence: document.getElementById("sequence").value,
                 brother_dad: document.getElementById("brother_dad").value,
                 brother_mom: document.getElementById("brother_mom").value,
                 matealive: document.getElementById("matealive").value,
                 matedod: document.getElementById("matedod").value,
+                bro_of_dad: document.getElementById("bro_of_dad").value,
+                bro_of_mom: document.getElementById("bro_of_mom").value,
 
                                 
                 //ตัวแปรข้อมูลพยาน1
@@ -1144,7 +1126,7 @@
                 type: "blob",
                 mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             }) //Output the document using Data-URI
-            saveAs(out, "oamsin.docx")
+            saveAs(out, "โอนรถ.docx")
         })
     }
 </script>
