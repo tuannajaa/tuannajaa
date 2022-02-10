@@ -54,7 +54,7 @@
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">เจ้าหน้าที่ดำเนินการ</label>
-                                        <select class = "input--style-4" name="officer" id="officer">
+                                        <select class = "input--style-4" name="officer" id="officer" onchange="mycheck();">
                                             <option value="">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
                                             
                                         </select>
@@ -63,7 +63,7 @@
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">เลขที่หนังสือ</label>
-                                        <input class="input--style-4" type="text" name="docNo" id="docNo">
+                                        <input class="input--style-4" type="text" name="docNo" id="docNo" onchange="mycheck();" >
                                     </div>
                                 </div>
                             
@@ -78,7 +78,7 @@
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
                                     <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(ผู้ร้อง)</b></label>
-                                    <input class="input--style-4" type="text" name="full_name" id="full_name">
+                                    <input class="input--style-4" type="text" name="full_name" id="full_name" onchange="mycheck();">
                                 </div>
                             </div>
                         </div>
@@ -420,6 +420,7 @@
 <script src="js/FileSaver.js"></script>
 <script src="js/jszip-utils.js"></script>
 <script src="js/validateForm.js"></script>
+<script src="js/mycheck.js"></script>
 <!--
 <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
