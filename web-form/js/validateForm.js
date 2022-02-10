@@ -1,18 +1,18 @@
 function validateform() {
     var x = 0
-    document.getElementById('officer').style.backgroundColor = "#e4ffdf"
-    document.getElementById('docNo').style.backgroundColor = "#e4ffdf"
-    document.getElementById('birthday').style.backgroundColor = "#e4ffdf"
-    document.getElementById('birth_province').style.backgroundColor = "#e4ffdf"
-    document.getElementById('father').style.backgroundColor = "#e4ffdf"
-    document.getElementById('mother').style.backgroundColor = "#e4ffdf"
-    document.getElementById('job').style.backgroundColor = "#e4ffdf"
-    document.getElementById('init-card').style.backgroundColor = "#e4ffdf"
-    document.getElementById('exp-card').style.backgroundColor = "#e4ffdf"
-    document.getElementById('init-card2').style.backgroundColor = "#e4ffdf"
-    document.getElementById('exp-card2').style.backgroundColor = "#e4ffdf"
-    document.getElementById('telNo').style.backgroundColor = "#e4ffdf"
-    document.getElementById('law').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('officer').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('docNo').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('birthday').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('birth_province').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('father').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('mother').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('job').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('init-card').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('exp-card').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('init-card2').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('exp-card2').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('telNo').style.backgroundColor = "#e4ffdf"
+    // document.getElementById('law').style.backgroundColor = "#e4ffdf"
 
     
     if((document.getElementById('officer').value) == ''){
