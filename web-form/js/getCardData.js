@@ -60,7 +60,6 @@ function getCardDataMom() {
             let Province = addressData.provice.substring(7)                 //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
             let cutProvince = Province.replace(/มหานคร/g,'กรุงเทพมหานคร')
             document.getElementById('provice_mom').value = cutProvince
-            
 
         });
 }
@@ -94,7 +93,6 @@ function getCardDataWit1() {
             let Province = addressData.provice.substring(7)                 //แก้ไขค่า กรณี คน กทม ไม่ยอมแสดงชื่อจังหวัดเต็มๆ
             let cutProvince = Province.replace(/มหานคร/g,'กรุงเทพมหานคร')
             document.getElementById('provice_wit1').value = cutProvince
-            
 
         });
 }
