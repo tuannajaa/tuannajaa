@@ -18,7 +18,7 @@ function getCardData() {
             var addressData = getAddress(data.address)
             document.getElementById("addresss").value = addressData.addressNo
             document.getElementById("moo").value = addressData.moo.substring(7)         //ตัดคำว่า หมู่ที่ ออก
-            document.getElementById("road").value = (addressData.road+addressData.soi).substring(3)
+            document.getElementById("road").value = (addressData.trok+addressData.soi+addressData.road).substring(3)
             document.getElementById("tambol").value = addressData.tambol.substring(4)   //ตัด ตำบล แขวง
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
@@ -51,7 +51,7 @@ function getCardDataMom() {
             let addressData = getAddress(data.address)
             document.getElementById("addresss_mom").value = addressData.addressNo
             document.getElementById("moo_mom").value = addressData.moo.substring(7)         //ตัดคำว่า หมู่ที่ ออก
-            document.getElementById("road_mom").value = (addressData.road+addressData.soi).substring(3)
+            document.getElementById("road_mom").value = (addressData.trok+addressData.soi+addressData.road).substring(3)
             document.getElementById("tambol_mom").value = addressData.tambol.substring(4)   //ตัด ตำบล แขวง
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
@@ -85,7 +85,7 @@ function getCardDataWit1() {
             let addressData = getAddress(data.address)
             document.getElementById("addresss_wit1").value = addressData.addressNo
             document.getElementById("moo_wit1").value = addressData.moo.substring(7)         //ตัดคำว่า หมู่ที่ ออก
-            document.getElementById("road_wit1").value = (addressData.road+addressData.soi).substring(3)
+            document.getElementById("road_wit1").value = (addressData.trok+addressData.soi+addressData.road).substring(3)
             document.getElementById("tambol_wit1").value = addressData.tambol.substring(4)   //ตัด ตำบล แขวง
             let district = addressData.district                                         //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
@@ -119,7 +119,7 @@ function getCardDataWit2() {
             let addressData = getAddress(data.address)
             document.getElementById("addresss_wit2").value = addressData.addressNo
             document.getElementById("moo_wit2").value = addressData.moo.substring(7)            //ตัดคำว่า หมู่ที่ ออก
-            document.getElementById("road_wit2").value = (addressData.road+addressData.soi).substring(3)
+            document.getElementById("road_wit2").value = (addressData.trok+addressData.soi+addressData.road).substring(3)
             document.getElementById("tambol_wit2").value = addressData.tambol.substring(4)    //ตัด ตำบล แขวง
             let district = addressData.district                                              //ตัดคำ อำเภอ และ เขต
             let cutDistrict = district.replace(/อำเภอ|เขต/g,"")                          
@@ -158,8 +158,9 @@ function getAddress(address){
     var data ={
         addressNo : addressArray[0],
         moo : addressArray[1],
-        soi : addressArray[2],
-        road : addressArray[3],
+        trok : addressArray[2],
+        soi : addressArray[3],
+        road : addressArray[4],
         tambol : addressArray[5],
         district : addressArray[6],
         provice : addressArray[7],
