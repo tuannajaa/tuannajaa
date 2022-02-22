@@ -72,8 +72,16 @@
                         </div>
                         <hr noshade=""><br>
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
-                                onclick="getCardData()">ดึงข้อมูลจากบัตรประชาชน</button>
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace" id="cardplace" >
+                                </div>
+                            </div>    
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
@@ -289,8 +297,16 @@
 
                         <hr noshade=""><br>
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
                                 onclick="getCardDataMom()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace_mom" id="cardplace_mom" >
+                                </div>
+                            </div>    
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
@@ -694,6 +710,8 @@
                 exp_card: exp_card,
                 forwhat: document.getElementById("forwhat").value,
                 docNo:document.getElementById("docNo").value,
+                cardplace: document.getElementById("cardplace").value,
+                
                 yyyy:yyyy,
                 
                 //ตัวแปรข้อมูลสมรสและหย่า
@@ -727,6 +745,7 @@
                 exp_card_mom: exp_card_mom,
                 b_year_mom: b_year_int_mom,
                 age_mom: age_in_years_mom,
+                cardplace_mom: document.getElementById("cardplace_mom").value,
 
                 //ตัวแปรข้อมูลลูก
                 full_name_son: document.getElementById("full_name_son").value,
@@ -761,6 +780,6 @@
 </script>
 
 <script src="js/officer.js"></script>
-<script src="js/getCardData.js"></script>
+<script src="js/getCardDataVer2.js"></script>
 </html>
 <!-- end document-->
