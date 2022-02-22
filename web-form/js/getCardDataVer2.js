@@ -9,7 +9,7 @@ function getCardData() {
         const obj = JSON.parse(x);
         console.log(obj)
         if (obj== null){
-            alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            alert('ตรวจสอบ บัตรประชาชนเสียบแล้ว หรือไม่??')
         }
         else{
             alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
