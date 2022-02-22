@@ -214,6 +214,7 @@ function validateform() {
                     mother: document.getElementById("mother").value,
                     yyyy: yyyy,
                     ttday:ttday,
+                    cardplace: document.getElementById("cardplace").value,
                     
                     
     
