@@ -12,6 +12,7 @@ function getCardData() {
             alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
         }
         else{
+            alert('กำลังอ่านบัตรประชาชน!!')
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
