@@ -51,6 +51,7 @@ function getCardDataMom() {
             alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
         }
         else{
+            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
@@ -89,6 +90,7 @@ function getCardDataWit1() {
             alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
         }
         else{
+            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
@@ -127,6 +129,7 @@ function getCardDataWit2() {
             alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
         }
         else{
+            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
