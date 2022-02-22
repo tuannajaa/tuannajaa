@@ -8,7 +8,10 @@ function getCardData() {
         console.log(x)
         const obj = JSON.parse(x);
         console.log(obj)
-
+        if (obj== null){
+            alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+        }
+        else{
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
@@ -27,8 +30,9 @@ function getCardData() {
         document.getElementById('provice').value = obj.Province
         var IssuePlace = obj.IssuePlace
         IssuePlaceArray = IssuePlace.split("/")
-        var CardPlace = IssuePlaceArray[0]+" จังหวัด"+IssuePlaceArray[1]
+        var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
         document.getElementById("cardplace").value = CardPlace
+        }
     });
 }
 //////////////////// GetCardData For Mother /////////////////
@@ -58,21 +62,4 @@ function getFormatedDateOfBirth(expDate){
     var dateExpire = expDate.slice(6,8)
     
     return dateExpire+"/"+monthExpire+"/"+yearExpire
-}
-
-
-function getAddress(address){
-    addressArray = address.split("#")
-    var data ={
-        addressNo : addressArray[0],
-        moo : addressArray[1],
-        trok : addressArray[2],
-        soi : addressArray[3],
-        road : addressArray[4],
-        tambol : addressArray[5],
-        district : addressArray[6],
-        provice : addressArray[7],
-    }
-
-    return data
 }
