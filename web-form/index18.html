@@ -70,8 +70,16 @@
                         </div>
                         <hr noshade=""><br>
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
                                 onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace" id="cardplace" >
+                                </div>
+                            </div>    
                         </div>
                         <br>
                         <div class="row row-space">
@@ -439,6 +447,6 @@
 
 </script>
 <script src="js/officer.js"></script>
-<script src="js/getCardData.js"></script>
+<script src="js/getCardDataVer2.js"></script>
 </html>
 <!-- end document-->
