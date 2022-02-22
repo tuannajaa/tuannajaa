@@ -14,7 +14,6 @@ function validateform() {
     // document.getElementById('telNo').style.backgroundColor = "#e4ffdf"
     // document.getElementById('law').style.backgroundColor = "#e4ffdf"
 
-    
     if((document.getElementById('officer').value) == ''){
             document.getElementById('officer').style.backgroundColor = "#ff5c5c"
             document.getElementById('officer').scrollIntoView()
@@ -174,7 +173,7 @@ function validateform() {
                 //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
                 var id_card = document.getElementById('card').value;
                 var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
-                
+
                 
                 doc.setData({
                     //ตัวแปรข้อมูลผู้ร้อง
@@ -215,6 +214,7 @@ function validateform() {
                     mother: document.getElementById("mother").value,
                     yyyy: yyyy,
                     ttday:ttday,
+                    
                     
     
                 });
