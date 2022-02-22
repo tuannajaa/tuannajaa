@@ -98,8 +98,16 @@
                         </div>
                         <hr noshade=""><br>
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
                                 onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace" id="cardplace" >
+                                </div>
+                            </div>    
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
@@ -471,8 +479,16 @@
                         
                         <hr noshade=""><br>
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
                                 onclick="getCardDataWit1()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace_wit1" id="cardplace_wit1" >
+                                </div>
+                            </div>    
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
@@ -618,8 +634,16 @@
 
                         <hr noshade=""><br>                       
                         <div class="row row-space">
+                            <div class="col-2">
                             <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
                                 onclick="getCardDataWit2()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace_wit2" id="cardplace_wit2" >
+                                </div>
+                            </div>    
                         </div>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
@@ -1070,6 +1094,7 @@
                 bro_of_dad: document.getElementById("bro_of_dad").value,
                 bro_of_mom: document.getElementById("bro_of_mom").value,
                 TelNo:document.getElementById("TelNo").value,
+                cardplace: document.getElementById("cardplace").value,
 
                                 
                 //ตัวแปรข้อมูลพยาน1
@@ -1090,6 +1115,7 @@
                 b_year_wit1: b_year_int_wit1,
                 age_wit1: age_in_years_wit1,
                 relation_wit1: document.getElementById("relation_wit1").value,
+                cardpalce_wit1: document.getElementById("cardplace_wit1").value,
 
                 //ตัวแปรข้อมูลพยาน2
                 full_name_wit2: document.getElementById("full_name_wit2").value,
@@ -1108,7 +1134,8 @@
                 exp_card_wit2: exp_card_wit2,
                 b_year_wit2: b_year_int_wit2,
                 age_wit2: age_in_years_wit2,
-                relation_wit2: document.getElementById("relation_wit2").value
+                relation_wit2: document.getElementById("relation_wit2").value,
+                cardplace_wit2: document.getElementById("cardplace_wit2").value
 
                 
 
@@ -1139,6 +1166,6 @@
 </script>
 
 <script src="js/officer.js"></script>
-<script src="js/getCardData.js"></script>
+<script src="js/getCardDataVer2.js"></script>
 </html>
 <!-- end document-->
