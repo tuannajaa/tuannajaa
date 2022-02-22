@@ -27,7 +27,6 @@ function getCardData() {
         document.getElementById('provice').value = obj.Province
         var IssuePlace = obj.IssuePlace
         IssuePlaceArray = IssuePlace.split("/")
-
         var CardPlace = IssuePlaceArray[0]+" จังหวัด"+IssuePlaceArray[1]
         document.getElementById("cardplace").value = CardPlace
     });
