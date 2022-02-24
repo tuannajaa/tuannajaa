@@ -58,7 +58,7 @@ function getCardData() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
     })
 }
 //////////////////// GetCardData For Mother /////////////////
@@ -120,7 +120,7 @@ function getCardDataMom() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
     })
 }
 //////////////////// GetCardData For Wit1 /////////////////
@@ -182,7 +182,7 @@ function getCardDataWit1() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
     })
 }
 //////////////////// GetCardData For Wit2 /////////////////
