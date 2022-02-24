@@ -244,7 +244,7 @@ function getCardDataWit2() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
     })
 }
 //////////////////// Function Format Wording /////////////////
