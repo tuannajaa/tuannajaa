@@ -55,7 +55,11 @@ function getCardData() {
             var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
             document.getElementById("cardplace").value = CardPlace
         }
-    });
+    })
+    .catch(err => {
+    console.log('caught it!',err);
+    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    })
 }
 //////////////////// GetCardData For Mother /////////////////
 function getCardDataMom() {
@@ -113,7 +117,11 @@ function getCardDataMom() {
         var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
         document.getElementById("cardplace_mom").value = CardPlace
         }
-    });
+    })
+    .catch(err => {
+    console.log('caught it!',err);
+    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    })
 }
 //////////////////// GetCardData For Wit1 /////////////////
 function getCardDataWit1() {
@@ -171,7 +179,11 @@ function getCardDataWit1() {
         var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
         document.getElementById("cardplace_wit1").value = CardPlace
         }
-    });
+    })
+    .catch(err => {
+    console.log('caught it!',err);
+    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    })
 }
 //////////////////// GetCardData For Wit2 /////////////////
 function getCardDataWit2() {
@@ -229,7 +241,11 @@ function getCardDataWit2() {
         var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
         document.getElementById("cardplace_wit2").value = CardPlace
         }
-    });
+    })
+    .catch(err => {
+    console.log('caught it!',err);
+    Swal.fire("คุณยังไม่ติดตั้งโปรแกรมหรือไม่เปิดโปรแกรม\nSmartdcard Reader")
+    })
 }
 //////////////////// Function Format Wording /////////////////
 function getFormatedDateOfBirth(dateOfBirth){
