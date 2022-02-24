@@ -1,5 +1,12 @@
 function getCardData() {
     console.log("function is working")
+
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****   
+
     fetch('https://localhost:8182/thaiid/read.jsonp?&section1=true&section2a=true&section2b=true')
     .then(response => response.text())
     .then(data => {
@@ -9,36 +16,55 @@ function getCardData() {
         const obj = JSON.parse(x);
         console.log(obj)
         if (obj== null){
-            alert('ตรวจสอบ บัตรประชาชนเสียบแล้ว หรือไม่??')
+            //alert('ตรวจสอบ บัตรประชาชนเสียบแล้ว หรือไม่??')
+            Swal.fire("เสียบบัตรประชาชนแล้วยัง?")
         }
         else{
-            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
-        var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
-        var issueDate = getFormatedDateOfBirth(obj.IssueDate)
-        var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
-        let preN = obj.TitleNameTh
-        let repreN = preN.replace(/น.ส./g,"นางสาว")
-        document.getElementById("full_name").value = repreN + obj.FirstNameTh +" "+ obj.LastNameTh
-        document.getElementById("birthday").value = dateOfBirth
-        document.getElementById("card").value = obj.CitizenNo
-        document.getElementById("init-card").value = issueDate
-        document.getElementById("exp-card").value = expDate
-        document.getElementById("addresss").value = obj.HomeNo
-        document.getElementById("moo").value = obj.Moo.substring(7) //ตัดคำว่า หมู่ที่ ออก
-        document.getElementById("road").value = obj.Trok+obj.Soi+obj.Road
-        document.getElementById("tambol").value = obj.Tumbol
-        document.getElementById("district").value = obj.Amphur
-        document.getElementById('provice').value = obj.Province
-        var IssuePlace = obj.IssuePlace
-        IssuePlaceArray = IssuePlace.split("/")
-        var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
-        document.getElementById("cardplace").value = CardPlace
+            //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            Swal.fire({
+                title: "กำลังอ่านบัตรประชาชน",
+                text: "กรุณารอสักครู่",
+                position: "center",
+                background: "white",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+
+            var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
+            var issueDate = getFormatedDateOfBirth(obj.IssueDate)
+            var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
+            let preN = obj.TitleNameTh
+            let repreN = preN.replace(/น.ส./g,"นางสาว")
+            document.getElementById("full_name").value = repreN + obj.FirstNameTh +" "+ obj.LastNameTh
+            document.getElementById("birthday").value = dateOfBirth
+            document.getElementById("card").value = obj.CitizenNo
+            document.getElementById("init-card").value = issueDate
+            document.getElementById("exp-card").value = expDate
+            document.getElementById("addresss").value = obj.HomeNo
+            document.getElementById("moo").value = obj.Moo.substring(7) //ตัดคำว่า หมู่ที่ ออก
+            document.getElementById("road").value = obj.Trok+obj.Soi+obj.Road
+            document.getElementById("tambol").value = obj.Tumbol
+            document.getElementById("district").value = obj.Amphur
+            document.getElementById('provice').value = obj.Province
+            var IssuePlace = obj.IssuePlace
+            IssuePlaceArray = IssuePlace.split("/")
+            var CardPlace = IssuePlaceArray[0]+" "+IssuePlaceArray[1]
+            document.getElementById("cardplace").value = CardPlace
         }
     });
 }
 //////////////////// GetCardData For Mother /////////////////
 function getCardDataMom() {
     console.log("function is working")
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****
     fetch('https://localhost:8182/thaiid/read.jsonp?&section1=true&section2a=true&section2b=true')
     .then(response => response.text())
     .then(data => {
@@ -48,10 +74,24 @@ function getCardDataMom() {
         const obj = JSON.parse(x);
         console.log(obj)
         if (obj== null){
-            alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            Swal.fire("เสียบบัตรประชาชนแล้วยัง?")
         }
         else{
-            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            Swal.fire({
+                title: "กำลังอ่านบัตรประชาชน",
+                text: "กรุณารอสักครู่",
+                position: "center",
+                background: "white",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
@@ -78,6 +118,11 @@ function getCardDataMom() {
 //////////////////// GetCardData For Wit1 /////////////////
 function getCardDataWit1() {
     console.log("function is working")
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****
     fetch('https://localhost:8182/thaiid/read.jsonp?&section1=true&section2a=true&section2b=true')
     .then(response => response.text())
     .then(data => {
@@ -87,10 +132,24 @@ function getCardDataWit1() {
         const obj = JSON.parse(x);
         console.log(obj)
         if (obj== null){
-            alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            Swal.fire("เสียบบัตรประชาชนแล้วยัง?")
         }
         else{
-            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            Swal.fire({
+                title: "กำลังอ่านบัตรประชาชน",
+                text: "กรุณารอสักครู่",
+                position: "center",
+                background: "white",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
@@ -117,6 +176,11 @@ function getCardDataWit1() {
 //////////////////// GetCardData For Wit2 /////////////////
 function getCardDataWit2() {
     console.log("function is working")
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****
     fetch('https://localhost:8182/thaiid/read.jsonp?&section1=true&section2a=true&section2b=true')
     .then(response => response.text())
     .then(data => {
@@ -126,10 +190,24 @@ function getCardDataWit2() {
         const obj = JSON.parse(x);
         console.log(obj)
         if (obj== null){
-            alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
+            Swal.fire("เสียบบัตรประชาชนแล้วยัง?")
         }
         else{
-            alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            Swal.fire({
+                title: "กำลังอ่านบัตรประชาชน",
+                text: "กรุณารอสักครู่",
+                position: "center",
+                background: "white",
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 2000
+            })
+
         var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
         var issueDate = getFormatedDateOfBirth(obj.IssueDate)
         var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
