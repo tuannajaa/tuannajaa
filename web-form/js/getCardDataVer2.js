@@ -26,6 +26,7 @@ function getCardData() {
                 text: "กรุณารอสักครู่",
                 position: "center",
                 background: "white",
+                icon: 'success',
                 allowOutsideClick: false,
                 allowEscapeKey: false,
                 allowEnterKey: false,
