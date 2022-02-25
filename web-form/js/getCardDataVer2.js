@@ -59,7 +59,13 @@ function getCardData() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
+            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+        })
+        
     })
 }
 //////////////////// GetCardData For Mother /////////////////
@@ -122,7 +128,13 @@ function getCardDataMom() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
+            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+        })
+    
     })
 }
 //////////////////// GetCardData For Wit1 /////////////////
@@ -185,7 +197,12 @@ function getCardDataWit1() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
+            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+        })
     })
 }
 //////////////////// GetCardData For Wit2 /////////////////
@@ -248,7 +265,13 @@ function getCardDataWit2() {
     })
     .catch(err => {
     console.log('caught it!',err);
-    Swal.fire("1.ติดตั้งและใช้งาน\nSmartdcard Reader\n2.ติดตั้งและใช้งานExtension\nCors Unblock")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
+            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+        })
+    
     })
 }
 //////////////////// Function Format Wording /////////////////
