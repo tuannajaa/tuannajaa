@@ -337,13 +337,19 @@ body {
     
     function boxinfo(pageload){
       console.log("function is working!")
+      
+      if(pageload == "/index1.html" || pageload =="/index12.html" || pageload =="/index13.html" || pageload =="/index14.html"){
+        var imglink = "/img/kidgoabroad.jpg"
+      }
+      else{var imglink = "https://unsplash.it/400/200"}
+      console.log(imglink)
   
       Swal.fire({
       title: 'ตรวจสอบ เอกสารหลักฐาน!',
       text: pageload,
-      imageUrl: 'https://unsplash.it/400/200',
-      imageWidth: 400,
-      imageHeight: 200,
+      imageUrl: imglink,
+      imageWidth: 500,
+      imageHeight: 350,
       imageAlt: 'Custom image',
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
