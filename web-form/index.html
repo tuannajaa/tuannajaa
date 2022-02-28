@@ -257,7 +257,7 @@ body {
                 <h3>หนังสือรับรองสถานภาพการสมรส (รับรองโสด)</h3>
                 <a href="#" id="/index2.html" onclick="boxinfo(this.id)">3.1 รับรองโสด (ไม่ได้จดสมรส)</a><br>
                 <a href="#" id="/index7.html" onclick="boxinfo(this.id)">3.2 รับรองโสด (จดสมรสและหย่าแล้ว)</a><br>
-                <a href="/#" id="index9.html" onclick="boxinfo(this.id)">3.3 รับรองโสด มอบอำนาจ (ไม่ได้จดสมรส)</a><br>
+                <a href="#" id="/index9.html" onclick="boxinfo(this.id)">3.3 รับรองโสด มอบอำนาจ (ไม่ได้จดสมรส)</a><br>
                 <a href="#" id="/index10.html" onclick="boxinfo(this.id)">3.4 รับรองโสด มอบอำนาจ (จดสมรสและหย่าแล้ว)</a>
             </div>
             <div id="momonly" class="tabcontent">
@@ -339,14 +339,21 @@ body {
       console.log("function is working!")
       
       if(pageload == "/index1.html" || pageload =="/index12.html" || pageload =="/index13.html" || pageload =="/index14.html"){
-        var imglink = "/img/kidgoabroad.jpg"
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEgxgOz71SO6P8ApAWsYoi_nM3wLmBUN_-j6wCgl-biTpXQAi3rzlYcINqmaXn0kyVKCmXPurhzA6cPgkMRAtMh1JJzucWfcILOXZg5yy88uwigOHkGFLcn7AMUCdaGR45bKLtF329lpheSp1pCh0X49lLWk7j1PhYbNljJJVb22YcTycPzqvtnynCztSg"
       }
+      else if(pageload == "/index3.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEhAuCwfxvEakFicmGkhGlA9jj4nywr4-pX-fexdHGWoSaRS72vVk1Sh2R6vrZZa5WrlrYBdF1230lZ3uUhFfLpT7dC77uNBTV7BnWE2tPjCAReFAlMBpJPVLSmVeKPiei0PbR9y7L1_5SZ2zW4be5xiem-dxmEV06tGeb_cgU54Z1dcB9IkG0q6r64RGA=s822"
+      }
+      else if(pageload == "/index2.html" || pageload == "/index7.html" || pageload == "/index9.html" || pageload == "/index10.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEhrX3nDDEZwoTpiCPlibVCByNfSa3qX2ggHXpspHiQtOGQPHpXaKs0DhzjXhqeVYmyvxGS56eH5vsU3Wx_9ocLuZA41bw9DqniySCtyWekk_7jdF47X2cWmP36PswY09GfVdFeGqCkTavzQEyT6E3yHdYLh_M69CG8TW6D-IUGR1XpJFqo2AUpJrPs4_w=s741"
+      }
+      
       else{var imglink = "https://unsplash.it/400/200"}
       console.log(imglink)
   
       Swal.fire({
       title: 'ตรวจสอบ เอกสารหลักฐาน!',
-      text: pageload,
+      text: '',
       imageUrl: imglink,
       imageWidth: 500,
       imageHeight: 350,
