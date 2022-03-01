@@ -681,10 +681,10 @@
                 var couple_m = '-';
                 var couple_fm = '-';
             }
+            //เลขที่เอกสารฉบับที่ 2
+            var doc2 = document.getElementById("docNo").value
+            var docNo2 = (parseInt(doc2))+1         
             
-            
-
-
                
             doc.setData({
                 //ตัวแปรข้อมูลพ่อ
@@ -710,6 +710,7 @@
                 exp_card: exp_card,
                 forwhat: document.getElementById("forwhat").value,
                 docNo:document.getElementById("docNo").value,
+                docNo2:docNo2,
                 cardplace: document.getElementById("cardplace").value,
                 
                 yyyy:yyyy,
