@@ -886,8 +886,8 @@
             var id_card_wit2 = document.getElementById('card_wit2').value;
             var id_card_slice_wit2 = id_card_wit2.substring(0,1) + '-' + id_card_wit2.substring(1,5) +'-'+ id_card_wit2.substring(5,10) + '-' + id_card_wit2.substring(10,12) + '-' + id_card_wit2.substring(12,13);
 
-                 
-
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML     
 
                
             doc.setData({
@@ -917,6 +917,7 @@
                 docNo: document.getElementById("docNo").value,
                 yyyy:yyyy,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
                 
                 //ตัวแปรผู้ตาย
                 whodead: document.getElementById("whodead").value,

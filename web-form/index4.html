@@ -851,6 +851,8 @@
             var id_card_dfather = document.getElementById("card_dfather").value;
             var id_card_slice_dfather = id_card_dfather.substring(0,1) + '-' + id_card_dfather.substring(1,5) + '-' + id_card_dfather.substring(5,10) + '-' + id_card_dfather.substring(10,12) + '-' + id_card_dfather.substring(12,13);
 
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
                            
             doc.setData({
                 //ตัวแปรข้อมูลผู้ร้อง
@@ -880,6 +882,7 @@
                 forwhat: document.getElementById("forwhat").value,
                 docNo:document.getElementById("docNo").value,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
                 
                 //ตัวแปรข้อมูล บิดา และ บุตร
                 full_name_dfather: document.getElementById("full_name_dfather").value,

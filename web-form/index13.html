@@ -463,11 +463,9 @@
                 var couple_m = '-';
                 var couple_fm = '-';
             }
-            
-            
-
-
-               
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
+                           
             doc.setData({
                 //ตัวแปรข้อมูลพ่อ
                 full_name: document.getElementById("full_name").value,
@@ -493,7 +491,7 @@
                 forwhat: document.getElementById("forwhat").value,
                 yyyy:yyyy,
                 cardplace: document.getElementById("cardplace").value,
-
+                titleName: titleName,
                 //เลขที่หนังสือ xxxx/2562
                 docNo: document.getElementById("docNo").value,
                 

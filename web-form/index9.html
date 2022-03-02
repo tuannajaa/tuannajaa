@@ -920,9 +920,8 @@
             else{
                 var couple_mfm = '-';
             }
-            
-
-
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
                
             doc.setData({
                 //ตัวแปรข้อมูลผู้รับมอบอำนาจ
@@ -951,6 +950,7 @@
                 docNo: document.getElementById("docNo").value,
                 yyyy:yyyy,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
 
                 //ตัวแปรข้อมูลผู้มอบอำนาจ
                 attorney_name:document.getElementById("attorney_name").value,

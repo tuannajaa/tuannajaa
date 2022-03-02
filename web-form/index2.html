@@ -868,8 +868,8 @@
             else{
                 var couple_mfm = '-';
             }
-            
-
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
 
                
             doc.setData({
@@ -898,6 +898,7 @@
                 docNo: document.getElementById("docNo").value,
                 yyyy:yyyy,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
                 
                 //ตัวแปรข้อมูลสมรสและหย่า
                 mariedcard: document.getElementById("mariedcard").value,

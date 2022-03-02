@@ -941,7 +941,8 @@
             //เลขที่เอกสารฉบับที่ 2
             var doc2 = document.getElementById("docNo").value
             var docNo2 = (parseInt(doc2))+1
-            
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
                            
             doc.setData({
                 //ตัวแปรข้อมูลผู้ร้อง
@@ -972,6 +973,7 @@
                 docNo:document.getElementById("docNo").value,
                 docNo2:docNo2,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
                 
                 //ตัวแปรข้อมูล บิดา และ บุตร
                 full_name_dfather: document.getElementById("full_name_dfather").value,

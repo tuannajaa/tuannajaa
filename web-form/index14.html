@@ -471,10 +471,9 @@
                 var couple_m = '-';
                 var couple_fm = '-';
             }
+            //ดำเนินการเรื่องอะไร
+            const titleName = document.getElementsByTagName('h2')[0].innerHTML
             
-            
-
-
                
             doc.setData({
                 //ตัวแปรข้อมูลพ่อ
@@ -519,6 +518,7 @@
                 b_year: b_year_int,
                 age: age_in_years,
                 cardplace: document.getElementById("cardplace").value,
+                titleName: titleName,
 
                 //ตัวแปรข้อมูลลูก
                 full_name_son: document.getElementById("full_name_son").value,
