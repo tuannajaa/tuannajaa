@@ -27,6 +27,7 @@ a:hover {
 	text-decoration: none;
 }
 
+
 .container-fluid { margin-left: 0; }
 
 .btn-primary {
@@ -61,7 +62,7 @@ hr { border-top: 4px solid #CCC; }
 .tm-mt-100 { margin-top: 100px; }
 
 .tm-sidebar {
-	background-color: #fff;
+	background-color: #f9f9f9;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -274,6 +275,7 @@ a.tm-paging-link:hover {
     background: #006699;
     color: white;
 }
+
 
 @media (max-width: 1972px) { .tm-paging { max-width: 870px; } }
 @media (max-width: 1660px) { .tm-paging { max-width: 580px; } }
