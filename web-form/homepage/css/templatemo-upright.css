@@ -159,9 +159,10 @@ hr { border-top: 4px solid #CCC; }
 
 .nav-item:hover .nav-link,
 .nav-link.current {
-	background-color: #F2F2F2;
-	color: #006699;
+	background-color: #f6ff15;
+	color: #0016b7;
 	padding-left: 30px;
+	font-weight: bold;
 }
 
 .nav-item:hover > .nav-link > .triangle-right,
