@@ -24,6 +24,7 @@ p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
 	color: #006699;
+	text-shadow: -1px 0 rgb(246, 255, 21), 0 1px rgb(246, 255, 21), 1px 0 rgb(246, 255, 21), 0 -1px rgb(246, 255, 21);
 	text-decoration: none;
 }
 
