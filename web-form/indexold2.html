@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title Page-->
+    <title>Tuannajaa Pokkrong TKDO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Font From Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet"> 
+    <!--SweetAlert CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css" rel="stylesheet">
+<style>
+* {box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Mali', cursive;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1000' height='600' preserveAspectRatio='none' viewBox='0 0 1000 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1238%26quot%3b)' fill='none'%3e%3crect width='1000' height='600' x='0' y='0' fill='url(%23SvgjsLinearGradient1239)'%3e%3c/rect%3e%3cpath d='M693.33%2c446.574C721.736%2c447.101%2c753.141%2c444.1%2c768.308%2c420.076C784.236%2c394.848%2c778.895%2c361.79%2c762.662%2c336.758C747.794%2c313.831%2c720.656%2c304.44%2c693.33%2c304.459C666.044%2c304.478%2c638.589%2c313.692%2c624.167%2c336.855C608.96%2c361.279%2c607.682%2c393.039%2c623.024%2c417.378C637.528%2c440.386%2c666.137%2c446.069%2c693.33%2c446.574' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M387.16 577.78 a117.64 117.64 0 1 0 235.28 0 a117.64 117.64 0 1 0 -235.28 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M829.694%2c470.056C868.113%2c471.39%2c912.849%2c474.973%2c933.763%2c442.718C955.765%2c408.785%2c943.376%2c363.534%2c920.297%2c330.324C900.316%2c301.572%2c864.658%2c291.12%2c829.694%2c292.965C798.153%2c294.63%2c771.398%2c312.55%2c754.269%2c339.087C735.23%2c368.583%2c719.912%2c405.478%2c737.432%2c435.901C754.973%2c466.359%2c794.567%2c468.836%2c829.694%2c470.056' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M519.62 340.89 a111.85 111.85 0 1 0 223.7 0 a111.85 111.85 0 1 0 -223.7 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M568.112%2c64.858C590.887%2c66.153%2c614.331%2c56.282%2c625.176%2c36.213C635.621%2c16.885%2c628.687%2c-6.391%2c616.491%2c-24.665C605.725%2c-40.797%2c587.493%2c-48.559%2c568.112%2c-49.295C547.069%2c-50.094%2c523.601%2c-46.746%2c512.923%2c-28.596C502.146%2c-10.277%2c510.474%2c12.003%2c521.282%2c30.304C531.855%2c48.207%2c547.354%2c63.677%2c568.112%2c64.858' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M347.93 78.55 a161.71 161.71 0 1 0 323.42 0 a161.71 161.71 0 1 0 -323.42 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M251.15 558.58 a177.88 177.88 0 1 0 355.76 0 a177.88 177.88 0 1 0 -355.76 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M744.766%2c387.052C774.766%2c387.191%2c806.876%2c381.731%2c822.942%2c356.396C839.959%2c329.561%2c837.057%2c294.66%2c820.588%2c267.485C804.707%2c241.28%2c775.36%2c225.686%2c744.766%2c227.397C716.714%2c228.966%2c696.784%2c251.121%2c682.334%2c275.216C667.311%2c300.266%2c653.593%2c330.174%2c667.831%2c355.679C682.3%2c381.598%2c715.082%2c386.915%2c744.766%2c387.052' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-40.41 271.89 a156.86 156.86 0 1 0 313.72 0 a156.86 156.86 0 1 0 -313.72 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M115.889%2c452.914C135.867%2c452.519%2c149.107%2c434.004%2c158.008%2c416.114C165.799%2c400.455%2c167.154%2c382.394%2c158.556%2c367.163C149.812%2c351.674%2c133.673%2c341.174%2c115.889%2c341.507C98.614%2c341.831%2c84.695%2c353.837%2c75.905%2c368.712C66.927%2c383.905%2c63.211%2c401.899%2c70.781%2c417.84C79.538%2c436.28%2c95.479%2c453.318%2c115.889%2c452.914' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M7.58 71.28 a173.86 173.86 0 1 0 347.72 0 a173.86 173.86 0 1 0 -347.72 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M158.34 374.87 a127.97 127.97 0 1 0 255.94 0 a127.97 127.97 0 1 0 -255.94 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M191.44 537.74 a173.58 173.58 0 1 0 347.16 0 a173.58 173.58 0 1 0 -347.16 0z' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M993.86%2c199.789C1022.545%2c200.548%2c1048.455%2c182.291%2c1061.74%2c156.856C1074.133%2c133.128%2c1067.773%2c105.88%2c1055.272%2c82.209C1041.641%2c56.397%2c1023.048%2c28.684%2c993.86%2c28.319C964.292%2c27.949%2c942.845%2c54.137%2c929.726%2c80.638C918.184%2c103.953%2c919.599%2c130.514%2c931.929%2c153.421C945.029%2c177.759%2c966.23%2c199.058%2c993.86%2c199.789' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M185.962%2c405.636C216.754%2c405.913%2c238.362%2c378.154%2c252.427%2c350.761C265.103%2c326.073%2c267.516%2c297.344%2c254.012%2c273.099C240.14%2c248.193%2c214.428%2c232.969%2c185.962%2c231.427C154.309%2c229.712%2c118.99%2c237.129%2c103.815%2c264.96C89.028%2c292.08%2c105.96%2c322.91%2c121.536%2c349.584C136.921%2c375.93%2c155.454%2c405.362%2c185.962%2c405.636' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M775.245%2c323.225C817.631%2c323.995%2c861.968%2c310.711%2c883.228%2c274.035C904.539%2c237.272%2c893.436%2c192.52%2c872.421%2c155.587C851.123%2c118.156%2c818.309%2c84.63%2c775.245%2c84.26C731.68%2c83.886%2c695.988%2c115.64%2c675.133%2c153.891C655.236%2c190.385%2c652.7%2c234.448%2c673.854%2c270.229C694.655%2c305.413%2c734.379%2c322.482%2c775.245%2c323.225' fill='rgba(7%2c 75%2c 254%2c 0.56)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1238'%3e%3crect width='1000' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1239'%3e%3cstop stop-color='rgba(255%2c 222%2c 222%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  
+}
+.main{
+  width: 1000px;
+  margin: auto;
+  height: 900px;
+  box-shadow: 3px 3px 10px rgb(19, 19, 19);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.header {
+  height: 110px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='110' preserveAspectRatio='none' viewBox='0 0 1440 110'%3e%3cg mask='url(%26quot%3b%23SvgjsMask6789%26quot%3b)' fill='none'%3e%3crect width='1440' height='110' x='0' y='0' fill='url(%23SvgjsLinearGradient6790)'%3e%3c/rect%3e%3cuse xlink:href='%23SvgjsSymbol6797' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol6797' x='720' y='0'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask6789'%3e%3crect width='1440' height='110' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient6790'%3e%3cstop stop-color='rgba(255%2c 94%2c 94%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(158%2c 0%2c 79%2c 1)' offset='0.93'%3e%3c/stop%3e%3c/linearGradient%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath6795'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath6796'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath6791'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath6793'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath6792'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath6794'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol6797'%3e%3cuse xlink:href='%23SvgjsPath6791' x='30' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='30' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6793' x='90' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='90' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6793' x='150' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6794' x='150' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='210' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='210' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='270' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='270' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='330' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='330' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='390' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='390' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6795' x='450' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6796' x='450' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='510' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='510' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6792' x='570' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6795' x='570' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='630' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6791' x='630' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6795' x='690' y='30' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath6796' x='690' y='90' stroke='rgba(2%2c 8%2c 14%2c 1)'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+}
+  
+.header h1{ 
+  padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 2px 0 rgb(0, 0, 0), 0 -2px rgb(0, 0, 0);
+  font-size: 40px;  
+}
+
+.content {
+  border-bottom:  1px solid rgb(167, 167, 167);
+  height: 730px;
+}
+.footer {
+  height: 60px;
+  background-color: #ffffff34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-l{
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.ft-l img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(87, 87, 87)
+}
+.ft-l img:hover{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(87, 87, 87)
+}
+.ft-l p {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 15px;
+}
+.ft-r p {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  background: #fdc9d5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffffff,#ffdedc );  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffffff,#ffd4d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+
+  width: 45%;
+  height: auto;
+  font-family: 'Mali', cursive;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: 'Mali', cursive;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #ffffff;  /* fallback for old browsers */
+  font-weight: bold;
+  border: 1px solid rgb(71, 22, 79);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background: #ffffff;  /* fallback for old browsers */
+  
+
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  line-height: 2.2rem;
+  width: 55%;
+  border-left: none;
+  height: 300px;
+  display: none;
+  font-size: 18px;
+  font-family: 'Mali', cursive;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background: #6441A5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6441A5,#2a0845);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #6441A5,#2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 9px 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background: #ffffff;  /* fallback for old browsers */
+  color: black;
+  font-weight: bold;
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.clearfix {
+  background-color: #fdfffd;
+}
+
+
+</style>
+
+    
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="header">
+      <h1>Print Document ปกครอง ทุ่งครุ</h1>
+      
+            
+    </div>
+
+    <div class="content">
+        
+        <div class="navbar">
+          <!--<a href="https://drive.google.com/drive/folders/0B4KMjM9YQskIdnZUVmpfU0packk?resourcekey=0-EC5KgTH5pqN7xmkY4D4kaw">คู่มือ</a>-->
+          <a href="https://pokkrong-2409a.web.app/samakom.html">สมาคม</a>
+          <a href="https://pokkrong-2409a.web.app/mulniti.html">มูลนิธิ</a>
+          <a href="https://pokkrong-2409a.web.app/searchCSV">SearchCSV</a>
+          <a href="#" class="right" onmouseover="openCity(event, 'getlaws')">ระเบียบเกี่ยวข้อง</a>
+          <a href="#" class="right" onmouseover="openCity(event, 'downloadform')">Download เอกสารอื่นๆ</a>
+          <a href="#" class="right" onmouseover="openCity(event, 'gettools')">Tools</a>
+        </div>
+
+            <div class="tab" style="font-family: 'Mali', cursive;">
+              <button class="tablinks" onmouseover="openCity(event, 'kidgoaboard')">1.ยินยอมให้บุตรเดินทางไปต่างประเทศ</button>
+              <button class="tablinks" onmouseover="openCity(event, 'sameperson')"><a href="#" id="/index3.html" onclick="boxinfo(this.id)">2.รับรองว่าเป็นบุคคลคนเดียวกัน</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'status')">3.รับรองสถานภาพสมรส</button>
+              <button class="tablinks" onmouseover="openCity(event, 'momonly')">4.มารดาใช้อำนาจปกครองบุตรเพียงฝ่ายเดียว</button>
+              <button class="tablinks" onmouseover="openCity(event, 'behavior')"><a href="#" id="/index6.html" onclick="boxinfo(this.id)">5.รับรองความประพฤติ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'victim')"><a href="/index8.html">6.หนังสือรับรองผู้ประสบภัย</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'deadplace')">7.หนังสือรับรองการตาย</button>
+              <button class="tablinks" onmouseover="openCity(event, 'getmoney')"><a href="#" id="/index19.html" onclick="boxinfo(this.id)">8.รับรองการได้รับเงินจากต่างประเทศ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'quickreport')"><a href="/index15.html">9.รายงานด่วนสาธารณภัย ปลัด สปภ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'testament')">10.TheProcessHasNotStarted</button>
+              <button class="tablinks" onmouseover="openCity(event, 'quickreport')"><a href="/index18.html" >11.เอกสารรับรองความจำเป็นฯ ออกนอกเคหะสถาน</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'authorize')"><a href="#" id="/index20.html" onclick="boxinfo(this.id)">12.หนังสือมอบอำนาจ</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'alive')"><a href="#" id="/index21.html" onclick="boxinfo(this.id)">13.หนังสือรับรองการมีชีวิต</a></button>
+              <button class="tablinks" onmouseover="openCity(event, 'omsinbank')"><a href="#" id="/index22.html" onclick="boxinfo(this.id)">14.สอบทายาทธนาคารออมสิน</a></button>
+              <button class="tablinks" onmouseover="openCity(event, '')"><a href="#" id="/index23.html" onclick="boxinfo(this.id)">15.สอบทายาท (หน่วยงานราชการ)</a></button>
+              <button class="tablinks" onmouseover="openCity(event, '')"><a href="#" id="/index24.html" onclick="boxinfo(this.id)">16.สอบทายาท รับการโอนรถ</a></button>
+              
+            </div>
+
+            <div id="deadplace" class="tabcontent">
+              <h3>รับรองสถานที่ตาย</h3>
+                <a href="#" id="/index16.html" onclick="boxinfo(this.id)" >7.1ออกหนังสือรับรองการตาย</a><br>
+                <a href="/descendant/DeadplaceForm.docx" >7.2ฟอร์มบันทึกสอบสวนปากคำการเสียชีวิต ป.ค.14</a>
+            </div>
+            <div id="kidgoaboard" class="tabcontent">
+              <h3>หนังสือยินยอมให้บุตรเดินทางไปต่างประเทศ</h3>
+                <a href="#" id="/index1.html" onclick="boxinfo(this.id)" >1.1 บุตรไปต่างประเทศ บุตรคนเดียว</a><br>
+                <a href="#" id="/index12.html" onclick="boxinfo(this.id)" >1.2 บุตรไปต่างประเทศ บุตร 2 คน</a><br>
+                <a href="#" id="/index13.html" onclick="boxinfo(this.id)" >1.3 พ่อทำคนเดียว บุตรคนเดียว</a><br>
+                <a href="#" id="/index14.html" onclick="boxinfo(this.id)" >1.4 แม่ทำคนเดียว บุตรคนเดียว</a>
+            </div>
+            <div id="status" class="tabcontent">
+                <h3>หนังสือรับรองสถานภาพการสมรส (รับรองโสด)</h3>
+                <a href="#" id="/index2.html" onclick="boxinfo(this.id)">3.1 รับรองโสด (ไม่ได้จดสมรส)</a><br>
+                <a href="#" id="/index7.html" onclick="boxinfo(this.id)">3.2 รับรองโสด (จดสมรสและหย่าแล้ว)</a><br>
+                <a href="#" id="/index9.html" onclick="boxinfo(this.id)">3.3 รับรองโสด มอบอำนาจ (ไม่ได้จดสมรส)</a><br>
+                <a href="#" id="/index10.html" onclick="boxinfo(this.id)">3.4 รับรองโสด มอบอำนาจ (จดสมรสและหย่าแล้ว)</a>
+            </div>
+            <div id="momonly" class="tabcontent">
+              <h3>หนังสือรับรองมารดาใช้อำนาจปกครองบุตร</h3>
+              <a href="#" id="/index4.html" onclick="boxinfo(this.id)">4.1 มารดาอุปการะบุตรเพียงผู้เดียว (ไม่ได้สมรส)</a><br>
+              <a href="#" id="/index5.html" onclick="boxinfo(this.id)">4.2 มารดาอุปการะบุตรเพียงผู้เดียว (สมรสและหย่าแล้ว)</a><br>
+              <a href="#" id="/index11.html" onclick="boxinfo(this.id)">4.3 มารดาอุปการะบุตรเพียงผู้เดียว + ยินยอมบุตรไป ตปท.</a>
+            </div>
+            <div id="downloadform" class="tabcontent">
+              <h3>Download แบบฟอร์มอื่นที่เกี่ยวข้อง</h3>
+              <a href="/basedoc/Request.docx" >แบบฟอร์ม ขออนุญาตการต่างๆ</a><br>
+              <a href="http://pokkrong-2409a.web.app/descendant/RestPunishment.pdf" >สอบสวน พักการลงโทษ</a><br>
+              <a href="/descendant/transfer_vehicle.doc" >สอบทายาทโอนรถ ขนส่งฯ</a><br>
+              <a href="/descendant/omsin_bank.doc" >สอบทายาท ธนาคารออมสิน</a><br>
+              <a href="/descendant/officer.doc" >สอบทายาท ขรก. ตำรวจ ทหาร ลูกจ้าง กทม.</a><br>
+              <a href="/descendant/company.docx" >รับรองเคอรฟิวบริษัท</a><br>
+            </div>
+            <div id="testament" class="tabcontent">
+              <!--<h3>กระบวนงานพินัยกรรมต่างๆ</h3>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.1 ทำพินัยกรรมเอกสารลับ</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.2 ทำพินัยกรรมเอกสารฝ่ายเมือง</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.3 สละมรดก</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.4 ตัดทายาทโดยธรรมมิให้รับมรดก</a><br>
+              <a href="#" onClick='alert("ยังไม่ได้ทำระบบพินัยกรรม")'>10.5 ถอนการตัดทายาทโดยธรรมมิให้รับมรดก</a><br>-->
+            </div>
+            <div id="gettools" class="tabcontent">
+              <h3>Download Program Ver.1</h3>
+                <a href="https://drive.google.com/file/d/1xzVCCMG--cbo6sI-uUtXUKDavwmygcxi/view?usp=sharing" >1.Download JCardReader</a><br>
+                <p>2.เปิดใช้งานโปรแกรม JHOS เพื่อดึงข้อมูลจากบัตรฯ และ ลง Program Java (หากยังไม่มี)</p>
+                <p>3.เปิด Chrome และ Enabled <a href="chrome://flags/#allow-insecure-localhost">chrome://flags/#allow-insecure-localhost</a></p>
+                <h3>Download Program Ver.2</h3>
+                <p>1.ติดตั้ง Chrome Extension ชื่อ <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino"> Cors Unblock</a>  แล้วเปิดใช้งาน</p>
+                <p>2.ติดตั้ง SmartCardReader <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view?usp=sharing">Download</a> แล้วเปิดใช้งานก่อนเสียบบัตร</p>
+                <p>3.<a href="https://localhost:8182/thaiid/read.jsonp?callback=callback&section1=true&section2a=true&section2b=true">Check Localhost</a></p>
+                <p>4.เปิด Chrome และ Enabled <a href="chrome://flags/#allow-insecure-localhost">chrome://flags/#allow-insecure-localhost</a></p>
+            </div>
+            <div id="getlaws" class="tabcontent">
+              <h3>กฏหมายที่เกี่ยวข้อง</h3>
+                <a href="https://drive.google.com/file/d/1amOc3jhysK4Wmj___JpayOWKPEUaZTI7/view?usp=sharing">1.การออกหนังสือรับรองการใช้อำนาจปกครองบุตรและหนังสือยินยอมให้บุตรเดินทางไปต่างประเทศ มท 0309.3/ว 20778 ลว 27 ส.ค. 2564</a><br>
+                <a href="https://multi.dopa.go.th/pab/assets/modules/info_organ/uploads/51c54a77081b81ba6604aa61b1e0966b57f47e1ab3d8d3145733444685974345.pdf">2.พระราชบัญญัติลักษณะปกครองท้องที่ พุทธศักราช 2457 (แก้ไขล่าสุด)</a><br>
+                <a href="https://pokkrong-2409a.web.app/slide1.html">3.แนวทางการสอบสวนรับรอง</a><br>
+                <a href="http://www.odos.moe.go.th/userfiles/file/%E0%B8%A3%E0%B8%AB%E0%B8%B1%E0%B8%AA%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%2077_2554.pdf" target="_blank">4.รหัสสำนักทะเบียน เขต อำเภอ จังหวัด</a><br>
+                
+            </div>
+
+            <div class="clearfix"></div>
+
+        
+
+    </div>
+    
+    <div class="footer">
+      <div class="ft-l">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLQihvcU9EsqfnXXw-uYwT0UtcBWiINENdo6LI_BqQ=s900-c-k-c0x00ffffff-no-rj">
+        <p>Supawat</p>
+      </div>
+      <div class="ft-r">
+        <p><a href="mailto:teambabana@gmail.com">teambabana@gmail.com</a></p>
+      </div>
+    </div>
+
+
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    function boxinfo(pageload){
+      console.log("function is working!")
+      
+      if(pageload == "/index1.html" || pageload =="/index12.html" || pageload =="/index13.html" || pageload =="/index14.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEgxgOz71SO6P8ApAWsYoi_nM3wLmBUN_-j6wCgl-biTpXQAi3rzlYcINqmaXn0kyVKCmXPurhzA6cPgkMRAtMh1JJzucWfcILOXZg5yy88uwigOHkGFLcn7AMUCdaGR45bKLtF329lpheSp1pCh0X49lLWk7j1PhYbNljJJVb22YcTycPzqvtnynCztSg"
+      }
+      else if(pageload == "/index3.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEhAuCwfxvEakFicmGkhGlA9jj4nywr4-pX-fexdHGWoSaRS72vVk1Sh2R6vrZZa5WrlrYBdF1230lZ3uUhFfLpT7dC77uNBTV7BnWE2tPjCAReFAlMBpJPVLSmVeKPiei0PbR9y7L1_5SZ2zW4be5xiem-dxmEV06tGeb_cgU54Z1dcB9IkG0q6r64RGA=s822"
+      }
+      else if(pageload == "/index2.html" || pageload == "/index7.html" || pageload == "/index9.html" || pageload == "/index10.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEhrX3nDDEZwoTpiCPlibVCByNfSa3qX2ggHXpspHiQtOGQPHpXaKs0DhzjXhqeVYmyvxGS56eH5vsU3Wx_9ocLuZA41bw9DqniySCtyWekk_7jdF47X2cWmP36PswY09GfVdFeGqCkTavzQEyT6E3yHdYLh_M69CG8TW6D-IUGR1XpJFqo2AUpJrPs4_w=s741"
+      }
+      else if(pageload == "/index6.html"){
+        var imglink="https://blogger.googleusercontent.com/img/a/AVvXsEj9_MNdPEd5qQk0rF3Xyf_n2wwlK49Jg9vzPiXOJ6f2aqA7MyO1wTy7HTzJTnueQvMHQmAbTwR4fuH448HFM2a1cxTlhUVc9aoALy5suH-tiBW_uAyxvf8Hx16efVVJC5AEctMdeHwRgZVy0456ytK83oIf6WJmbg7dE7RfSUjipISnWrFgt7waY_zQYA=s759"
+      }
+      else if(pageload == "/index16.html"){
+        var imglink = "https://blogger.googleusercontent.com/img/a/AVvXsEjpvLLKo-8gmae-0PVL6RgLc-5WQsPPVq_1-QjVWu_zek77JQXu7ZWxqMZ9Z2gUnElHYB3VtO4PKZk_VXxNscjeNC0WF9Uqx6zIcDlbYgmKnDNip1BEQuNrA7DqFGxJw8pMjDaPW_DaxZ7bDsdXzW71Gvzz5w6wLDOmpqdcmflwO4dkbNwbxWq8UBkdEw=s664"
+      }
+      else{var imglink = "https://unsplash.it/400/200"}
+      console.log(imglink)
+  
+      Swal.fire({
+      title: 'ตรวจสอบ เอกสารหลักฐาน!',
+      text: pageload,
+      imageUrl: imglink,
+      imageWidth: 500,
+      imageHeight: 400,
+      imageAlt: 'Custom image',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'OK!',
+      }).then((result) => {
+      if (result.isConfirmed) {
+        location.replace(pageload)
+      }})
+    }
+
+    </script>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
+
+<!-- end document-->
