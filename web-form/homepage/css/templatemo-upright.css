@@ -19,12 +19,12 @@ https://templatemo.com/tm-555-upright
 
 html, body { overflow-x: hidden; }
 body { font-family: 'Kumbh Sans', sans-serif; }
-div, a, p { color: #666666; }
+div, a, p { color: #000000; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
-	color: #006699;
-	text-shadow: -1px 0 rgb(246, 255, 21), 0 1px rgb(246, 255, 21), 1px 0 rgb(246, 255, 21), 0 -1px rgb(246, 255, 21);
+	color: #090067;
+	text-shadow: -2px 0 rgb(246, 255, 21), 0 2px rgb(246, 255, 21), 2px 0 rgb(246, 255, 21), 0 -2px rgb(246, 255, 21);
 	text-decoration: none;
 }
 
