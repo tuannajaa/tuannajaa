@@ -184,6 +184,7 @@ hr { border-top: 4px solid #CCC; }
 .tm-img-home-container {
 	width: 250px;
 	height: 500px;
+	border-radius: 20px;
 	background: url(https://unsplash.it/200/500) no-repeat center;
 	background-size: cover;
 	margin-right: 0;
