@@ -462,5 +462,23 @@ https://templatemo.com/tm-555-upright
     <script src="homepage/js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
     <script src="homepage/js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
     <script src="homepage/js/templatemo-script.js"></script>
+    
+    <!--Add VantaJS Background image from JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script>
+        VANTA.HALO({
+        el: ".tm-brand-box",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 110.00,
+        minWidth: 200.00,
+        yOffset: -2.2,
+        backgroundColor: 0x73a84,
+        size: 10
+        })
+    </script>
+    <!--End VantaJS-->
 </body>
 </html> 
