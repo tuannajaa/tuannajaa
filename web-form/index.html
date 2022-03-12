@@ -465,6 +465,8 @@ https://templatemo.com/tm-555-upright
     <!--Add VantaJS Background image from JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
         VANTA.HALO({
         el: ".tm-brand-box",
@@ -476,6 +478,36 @@ https://templatemo.com/tm-555-upright
         yOffset: -3.4,
         backgroundColor: 0x73a84,
         size: 17
+        })
+        VANTA.BIRDS({
+        el: ".tm-section-wrap",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0xffffff,
+        color1: 0xfff,
+        color2: 0xffee00,
+        birdSize: 3.00,
+        quantity: 1.00
+        })
+        VANTA.WAVES({
+        el: "#tm-main-nav",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xffd6e6,
+        shininess: 20.00,
+        waveHeight: 27.50,
+        waveSpeed: 0.60,
+        zoom: 0.82
         })
     </script>
     <!--End VantaJS-->
