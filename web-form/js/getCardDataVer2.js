@@ -36,7 +36,7 @@ function getCardData() {
                 allowEnterKey: false,
                 showConfirmButton: false,
                 showCancelButton: false,
-                timer: 2000,
+                timer: 3000,
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
@@ -115,7 +115,7 @@ function getCardDataMom() {
                 allowEnterKey: false,
                 showConfirmButton: false,
                 showCancelButton: false,
-                timer: 2000,
+                timer: 3000,
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
@@ -194,7 +194,7 @@ function getCardDataWit1() {
                 allowEnterKey: false,
                 showConfirmButton: false,
                 showCancelButton: false,
-                timer: 2000,
+                timer: 3000,
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
@@ -272,7 +272,7 @@ function getCardDataWit2() {
                 allowEnterKey: false,
                 showConfirmButton: false,
                 showCancelButton: false,
-                timer: 2000,
+                timer: 3000,
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
