@@ -62,7 +62,7 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">เลขที่หนังสือ</label>
+                                    <label class="label">เลขที่ พินัยกรรม</label>
                                     <input class="input--style-4" type="text" name="docNo" id="docNo">
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(ผู้ร้อง)</b></label>
+                                    <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(ผู้ทำพินัยกรรม)</b></label>
                                     <input class="input--style-4" type="text" name="full_name" id="full_name">
                                 </div>
                             </div>
@@ -206,38 +206,24 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">ต้องการออกหนังสือรับรองเพื่อ..</label>
-                                    <input class="input--style-4" type="text" name="forwhat" id="forwhat">
+                                    <label class="label">หมายเลขโทรศัพท์ (ไส่ขีดด้วย)</label>
+                                    <input class="input--style-4" type="text" name="telNo" id="telNo">
                                 </div>
                             </div>                            
                         </div>
                         <hr noshade=""><br>
-                        <h3>รายละเอียดที่จะรับรอง</h3>
+                        <h3>รายละเอียด ระบุในพินัยกรรม</h3>
                         <div class="row row-space">
                             <div class="" style="width: 100%;">
                                 <div class="input-group">
-                                    <label class="label">ข้อมูลเอกสารที่อ้างอิง</label>
-                                    <textarea class="input--style-4" name="reference" id="reference" style="width: 100%">1."ชื่อที่ผิด" ตามเอกสาร...&#13;&#10;2."ชื่อที่ถูก" ตามเอกสาร...</textarea>
-                                    <label class="label">ตามหลักฐานที่กล่าวอ้างข้างต้นไม่ถูกต้องตรงกัน น่าจะมีสาเหตุมาจาก</label>
-                                    <input class="input--style-4" type="text" name="cause" id="cause" value="เจ้าหน้าที่บันทึกข้อมูลผิด">
+                                    <label class="label">ข้อมูล รายละเอียด เอกสารหลักฐาน ผู้รับพินัยกรรม ผู้จัดการมรดก</label>
+                                    <textarea class="input--style-4" name="reference" id="reference" style="width: 100%; height: 400px;">
+ข้อ 1 ถ้าข้าพเจ้าถึงแก่ความตายไปแล้ว บรรดาทรัพย์สินของข้าพเจ้าที่มีอยู่และทรัพย์สินที่จะเกิดขึ้นในอนาคต ข้าพเจ้าขอยกให้ เป็นกรรมสิทธิ์แก่ผู้ระบุไว้ในพินัยกรรมนี้ ให้เป็นผู้รับทรัพย์สินตามจำนวนซึ่งกำหนดไว้ คือ ที่ดินเลขที่โฉนด xxxx เลขที่ดิน x เล่ม xxx หน้า xx หน้าสำรวจ xxxx ตำบลทุ่งครุ (บ้านครุ) อำเภอราษฎร์บูรณะ จังหวัดกรุงเทพมหานคร เนื้อที่ 27 ตารางวา ข้อ 2 ทรัพย์สินตาม ข้อ 1 ขอยกให้แก่ นายนาง เลขประจำตัวประชาชน xxx และ นาย/นาง เลขประจำตัวประชาชน xxxx คนละส่วนเท่าๆ กัน ข้อ 3 ข้าพเจ้าขอรับพินัยกรรมฉบับนี้ไปเก็บรักษาไว้เองและขอตั้งให้ นายนาง เลขประจำตัวประชาชน xxxx เป็นผู้จัดการมรดกของข้าพเจ้าตามพินัยกรรมนี้และให้มีอำนาจหน้าที่ตามกฎหมายทุกประการ
+                                    </textarea>
+                                    
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">ชื่อที่ผิด</label>
-                                    <input class="input--style-4" type="text" name="wrong_name" id="wrong_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">ชื่อที่ถูก</label>
-                                    <input class="input--style-4" type="text" name="right_name" id="right_name">
-                                </div>
-                            </div>
-                        </div>                        
 
                         <hr noshade=""><br>
                         <div class="row row-space">
@@ -390,6 +376,20 @@
                                 <div class="input-group">
                                     <label class="label">มีความสัมพันธ์กับผู้ร้องโดยเป็น</label>
                                     <input class="input--style-4" type="text" name="relation_wit1" id="relation_wit1">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">รู้จักกันกี่ปี?</label>
+                                    <input class="input--style-4" type="text" name="know_wit1" id="know_wit1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมายเลขโทรศัพท์ (ไส่ขีดด้วย)</label>
+                                    <input class="input--style-4" type="text" name="telNo_wit1" id="telNo_wit1">
                                 </div>
                             </div>
                         </div>
@@ -546,6 +546,20 @@
                                     <input class="input--style-4" type="text" name="relation_wit2" id="relation_wit2">
                                 </div>
                             </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">รู้จักกันกี่ปี?</label>
+                                    <input class="input--style-4" type="text" name="know_wit2" id="know_wit2s">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมายเลขโทรศัพท์ (ไส่ขีดด้วย)</label>
+                                    <input class="input--style-4" type="text" name="telNo_wit2" id="telNo_wit2">
+                                </div>
+                            </div>
                         </div>
 
                         <hr noshade=""><br>                       
@@ -663,7 +677,7 @@
     
     function generate() {
 
-        loadFile("https://pokkrong-2409a.web.app/basedoc/SamePerson.docx", function (error, content) {
+        loadFile("https://pokkrong-2409a.web.app/basedoc/testament.doc", function (error, content) {
             if (error) {
                 throw error
             };
@@ -816,12 +830,11 @@
                 officer: document.getElementById("officer").value,
                 init_card: issue_card,
                 exp_card: exp_card,
-                forwhat: document.getElementById("forwhat").value,
+                telNo: document.getElementById("telNo").value,
                 reference: document.getElementById("reference").value,
-                wrong_name: document.getElementById("wrong_name").value,
-                right_name: document.getElementById("right_name").value,
-                cause: document.getElementById("cause").value,
                 yyyy:yyyy,
+                mmm:mmm,
+                dd:dd,
                 docNo: document.getElementById("docNo").value,
                 cardplace: document.getElementById("cardplace").value,
                 titleName: titleName,
@@ -845,6 +858,8 @@
                 age_wit1: age_in_years_wit1,
                 relation_wit1: document.getElementById("relation_wit1").value,
                 cardplace_wit1: document.getElementById("cardplace_wit1").value,
+                know_wit1:document.getElementById("know_wit1").value,
+                telNo_wit1:document.getElementById("telNo_wit1").value,
 
                 //ตัวแปรข้อมูลพยาน2
                 full_name_wit2: document.getElementById("full_name_wit2").value,
@@ -865,6 +880,8 @@
                 age_wit2: age_in_years_wit2,
                 relation_wit2: document.getElementById("relation_wit2").value,
                 cardplace_wit2: document.getElementById("cardplace_wit2").value,
+                know_wit2:document.getElementById("know_wit2").value,
+                telNo_wit2:document.getElementById("telNo_wit2").value,
 
             });
             try {
