@@ -422,6 +422,7 @@
   .dataTables_wrapper.no-footer div.dataTables_scrollHead table.dataTable,
   .dataTables_wrapper.no-footer div.dataTables_scrollBody > table {
     border-bottom: none;
+    font-size: 20px;
   }
   .dataTables_wrapper:after {
     visibility: hidden;
