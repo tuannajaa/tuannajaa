@@ -3,6 +3,8 @@
  */
  .DTFC_ScrollWrapper {
    font-size: 15px;
+   overflow-x: scroll;
+   overflow-y: hidden;
  }
  table.dataTable {
     width: 100%;
@@ -400,6 +402,9 @@
   }
   .dataTables_wrapper .dataTables_scroll {
     clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 1000px!important;
   }
   .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
     *margin-top: -1px;
