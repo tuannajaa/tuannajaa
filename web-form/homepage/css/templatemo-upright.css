@@ -673,10 +673,13 @@ select:not([multiple]) {
 		background-size: contain;		
 	}
 }
-/*Hide the Top right picture when display on smartphone*/
+/*Display on smartphone Setting*/
 @media only screen and (max-width:600px) {
 	.tm-img-home-container {
 		display: none;
+	}
+	.tm-carousel-item {
+		margin: auto;
 	}
 }
 /* Hide the leftside bar */
