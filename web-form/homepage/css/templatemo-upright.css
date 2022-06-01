@@ -671,7 +671,12 @@ select:not([multiple]) {
 		background-size: contain;		
 	}
 }
-
+/*Hide the Top right picture when display on smartphone*/
+@media only screen and (max-width:600px) {
+	.tm-img-home-container {
+		display: none;
+	}
+}
 /* Hide the leftside bar */
 @media (max-width: 991px) {
 	.tm-sidebar {
