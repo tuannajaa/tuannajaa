@@ -53,7 +53,9 @@ hr { border-top: 4px solid #CCC; }
 
 /* Layout */
 
-.tm-main { width: 100%; }
+.tm-main {
+	width: 100%;
+}
 
 .tm-row-home { 
 	padding-left: 15px;
