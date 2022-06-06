@@ -689,7 +689,9 @@ select:not([multiple]) {
 		left: -400px;
 		transition: all 0.3s ease;
 	}
-
+	.tm-img-home-container {
+		display: none;
+	}
 	.navbar-toggler {
 		display: block;
 		position: fixed;
