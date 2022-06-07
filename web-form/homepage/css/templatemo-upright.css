@@ -464,6 +464,7 @@ figure.effect-honey:hover ul li a {
 @media (max-width: 1200px) {
 	.tm-col-about { width: 100%; }
 	.tm-col-about-l { padding-right: 0; }
+	.tm-img-home-container{display: none;}
 }
 
 .tm-social {
@@ -721,8 +722,8 @@ select:not([multiple]) {
 	}
 
 	.tm-section-wrap {
-		width: calc(100% - 400px);
-		margin-left: 400px;		
+		width: 100%;
+		margin-left: 0;		
 	}
 
 	.tm-section {
