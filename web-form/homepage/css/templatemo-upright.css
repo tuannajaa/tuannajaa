@@ -191,7 +191,7 @@ hr { border-top: 4px solid #CCC; }
 	background-size: cover;
 	margin-right: 0;
 	margin-left: auto;
-	opacity: 0.6;
+	
 }
 
 @media (max-width: 1600px) {
