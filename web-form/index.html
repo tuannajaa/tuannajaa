@@ -263,9 +263,9 @@
                         <div class="row">
                             <div class="col-lg-6 tm-col-home mb-4">
                                 <div class="tm-text-container">
-                                    <a href="/index4.html"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 1.มารดาปกครองบุตรฝ่ายเดียว (ไม่จดสมรส)</button></a><p></p>
-                                    <a href="/index5.html"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 2.มารดาปกครองบุตรฝ่ายเดียว (หย่าแล้ว)</button></a><p></p>
-                                    <a href="/index11.html"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 3.มารดาปกครองบุตรฝ่ายเดียว+ยินยอมให้บุตรเดินทางไปต่างประเทศ</button></a><p></p>
+                                    <a href="#" onclick="momonly()"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 1.มารดาปกครองบุตรฝ่ายเดียว (ไม่จดสมรส)</button></a><p></p>
+                                    <a href="#" onclick="momonlyDivorce()"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 2.มารดาปกครองบุตรฝ่ายเดียว (หย่าแล้ว)</button></a><p></p>
+                                    <a href="#" onclick="momonlyAndGoAbroad()"><button type="button" class="btn btn-outline-info" style="font-size: 1.5rem;">&#9745; 3.มารดาปกครองบุตรฝ่ายเดียว+ยินยอมให้บุตรเดินทางไปต่างประเทศ</button></a><p></p>
                                     <p style="color:red;">&#9744; ทะเบียนบ้านผู้ร้องอยู่ในพื้นที่เขต พร้อมพยานบุคคล 2 ราย อายุ 20 ปี ขึ้นไป (ควรเป็นญาติพี่น้องที่ทราบรายละเอียด)<br>&#9744; ผู้ร้องคัดข้อมูลทะเบียนครอบครัว (ว่ามิได้จดสมรสกับฝ่ายชาย หรือ จดหย่าแล้ว)<br>&#9744; ออกหนังสือรับรองเพื่อทำอะไร<br>&#9744; สอบถาม จังหวัดที่เกิดและอาชีพของผู้ร้องและพยาน ปีที่คบกัน? ปีที่เลิกร้างกัน? <br>&#9744; สำเนาสูติบัตรบุตร (ปรากฎรายการมารดา ตรงกับผู้ร้อง)</p>
                                 </div>                                
                             </div>
@@ -489,6 +489,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <script>
         VANTA.HALO({

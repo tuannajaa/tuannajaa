@@ -268,3 +268,44 @@ $(document).ready(function () {
         ]
     });
 });
+
+/*************** Require more document Alert *****************/
+function momonly(){
+    Swal.fire({
+    title: '<strong style="color:red;">More documents required</strong>',
+    icon: 'info',
+    html:
+      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    confirmButtonText:
+      '<a href="/index4.html">OK</a>'
+  })
+  }
+  function momonlyDivorce(){
+    Swal.fire({
+    title: '<strong style="color:red;">More documents required</strong>',
+    icon: 'info',
+    html:
+      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    confirmButtonText:
+      '<a href="/index5.html">OK</a>'
+  })
+  }
+  function momonlyAndGoAbroad(){
+    Swal.fire({
+    title: '<strong style="color:red;">More documents required</strong>',
+    icon: 'info',
+    html:
+      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    confirmButtonText:
+      '<a href="/index11.html">OK</a>'
+  })
+  }
