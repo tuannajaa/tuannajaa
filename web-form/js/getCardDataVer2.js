@@ -17,17 +17,15 @@ function getCardData() {
         console.log(obj)
         if (obj== null){
             //alert('ตรวจสอบ บัตรประชาชนเสียบแล้ว หรือไม่??')
-            Swal.fire(
-                'ตรวจไม่พบบัตรประชาชน?',
-                'ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน',
-                'question'
-            )
+            Swal.fire({
+                icon: 'error',
+                html: '<h2 style="color:red;">ตรวจไม่พบบัตรประชาชน?</h2>'+'<h4>ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน</h4>',   
+            })
         }
         else{
             //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
             Swal.fire({
-                title: "กำลังอ่านบัตรประชาชน",
-                text: "กรุณารอสักครู่",
+                html: '<h1 style="color:#006C0F;">กำลังอ่านบัตรประชาชน</h1>' + '<h4>กรุณารอสักครุ...</h4>',
                 position: "center",
                 background: "white",
                 icon: 'success',
@@ -40,7 +38,7 @@ function getCardData() {
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
-                left top
+                center top
                 no-repeat
                 `
             })
@@ -94,17 +92,15 @@ function getCardDataMom() {
         console.log(obj)
         if (obj== null){
             //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
-            Swal.fire(
-                'ตรวจไม่พบบัตรประชาชน?',
-                'ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน',
-                'question'
-            )
+            Swal.fire({
+                icon: 'error',
+                html: '<h2 style="color:red;">ตรวจไม่พบบัตรประชาชน?</h2>'+'<h4>ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน</h4>',   
+            })
         }
         else{
             //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
             Swal.fire({
-                title: "กำลังอ่านบัตรประชาชน",
-                text: "กรุณารอสักครู่",
+                html: '<h1 style="color:#006C0F;">กำลังอ่านบัตรประชาชน</h1>' + '<h4>กรุณารอสักครุ...</h4>',
                 position: "center",
                 background: "white",
                 icon: 'success',
@@ -117,7 +113,7 @@ function getCardDataMom() {
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
-                left top
+                center top
                 no-repeat
                 `
             })
@@ -171,17 +167,15 @@ function getCardDataWit1() {
         console.log(obj)
         if (obj== null){
             //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
-            Swal.fire(
-                'ตรวจไม่พบบัตรประชาชน?',
-                'ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน',
-                'question'
-            )
+            Swal.fire({
+                icon: 'error',
+                html: '<h2 style="color:red;">ตรวจไม่พบบัตรประชาชน?</h2>'+'<h4>ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน</h4>',   
+            })
         }
         else{
             //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
             Swal.fire({
-                title: "กำลังอ่านบัตรประชาชน",
-                text: "กรุณารอสักครู่",
+                html: '<h1 style="color:#006C0F;">กำลังอ่านบัตรประชาชน</h1>' + '<h4>กรุณารอสักครุ...</h4>',
                 position: "center",
                 background: "white",
                 icon: 'success',
@@ -194,7 +188,7 @@ function getCardDataWit1() {
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
-                left top
+                center top
                 no-repeat
                 `
             })
@@ -247,17 +241,15 @@ function getCardDataWit2() {
         console.log(obj)
         if (obj== null){
             //alert('ตรวจสอบ บัตรประชาชนเสียบแล้วหรือไม่?')
-            Swal.fire(
-                'ตรวจไม่พบบัตรประชาชน?',
-                'ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน',
-                'question'
-            )
+            Swal.fire({
+                icon: 'error',
+                html: '<h2 style="color:red;">ตรวจไม่พบบัตรประชาชน?</h2>'+'<h4>ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน</h4>',   
+            })
         }
         else{
             //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
             Swal.fire({
-                title: "กำลังอ่านบัตรประชาชน",
-                text: "กรุณารอสักครู่",
+                html: '<h1 style="color:#006C0F;">กำลังอ่านบัตรประชาชน</h1>' + '<h4>กรุณารอสักครุ...</h4>',
                 position: "center",
                 background: "white",
                 icon: 'success',
@@ -270,7 +262,7 @@ function getCardDataWit2() {
                 backdrop: `
                 rgba(0,0,123,0.4)
                 url("https://sweetalert2.github.io/images/nyan-cat.gif")
-                left top
+                center top
                 no-repeat
                 `
             })
