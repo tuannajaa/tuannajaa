@@ -71,9 +71,7 @@ function getCardData() {
     console.log('caught it!',err);
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
-            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+            html: '<h1 style="color:red;">พบข้อขัดข้องหมองใจ</h1>'+'<h4>คุณยังไม่ติดตั้งโปรแกรม : <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartdcard Reader</a></h4>' + '<h4>และยังไม่เปิดใช้งาน : <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Cors Unblock</a></h4> ',
         })
         
     })
@@ -150,9 +148,7 @@ function getCardDataMom() {
     console.log('caught it!',err);
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
-            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+            html: '<h1 style="color:red;">พบข้อขัดข้องหมองใจ</h1>'+'<h4>คุณยังไม่ติดตั้งโปรแกรม : <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartdcard Reader</a></h4>' + '<h4>และยังไม่เปิดใช้งาน : <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Cors Unblock</a></h4> ',
         })
     
     })
@@ -229,9 +225,7 @@ function getCardDataWit1() {
     console.log('caught it!',err);
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
-            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+            html: '<h1 style="color:red;">พบข้อขัดข้องหมองใจ</h1>'+'<h4>คุณยังไม่ติดตั้งโปรแกรม : <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartdcard Reader</a></h4>' + '<h4>และยังไม่เปิดใช้งาน : <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Cors Unblock</a></h4> ',
         })
     })
 }
@@ -307,9 +301,7 @@ function getCardDataWit2() {
     console.log('caught it!',err);
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'คุณอาจยังไม่ติดตั้ง หรือ ลงโปรแกรม Smartdcard Reader หรือ ยังไม่เปิดใช้งาน Cors Unblock',
-            footer: '<a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Download Cors Unblock</a>_And_<a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartcard Reader</a>'
+            html: '<h1 style="color:red;">พบข้อขัดข้องหมองใจ</h1>'+'<h4>คุณยังไม่ติดตั้งโปรแกรม : <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartdcard Reader</a></h4>' + '<h4>และยังไม่เปิดใช้งาน : <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Cors Unblock</a></h4> ',
         })
     
     })
