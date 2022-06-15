@@ -322,4 +322,16 @@ function behav(x){
           '<a href="'+x+'">OK</a>'
     })
 }
-  
+function investigate(x){
+    Swal.fire({
+        title: '<strong style="color:red;">More documents required</strong>',
+        icon: 'info',
+        html:
+          '<h3>&#128209; 1.ทะเบียนสมรสผู้ตาย</h3><h3>&#128209; 2.มรณบัตร+ใบสมรส บิดามารดาผู้ตาย</h3><h3>&#128209; 3.ทะเบียนรับบุตรบุญธรรมของผู้ตาย</h3><h3>&#128209; 4.ทะเบียนรับรองบุตรของผู้ตาย</h3><h3>&#128209; 5.รายการพี่น้องร่วมบิดามารดา</h3> ',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<a href="'+x+'">OK</a>'
+    })
+} 
