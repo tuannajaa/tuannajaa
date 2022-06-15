@@ -270,42 +270,56 @@ $(document).ready(function () {
 });
 
 /*************** Require more document Alert *****************/
-function momonly(){
+function momonly(x){
     Swal.fire({
     title: '<strong style="color:red;">More documents required</strong>',
     icon: 'info',
     html:
-      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
+      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2><h3 style="color:blue;">ปีที่คบ..? ปีที่เลิก..?</h3> ',
     showCloseButton: true,
     showCancelButton: true,
     focusConfirm: false,
     confirmButtonText:
-      '<a href="/index4.html">OK</a>'
+      '<a href="'+x+'">OK</a>'
   })
-  }
-  function momonlyDivorce(){
+}
+function single(x){
     Swal.fire({
     title: '<strong style="color:red;">More documents required</strong>',
     icon: 'info',
     html:
-      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
+      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>จดสมรส จดหย่า</h2> ',
     showCloseButton: true,
     showCancelButton: true,
     focusConfirm: false,
     confirmButtonText:
-      '<a href="/index5.html">OK</a>'
+      '<a href="'+x+'">OK</a>'
   })
-  }
-  function momonlyAndGoAbroad(){
+}
+function deaddoc(x){
     Swal.fire({
-    title: '<strong style="color:red;">More documents required</strong>',
-    icon: 'info',
-    html:
-      '<h2>&#128209; 1.ข้อมูลทะเบียนครอบครัว</h2><h2>&#128209; 2.ทะเบียนรับรองบุตร(บิดา)</h2> ',
-    showCloseButton: true,
-    showCancelButton: true,
-    focusConfirm: false,
-    confirmButtonText:
-      '<a href="/index11.html">OK</a>'
-  })
-  }
+        title: '<strong style="color:red;">More documents required</strong>',
+        icon: 'info',
+        html:
+          '<h3>&#128209; 1.หลักฐานการขอคัดมรณบัตรผู้ตาย</h3><h3>คัดที่ท้องที่เสียชีวิต</h3><h3 style="color:green;">ระบุสาเหตุใด..ไม่พบข้อมูล</h3> ',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<a href="'+x+'">OK</a>'
+    })
+}
+function behav(x){
+    Swal.fire({
+        title: '<strong style="color:red;">More documents required</strong>',
+        icon: 'info',
+        html:
+          '<h3>&#128209; 1.หลักฐานประวัติอาชญากรรม</h3><h3>คัดที่สำนักงานตำรวจแห่งชาติ</h3> ',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<a href="'+x+'">OK</a>'
+    })
+}
+  
