@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Create Doc by Tuannajaa</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+   
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.10.custom.css" rel="stylesheet" />
+    <style type="text/css">
+
+        .demoHeaders { margin-top: 2em; }
+        #dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+        #dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+        ul#icons {margin: 0; padding: 0;}
+        ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+        ul#icons span.ui-icon {float: left; margin: 0 4px;}
+        ul.test {list-style:none; line-height:30px;}
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">แรงงานต่างด้าว</h2>
+                    <form method="POST" id="sheetdb-form" action="https://sheetdb.io/api/v1/eu82d7pal77k2" target="_blank">
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                    
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">เจ้าหน้าที่ดำเนินการ</label>
+                                        <select class = "input--style-4" name="officer" id="officer" >
+                                            <option value="">กรุณาเลือกเจ้าหน้าที่ดำเนินการ</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">เลขที่หนังสือ</label>
+                                        <input class="input--style-4" type="text" name="docNo" id="docNo"  >
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="col-2">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace" id="cardplace" >
+                                </div>
+                            </div>    
+                        </div>
+                        <br>
+                        <div class="row row-space">
+                            <div class="" style="width: 100%;">
+                                <div class="input-group">
+                                    <label class="label">ชื่อ-สกุล ผู้ร้อง <b>(ผู้ร้อง)</b></label>
+                                    <input class="input--style-4" type="text" name="full_name" id="full_name" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วัน/เดือน/ปี/เกิด</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="birthday" name="birthday" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จังหวัดที่เกิด</label>
+                                    <input class="input--style-4" type="text" name="birth_province" id="birth_province" >
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อบิดา</label>
+                                    <input class="input--style-4" type="text" name="father" id="father">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อมารดา</label>
+                                    <input class="input--style-4" type="text" name="mother" id="mother">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อยู่บ้านเลขที่</label>
+                                    <input class="input--style-4" type="text" name="addresss" id="addresss">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">หมู่ที่</label>
+                                    <input class="input--style-4" type="text" name="moo" id="moo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตรอก/ซอย/ถนน</label>
+                                    <input class="input--style-4" type="text" name="road" id="road">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ตำบล/แขวง</label>
+                                    <input class="input--style-4" type="text" name="tambol" id="tambol">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อำเภอ/เขต</label>
+                                    <input class="input--style-4" type="text" name="district" id="district">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                    <div class="input-group">
+                                            <label class="label">จังหวัด</label>
+                                            <input class="input--style-4" type="text" name="provice" id="provice">
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">อาชีพ</label>
+                                    <input class="input--style-4" type="text" name="job" id="job">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรประจำตัวประชาชน</label>
+                                    <input class="input--style-4" type="number" name="card" id="card">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">วันออกบัตร</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="init-card" name="init-card" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">บัตรหมดอายุ</label>
+                                    <div class="input-group-icon">
+                                        <input type="text" class="datepicker-th-2" id="exp-card" name="exp-card" value="ClickHere" />
+                                        <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr noshade=""><br>
+                        
+                                                
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">เบอร์โทร</label>
+                                    <input class="input--style-4" type="text" name="telNo" id="telNo">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ระบุเหตุผล เพื่อ...</label>
+                                    <textarea class="input--style-4" type="text" name="forwhat" id="forwhat" style="width:100%;"></textarea>
+                                </div>
+                            </div>
+                        </div>    
+                        
+
+                        <hr noshade=""><br>                     
+
+                        <div class="row row-space">
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate();">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="submit" style="background-color: rgb(241, 74, 13);" >Save Sheet</button>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app'" style="background: darkmagenta">Back</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Thai Carlendar Format-->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.10.offset.datepicker.min.js"></script>
+		<script type="text/javascript">
+		  $(function () {
+		    var d = new Date();
+		    var toDay = d.getDate() + '/' + (d.getMonth() + 1) + '/' + (d.getFullYear() + 543);
+
+		    // กรณีต้องการใส่ปฏิทินลงไปมากกว่า 1 อันต่อหน้า ก็ให้มาเพิ่ม Code ที่บรรทัดด้านล่างด้วยครับ (1 ชุด = 1 ปฏิทิน)
+		    
+		    $(".datepicker-th-2").datepicker({ changeMonth: true, changeYear: true,dateFormat: 'dd/mm/yy', isBuddhist: true, defaultDate: toDay,dayNames: ['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'],
+              dayNamesMin: ['อา.','จ.','อ.','พ.','พฤ.','ศ.','ส.'],
+              monthNames: ['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'],
+              monthNamesShort: ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']});
+    		
+			});
+		</script>
+    
+    
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+         
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <!--Copy Same Address Data-->
+    <script type="text/javascript">
+        let kick = 0
+        function copy()
+        {   
+            kick = kick + 1
+            if(kick % 2 != 0)
+            {
+                var a1 = document.getElementById("addresss");
+                var a2 = document.getElementById("addresss2");
+                a2.value = a1.value;
+                var c1 = document.getElementById("road");
+                var c2 = document.getElementById("road2");
+                c2.value = c1.value;
+                var d1 = document.getElementById("tambol");
+                var d2 = document.getElementById("tambol2");
+                d2.value = d1.value;
+                document.getElementById('copydata').style.backgroundColor = "white"
+                document.getElementById('copydata').style.border = "2px solid black"
+                document.getElementById('copydata').style.color = "black"
+                document.getElementById('copydata').value = 'ลบ ข้อมูลที่อยู่ปัจจุบัน'
+            }
+            else
+            {
+                document.getElementById("addresss2").value = ''
+                document.getElementById("road2").value = ''
+                document.getElementById("tambol2").value = ''
+                document.getElementById('copydata').style.backgroundColor = "black"
+                document.getElementById('copydata').style.color = "white"
+                document.getElementById('copydata').style.border = "2px solid grey"
+                document.getElementById('copydata').value = 'ใช้ที่อยู่ตามบัตร ปชช.'
+            }    
+        }
+    </script>
+
+
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+<script src="js/docxtemplater.js"></script>
+<script src="js/jszip.js"></script>
+<script src="js/FileSaver.js"></script>
+<script src="js/jszip-utils.js"></script>
+<script src="js/validateForm.js"></script>
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.js"></script>
+-->
+<!--
+    Mandatory in IE 6, 7, 8 and 9.
+    -->
+<!--[if IE]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils-ie.js"></script>
+    <![endif]-->
+
+<script>
+    function loadFile(url, callback) {
+            JSZipUtils.getBinaryContent(url, callback);
+        }
+    function generate(){ 
+            
+        loadFile("https://pokkrong-2409a.web.app/basedoc/alien.docx", function (error, content) {
+                if (error) {
+                    throw error
+                };
+                var zip = new JSZip(content);
+                var doc = new window.docxtemplater().loadZip(zip)
+                //วัน เดือน ปี เกิด ผู้ร้อง
+                var birthday_v = document.getElementById("birthday").value.split("/");
+                var birthday_v2 = document.getElementById("birthday").value;
+                var b_date = birthday_v[0];
+                var b_month = parseInt(birthday_v[1]); 
+                var b_year = birthday_v[2];
+                var b_year_int = parseInt(b_year);
+                            
+                                     
+                //วันที่ปัจจุบัน 
+                var to_day = new Date();
+                var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+                var dd = to_day.getDate();
+                var mm = to_day.getMonth();
+                var mmmm = parseInt(mm)+1;
+                var yy = to_day.getFullYear();
+                var yyyy = to_day.getFullYear() +543;
+                var mmm = thmonth[to_day.getMonth()];
+                var this_day = dd + ' ' + mmm + ' ' + yyyy;
+                var ttday = dd + ' ' + mmm + ' พ.ศ. ' + yyyy;
+                
+    
+                //วันออกบัตร ผู้ร้อง
+                var issue_c = document.getElementById("init-card").value.split("/");
+                var issue_date = parseInt(issue_c[0]);
+                var issue_month = issue_c[1];
+                var issue_year = issue_c[2];
+                var issue_m = parseInt(issue_month)-1;
+                var issue_year_int = parseInt(issue_year);
+                var issue_mm = thmonth[issue_m];
+                var issue_card = issue_date + ' ' + issue_mm + ' ' + issue_year_int;
+                
+                //วันบัตรหมดอายุ ผู้ร้อง
+                var exp_c = document.getElementById("exp-card").value.split("/");
+                var exp_date = parseInt(exp_c[0]);
+                var exp_month = parseInt(exp_c[1])-1;
+                var exp_year = parseInt(exp_c[2]);
+                var exp_mm = thmonth[exp_month];
+                if(exp_year==9999){
+                    var exp_card ="ตลอดชีพ"
+                    console.log(exp_card)    
+                    }
+                else{
+                    var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+                    console.log(exp_card)
+                }
+                
+                
+                //วันเริ่มเดินทาง
+                var issue_c2 = document.getElementById("init-card2").value.split("/");
+                var issue_date2 = parseInt(issue_c2[0]);
+                var issue_month2 = issue_c2[1];
+                var issue_year2 = issue_c2[2];
+                var issue_m2 = parseInt(issue_month2)-1;
+                var issue_year_int2 = parseInt(issue_year2);
+                var issue_mm2 = thmonth[issue_m2];
+                var issue_card2 = issue_date2 + ' ' + issue_mm2 + ' ' + issue_year_int2;
+                
+                //เดินทางถึงวันที่
+                var exp_c2 = document.getElementById("exp-card2").value.split("/");
+                var exp_date2 = parseInt(exp_c2[0]);
+                var exp_month2 = parseInt(exp_c2[1])-1;
+                var exp_year2 = parseInt(exp_c2[2]);
+                var exp_mm2 = thmonth[exp_month2];
+                var exp_card2 = exp_date2 + ' ' + exp_mm2 + ' ' + exp_year2;
+               
+                //คำนวนอายุอัตโนมัติ ผู้ร้อง
+                var age_in_years;
+                if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
+                if(b_month<mmmm) {age_in_years = yyyy-b_year_int;}
+                if(b_month==mmmm) {
+                    if(b_date<=dd) {age_in_years = yyyy-b_year_int;}
+                    else age_in_years = (yyyy-b_year_int)-1;
+                }
+                                       
+                //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
+                var id_card = document.getElementById('card').value;
+                var id_card_slice = id_card.substring(0,2) + '-' + id_card.substring(2,6) +'-'+ id_card.substring(6,12) + '-' + id_card.substring(12,13);
+
+                
+                doc.setData({
+                    //ตัวแปรข้อมูลผู้ร้อง
+                    full_name: document.getElementById("full_name").value,
+                    b_date: b_date,
+                    b_month: b_month,
+                    b_year: b_year_int,
+                    tday: this_day,
+                    birth_province: document.getElementById("birth_province").value,
+                    age: age_in_years,
+                    addresss: document.getElementById("addresss").value,
+                    moo: document.getElementById("moo").value,
+                    road: document.getElementById("road").value,
+                    tambol: document.getElementById("tambol").value,
+                    district: document.getElementById("district").value,
+                    provice: document.getElementById("provice").value,
+                    addresss2: document.getElementById("addresss2").value,
+                    moo2: document.getElementById("moo2").value,
+                    road2: document.getElementById("road2").value,
+                    tambol2: document.getElementById("tambol2").value,
+                    job: document.getElementById("job").value,
+                    card: id_card_slice,
+                    officer: document.getElementById("officer").value,
+                    init_card: issue_card,
+                    exp_card: exp_card,
+                    forwhat: document.getElementById("forwhat").value,
+                    telNo:document.getElementById("telNo").value,
+                    law:document.getElementById("law").value,
+                    destination:document.getElementById("destination").value,
+                    destinationDistrict:document.getElementById("destinationDistrict").value,
+                    destinationTambol:document.getElementById("destinationTambol").value,
+                    destinationRoad:document.getElementById("destinationRoad").value,
+                    vehicle: document.getElementById("vehicle").value,
+                    init_card2: issue_card2,
+                    exp_card2: exp_card2,
+                    docNo:document.getElementById("docNo").value,
+                    father: document.getElementById("father").value,
+                    mother: document.getElementById("mother").value,
+                    yyyy: yyyy,
+                    ttday:ttday,
+                    cardplace: document.getElementById("cardplace").value,
+                    
+                    
+    
+                });
+                try {
+                    // render the document (replace all occurences of {first_name} by John, {last_name} by Doe, ...)
+                    doc.render()
+                } catch (error) {
+                    var e = {
+                        message: error.message,
+                        name: error.name,
+                        stack: error.stack,
+                        properties: error.properties,
+                    }
+                    console.log(JSON.stringify({
+                        error: e
+                    }));
+                    // The error thrown here contains additional information when logged with JSON.stringify (it contains a property object).
+                    throw error;
+                }
+                var out = doc.getZip().generate({
+                    type: "blob",
+                    mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                }) //Output the document using Data-URI
+                saveAs(out, document.getElementById('full_name').value +"output.docx")
+            })
+        }
+
+</script>
+<script src="js/officer.js"></script>
+<script src="js/getCardDataVer2.js"></script>
+</html>
+<!-- end document-->
