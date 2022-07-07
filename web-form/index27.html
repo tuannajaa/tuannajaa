@@ -286,28 +286,11 @@
             }    
         }
     </script>
-
-
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+</body>
 <script src="js/docxtemplater.js"></script>
 <script src="js/jszip.js"></script>
 <script src="js/FileSaver.js"></script>
 <script src="js/jszip-utils.js"></script>
-
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.9.1/docxtemplater.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.6.1/jszip.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils.js"></script>
--->
-<!--
-    Mandatory in IE 6, 7, 8 and 9.
-    -->
-<!--[if IE]>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip-utils/0.0.2/jszip-utils-ie.js"></script>
-    <![endif]-->
 
 <script>
     function loadFile(url, callback) {
@@ -367,26 +350,7 @@
                     var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
                     console.log(exp_card)
                 }
-                
-                
-                //วันเริ่มเดินทาง
-                var issue_c2 = document.getElementById("init-card2").value.split("/");
-                var issue_date2 = parseInt(issue_c2[0]);
-                var issue_month2 = issue_c2[1];
-                var issue_year2 = issue_c2[2];
-                var issue_m2 = parseInt(issue_month2)-1;
-                var issue_year_int2 = parseInt(issue_year2);
-                var issue_mm2 = thmonth[issue_m2];
-                var issue_card2 = issue_date2 + ' ' + issue_mm2 + ' ' + issue_year_int2;
-                
-                //เดินทางถึงวันที่
-                var exp_c2 = document.getElementById("exp-card2").value.split("/");
-                var exp_date2 = parseInt(exp_c2[0]);
-                var exp_month2 = parseInt(exp_c2[1])-1;
-                var exp_year2 = parseInt(exp_c2[2]);
-                var exp_mm2 = thmonth[exp_month2];
-                var exp_card2 = exp_date2 + ' ' + exp_mm2 + ' ' + exp_year2;
-               
+            
                 //คำนวนอายุอัตโนมัติ ผู้ร้อง
                 var age_in_years;
                 if(b_month>mmmm) {age_in_years = (yyyy-b_year_int)-1;}
@@ -396,7 +360,7 @@
                     else age_in_years = (yyyy-b_year_int)-1;
                 }
                                        
-                //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
+                //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง รูปแบบต่างด้าว
                 var id_card = document.getElementById('card').value;
                 var id_card_slice = id_card.substring(0,2) + '-' + id_card.substring(2,6) +'-'+ id_card.substring(6,12) + '-' + id_card.substring(12,13);
 
@@ -404,30 +368,20 @@
                 doc.setData({
                     //ตัวแปรข้อมูลผู้ร้อง
                     full_name: document.getElementById("full_name").value,
-                    b_date: b_date,
-                    b_month: b_month,
-                    b_year: b_year_int,
-                    tday: this_day,
-                    birth_province: document.getElementById("birth_province").value,
                     age: age_in_years,
                     addresss: document.getElementById("addresss").value,
                     moo: document.getElementById("moo").value,
                     road: document.getElementById("road").value,
                     tambol: document.getElementById("tambol").value,
-                    district: document.getElementById("district").value,
-                    provice: document.getElementById("provice").value,
                     job: document.getElementById("job").value,
                     card: id_card_slice,
-                    officer: document.getElementById("officer").value,
                     init_card: issue_card,
                     exp_card: exp_card,
                     forwhat: document.getElementById("forwhat").value,
                     telNo:document.getElementById("telNo").value,
-                    yyyy: yyyy,
-                    ttday:ttday,
-                    cardplace: document.getElementById("cardplace").value,
+                    ttday:ttday
                     
-                    
+                            
     
                 });
                 try {
