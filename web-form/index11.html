@@ -870,21 +870,36 @@
             var exp_month = parseInt(exp_c[1])-1;
             var exp_year = parseInt(exp_c[2]);
             var exp_mm = thmonth[exp_month];
-            var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+            if(exp_year==9999){
+                var exp_card = "ตลอดชีพ"
+            }
+            else{
+                var exp_card = exp_date + ' ' + exp_mm + ' ' + exp_year;
+            }
             //วันบัตรหมดอายุ พยาน1
             var exp_c_wit1 = document.getElementById("exp-card_wit1").value.split("/");
             var exp_date_wit1 = parseInt(exp_c_wit1[0]);
             var exp_month_wit1 = parseInt(exp_c_wit1[1])-1;
             var exp_year_wit1 = parseInt(exp_c_wit1[2]);
             var exp_mm_wit1 = thmonth[exp_month_wit1];
-            var exp_card_wit1 = exp_date_wit1 + ' ' + exp_mm_wit1 + ' ' + exp_year_wit1;
+            if(exp_year_wit1==9999){
+                var exp_card_wit1 = "ตลอดชีพ"
+            }
+            else{
+                var exp_card_wit1 = exp_date_wit1 + ' ' + exp_mm_wit1 + ' ' + exp_year_wit1;
+            }
             //วันบัตรหมดอายุ พยาน2
             var exp_c_wit2 = document.getElementById("exp-card_wit2").value.split("/");
             var exp_date_wit2 = parseInt(exp_c_wit2[0]);
             var exp_month_wit2 = parseInt(exp_c_wit2[1])-1;
             var exp_year_wit2 = parseInt(exp_c_wit2[2]);
             var exp_mm_wit2 = thmonth[exp_month_wit2];
-            var exp_card_wit2 = exp_date_wit2 + ' ' + exp_mm_wit2 + ' ' + exp_year_wit2;
+            if(exp_year_wit2==9999){
+                var exp_card_wit2 = "ตลอดชีพ"
+            }
+            else{
+                var exp_card_wit2 = exp_date_wit2 + ' ' + exp_mm_wit2 + ' ' + exp_year_wit2;
+            }
 
             //คำนวนอายุอัตโนมัติ ผู้ร้อง
             var age_in_years;
