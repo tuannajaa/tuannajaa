@@ -73,7 +73,22 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <hr noshade=""><br>
+                        <div class="row row-space">
+                            <div class="col-2">
+                            <button class="btn btn--radius-2 btn--blue" style="background-color: rgb(73, 1, 255);" type="button"
+                                onclick="getCardData()" >ดึงข้อมูลจากบัตรประชาชน</button>
+                            </div>
+                            <!--
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สำนักทะเบียนท้องถิ่น ที่ออกบัตร</label>
+                                    <input class="input--style-4" type="text" name="cardplace" id="cardplace" >
+                                </div>
+                            </div>  -->  
+                        </div>
+
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
@@ -931,8 +946,109 @@
             saveAs(out, "output.docx")
         })
     }
+
+
+    function getCardData() {
+    console.log("function is working")
+
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****   
+
+    fetch('https://localhost:8182/thaiid/read.jsonp?&section1=true&section2a=true&section2b=true')
+    .then(response => response.text())
+    .then(data => {
+        var idcard = data
+        var x = idcard.substring(13 , idcard.length - 1)
+        console.log(x)
+        const obj = JSON.parse(x);
+        console.log(obj)
+        if (obj== null){
+            //alert('ตรวจสอบ บัตรประชาชนเสียบแล้ว หรือไม่??')
+            Swal.fire({
+                icon: 'error',
+                html: '<h2 style="color:red;">ตรวจไม่พบบัตรประชาชน?</h2>'+'<h4>ตรวจสอบว่าเสียบบัตรประชาชนแล้วหรือยัง? หรือใช้ยางลบ ลบบริเวณหน้าสัมผัสของบัตรประชาชน</h4>',   
+            })
+        }
+        else{
+            //alert('กำลังอ่านบัตรประชาชน!! รอสักครู่')
+            Swal.fire({
+                html: '<h1 style="color:#006C0F;">กำลังอ่านบัตรประชาชน</h1>' + '<h4>กรุณารอสักครุ...</h4>',
+                position: "center",
+                background: "white",
+                icon: 'success',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                showCancelButton: false,
+                timer: 3000,
+                backdrop: `
+                rgba(0,0,123,0.4)
+                url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                center top
+                no-repeat
+                `
+            })
+
+            var dateOfBirth = getFormatedDateOfBirth(obj.BirthDate)
+            var issueDate = getFormatedDateOfBirth(obj.IssueDate)
+            var expDate = getFormatedDateOfBirth(obj.ExpiryDate)
+            let preN = obj.TitleNameTh
+            let repreN = preN.replace(/น.ส./g,"นางสาว")
+            document.getElementById("prename").value = repreN
+            document.getElementById("full_name").value = obj.FirstNameTh +" "+ obj.LastNameTh
+            document.getElementById("birthday").value = dateOfBirth
+            document.getElementById("card").value = obj.CitizenNo
+            document.getElementById("addresss").value = obj.HomeNo
+            document.getElementById("moo").value = obj.Moo.substring(7) //ตัดคำว่า หมู่ที่ ออก
+            document.getElementById("road").value = obj.Trok+obj.Soi+obj.Road
+            document.getElementById("tambol").value = obj.Tumbol
+            document.getElementById("district").value = obj.Amphur
+            document.getElementById('provice').value = obj.Province
+            document.getElementById('addresss_fire').value = obj.HomeNo
+            document.getElementById('road_fire').value = obj.Trok+obj.Soi+obj.Road
+            document.getElementById('tambol_fire').value = obj.Tumbol
+        }
+    })
+    .catch(err => {
+    console.log('caught it!',err);
+        Swal.fire({
+            icon: 'error',
+            html: '<h1 style="color:red;">พบข้อขัดข้องหมองใจ</h1>'+'<h4>คุณยังไม่ติดตั้งโปรแกรม : <a href="https://drive.google.com/file/d/14SURlNUX9I3BBRMOT4S8GMM7TcwcfQw6/view" traget="_blank">Smartdcard Reader</a></h4>' + '<h4>และยังไม่เปิดใช้งาน : <a href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" traget="_blank">Cors Unblock</a></h4> ',
+        })
+        
+    })
+}
+
+//////////////////// Function Format Wording /////////////////
+function getFormatedDateOfBirth(dateOfBirth){
+    var year = dateOfBirth.slice(0,4)
+    var month = dateOfBirth.slice(4,6)
+    var date = dateOfBirth.slice(6,8)
+    
+    return date+"/"+month+"/"+year
+}
+function getFormatedDateOfBirth(issueDate){
+    var yearIssue = issueDate.slice(0,4)
+    var monthIssue = issueDate.slice(4,6)
+    var dateIssue = issueDate.slice(6,8)
+    
+    return dateIssue+"/"+monthIssue+"/"+yearIssue
+}
+function getFormatedDateOfBirth(expDate){
+    var yearExpire = expDate.slice(0,4)
+    var monthExpire = expDate.slice(4,6)
+    var dateExpire = expDate.slice(6,8)
+    
+    return dateExpire+"/"+monthExpire+"/"+yearExpire
+}
+
 </script>
 
 <script src="js/officer.js"></script>
+
 </html>
 <!-- end document-->
