@@ -1,19 +1,12 @@
 function validateform() {
-    var x = 0
-    // document.getElementById('officer').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('docNo').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('birthday').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('birth_province').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('father').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('mother').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('job').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('init-card').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('exp-card').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('init-card2').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('exp-card2').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('telNo').style.backgroundColor = "#e4ffdf"
-    // document.getElementById('law').style.backgroundColor = "#e4ffdf"
 
+    //***import js into html*****  
+    var script = document.createElement("script");
+    script.src = 'https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js'  
+    document.body.appendChild(script)
+    //***END import js into html*****
+    
+    var x = 0
     if((document.getElementById('officer').value) == ''){
             document.getElementById('officer').style.backgroundColor = "#ff5c5c"
             document.getElementById('officer').scrollIntoView()
@@ -80,7 +73,13 @@ function validateform() {
         x = x+1
     }
     if(x > 0) {
-        alert("คุณกรอกรายละเอียดไม่ครบ!!! " + x + " แห่ง")
+        
+        Swal.fire({
+            icon: 'error',
+            html:
+            'คุณกรอกรายละเอียดไม่ครบ <b style="color:red">ยังขาดอีก '+x+' แห่ง</b>',
+            
+        })
     }
     if(x == 0){
         function loadFile(url, callback) {
