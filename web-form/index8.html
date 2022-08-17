@@ -63,7 +63,7 @@
                                 <div class="input-group">
                                     <label class="label">ภัยที่เกิดคือ</label>
                                     <select class = "input--style-4" name="disater" id="disater">
-                                        <option value="เจ้าหน้าที่">กรุณาเลือก</option>
+                                        <option value="">กรุณาเลือก</option>
                                         <option value="อัคคีภัย">อัคคีภัย</option>
                                         <option value="วาตภัย">วาตภัย</option>
                                         <option value="อุทกภัย">อุทกภัย</option>
@@ -608,7 +608,7 @@
 
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()" onmouseover="validation_index8()">Submit</button>
                             </div>
                             <div class="p-t-15">
                                 <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app'" style="background: darkmagenta">Back</button>
@@ -1047,7 +1047,8 @@ function getFormatedDateOfBirth(expDate){
 }
 
 </script>
-
+<script src="js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 <script src="js/officer.js"></script>
 
 </html>

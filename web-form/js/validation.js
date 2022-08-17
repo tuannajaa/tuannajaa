@@ -278,3 +278,33 @@ function validation_index3(){
             })
         }
 }
+
+function validation_index8(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('disater').value) == ''){
+            document.getElementById('disater').style.border = '3px solid red';
+            document.getElementById('disater').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('disater').style.border = '';
+        }
+                        
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
