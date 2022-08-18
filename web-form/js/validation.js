@@ -308,3 +308,219 @@ function validation_index8(){
             })
         }
 }
+
+function validation_index2(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+        if((document.getElementById('forwhat').value) == ''){
+            document.getElementById('forwhat').style.border = '3px solid red';
+            document.getElementById('forwhat').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('forwhat').style.border = '';
+        }
+                
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index7(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+        if((document.getElementById('forwhat').value) == ''){
+            document.getElementById('forwhat').style.border = '3px solid red';
+            document.getElementById('forwhat').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('forwhat').style.border = '';
+        }
+                
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index9(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+        if((document.getElementById('forwhat').value) == ''){
+            document.getElementById('forwhat').style.border = '3px solid red';
+            document.getElementById('forwhat').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('forwhat').style.border = '';
+        }
+        if((document.getElementById('attorney_name').value) == ''){
+            document.getElementById('attorney_name').style.border = '3px solid red';
+            document.getElementById('attorney_name').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('attorney_name').style.border = '';
+        }
+        if((document.getElementById('acard').value) == ''){
+            document.getElementById('acard').style.border = '3px solid red';
+            document.getElementById('acard').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('acard').style.border = '';
+        }
+        if((document.getElementById('aage').value) == ''){
+            document.getElementById('aage').style.border = '3px solid red';
+            document.getElementById('aage').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('aage').style.border = '';
+        }
+        if((document.getElementById('aaddresss').value) == ''){
+            document.getElementById('aaddresss').style.border = '3px solid red';
+            document.getElementById('aaddresss').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('aaddresss').style.border = '';
+        }
+
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index10(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+        if((document.getElementById('forwhat').value) == ''){
+            document.getElementById('forwhat').style.border = '3px solid red';
+            document.getElementById('forwhat').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('forwhat').style.border = '';
+        }
+        if((document.getElementById('attorney_name').value) == ''){
+            document.getElementById('attorney_name').style.border = '3px solid red';
+            document.getElementById('attorney_name').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('attorney_name').style.border = '';
+        }
+        if((document.getElementById('acard').value) == ''){
+            document.getElementById('acard').style.border = '3px solid red';
+            document.getElementById('acard').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('acard').style.border = '';
+        }
+        if((document.getElementById('aage').value) == ''){
+            document.getElementById('aage').style.border = '3px solid red';
+            document.getElementById('aage').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('aage').style.border = '';
+        }
+        if((document.getElementById('aaddresss').value) == ''){
+            document.getElementById('aaddresss').style.border = '3px solid red';
+            document.getElementById('aaddresss').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('aaddresss').style.border = '';
+        }
+
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
