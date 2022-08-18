@@ -124,13 +124,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ปี พ.ศ. ที่เสียชีวิต</label>
-                                    <input class="input--style-4" type="text" name="yearofdead" id="yearofdead" value="ปี พ.ศ./วันที่.. ">
+                                    <input class="input--style-4" type="text" name="yearofdead" id="yearofdead" placeholder="ปี พ.ศ./วันที่.. ">
                                 </div>
                             </div>
                             <div class="col-2">
                                     <div class="input-group">
                                             <label class="label">สถานที่ตาย (ตำบล/อำเภอ/ท้องที่จังหวัด ฯลฯ)</label>
-                                            <input class="input--style-4" type="text" name="deadplace" id="deadplace" value="ตำบล... อำเภอ... จังหวัด...">
+                                            <input class="input--style-4" type="text" name="deadplace" id="deadplace" placeholder="ตำบล... อำเภอ... จังหวัด...">
                                         </div>
                             </div>
                         </div>
@@ -138,13 +138,13 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">สาเหตุที่เสียชีวิต (เป็นโรคอะไร/ประสบอุบัติเหตุ ฯลฯ)</label>
-                                    <input class="input--style-4" type="text" name="causeofdead" id="causeofdead" value="เป็นโรค...">
+                                    <input class="input--style-4" type="text" name="causeofdead" id="causeofdead" placeholder="เป็นโรค...">
                                 </div>
                             </div>
                             <div class="col-2">
                                     <div class="input-group">
                                             <label class="label">ฌาปนกิจที่ใด (วัดอะไร ที่ไหน มัสยิด... ฯลฯ)</label>
-                                            <input class="input--style-4" type="text" name="ceremony" id="ceremony" value="วัดทุ่งครุ เขตทุ่งครุ กรุงเทพมหานคร">
+                                            <input class="input--style-4" type="text" name="ceremony" id="ceremony" placeholder="วัดทุ่งครุ เขตทุ่งครุ กรุงเทพมหานคร">
                                         </div>
                             </div>
                         </div>
@@ -295,7 +295,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ผู้ตายเกี่ยวข้องเป็นอะไรของผู้ร้อง</label>
-                                    <input class="input--style-4" type="text" name="relation" id="relation" value="พ่อ แม่ ปู่ ย่า...">
+                                    <input class="input--style-4" type="text" name="relation" id="relation" placeholder="พ่อ แม่ ปู่ ย่า...">
                                 </div>
                             </div>                            
                         </div>
@@ -305,7 +305,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">ที่สำนักทะเบียน..(ภูมินำเนาผู้ตาย)</label>
-                                    <input class="input--style-4" type="text" name="districtofdead" id="districtofdead" value="ทุ่งครุ">
+                                    <input class="input--style-4" type="text" name="districtofdead" id="districtofdead" placeholder="ทุ่งครุ">
                                 </div>
                             </div>
                             <div class="col-2">
@@ -649,7 +649,7 @@
 
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()" onmouseover="validation_index16()">Submit</button>
                             </div>
                             <div class="p-t-15">
                                 <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app'" style="background: darkmagenta">Back</button>
@@ -1018,7 +1018,8 @@
         })
     }
 </script>
-
+<script src="js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 <script src="js/officer.js"></script>
 <script src="js/getCardDataVer2.js"></script>
 </html>

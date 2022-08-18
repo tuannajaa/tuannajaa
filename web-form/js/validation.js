@@ -524,3 +524,131 @@ function validation_index10(){
             })
         }
 }
+
+function validation_index22(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+        if((document.getElementById('relation').value) == ''){
+            document.getElementById('relation').style.border = '3px solid red';
+            document.getElementById('relation').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('relation').style.border = '';
+        }
+                
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index23(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+                        
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index24(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+                        
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}
+
+function validation_index16(){
+        
+    var x = 0
+        if((document.getElementById('officer').value) == 'เจ้าหน้าที่'){
+            document.getElementById('officer').style.border = '3px solid red';
+            document.getElementById('officer').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('officer').style.border = '';
+        }
+        if((document.getElementById('docNo').value) == ''){
+            document.getElementById('docNo').style.border = '3px solid red';
+            document.getElementById('docNo').scrollIntoView()
+            x = x+1
+        }
+        else {
+            document.getElementById('docNo').style.border = '';
+        }
+                        
+        if(x!=0){
+            //alert("คุณกรอกข้อมูลไม่ครบ โปรดตรวจสอบอีกครั้ง!!")
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'คุณกรอกข้อมูลไม่ครบ '+x+ ' แห่ง!!!!',
+            })
+        }
+}

@@ -64,7 +64,7 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">หนังสือขนส่ง ที่ ลงวันที่..</label>
-                                    <input class="input--style-4" type="text" name="docNo" id="docNo" value="อส 111/22 ลงวันที่ dd mmm yyyy" onblur="if(this.value=='')this.value='อส 111/22 ลงวันที่ dd mmm yyyy';" onfocus="if(this.value=='อส 111/22 ลงวันที่ dd mmm yyyy')this.value='';">
+                                    <input class="input--style-4" type="text" name="docNo" id="docNo" placeholder="ขนส่ง123/2565 ลว 1 มีนาคม 2534">
                                 </div>
                             </div>
                         </div>
@@ -790,7 +790,7 @@
 
                         <div class="row row-space">
                             <div class="p-t-15">
-                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()">Submit</button>
+                                <button class="btn btn--radius-2 btn--blue" type="button" onclick="generate()" onmouseover="validation_index24()">Submit</button>
                             </div>
                             <div class="p-t-15">
                                 <button class="btn btn--radius-2 btn--blue" type="button" onclick="location.href='https://pokkrong-2409a.web.app/index.html'" style="background: darkmagenta">Back</button>
@@ -1179,7 +1179,8 @@
         })
     }
 </script>
-
+<script src="js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 <script src="js/officer.js"></script>
 <script src="js/getCardDataVer2.js"></script>
 </html>
