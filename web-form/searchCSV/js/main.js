@@ -6,7 +6,7 @@ var mainTable;
 
 function loadFile() {
 
-    fetch('bkk62.csv')
+    fetch('ForTest.csv')
         .then(response => response.text())
         .then(text => parseCsv.getParsecsvdata(text));
 
