@@ -810,7 +810,7 @@
             
             //ใส่ขีดให้เบอร์โทร ผู้ร้อง
             var tel_fire = document.getElementById('tel_fire').value;
-            var tel_fire_slice = tel_fire.substring(0,3) + '-' + tel_fire.substring(3,6) + '-' + tel_fire.substring(6,10);
+            var tel_fire_slice = tel_fire.substring(0,2) + ' ' + tel_fire.substring(2,6) + ' ' + tel_fire.substring(6,10);
             //ใส่ขีดให้เลขบัตรประชาชน ผู้ร้อง
             var id_card = document.getElementById('card').value;
             var id_card_slice = id_card.substring(0,1) + '-' + id_card.substring(1,5) +'-'+ id_card.substring(5,10) + '-' + id_card.substring(10,12) + '-' + id_card.substring(12,13);
