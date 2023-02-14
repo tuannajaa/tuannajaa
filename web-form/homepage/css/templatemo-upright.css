@@ -22,11 +22,7 @@ body { font-family: 'Sarabun', sans-serif; }
 div, a, p { color: #000000; }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
-a:hover {
-	color: #090067;
-	text-shadow: -2px 0 rgb(246, 255, 21), 0 2px rgb(246, 255, 21), 2px 0 rgb(246, 255, 21), 0 -2px rgb(246, 255, 21);
-	text-decoration: none;
-}
+
 
 
 .container-fluid { margin-left: 0; }
