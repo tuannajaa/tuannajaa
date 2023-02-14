@@ -748,8 +748,9 @@ select:not([multiple]) {
 }
 /*About Us*/
 .box{
-    position: relative;
+    position: absolute;
     width: 250px;
+	height: 200px;
     background: #A1FFCE;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -763,16 +764,6 @@ select:not([multiple]) {
     border-radius: 10px;
 	margin: auto;
 }
-.top-bar{
-    width: 50%;
-    height: 4px;
-    background: #507bfc;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 0px 0px 10px 10px;
-}
 
 .top{
     display: flex;
@@ -783,20 +774,22 @@ select:not([multiple]) {
 .fa-check-circle{
     color: #17b667;
 }
-.content img{
-    width: 90px;
-    height: 90px;
+.imgg img{
+    width: 80px;
+    height: 80px;
     border-radius:100px;
     overflow: hidden;
     object-fit: cover;
     object-position: top;
 	border: solid 1px rgb(30, 27, 27);
+	
 }
 .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	
 }
 .content strong{
     font-weight: 500;
