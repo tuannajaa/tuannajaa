@@ -457,10 +457,10 @@
                         <div class="mt-5">
                             <div class="tm-carousel">
                                 <div class="card" style="width: 18rem;">
-                                    <img class="card-img-top" src="https://yt3.googleusercontent.com/ytc/AMLnZu9VL1q3WPHwp_cM3tr1yI-3iXbh0R9nTJsf95W93Q=s900-c-k-c0x00ffffff-no-rj" alt="Card image cap"> <!--286x180px-->
+                                    <img class="card-img-top" style="margin:auto; width:40%; border-radius: 180px 180px; padding-top:10px;" src="https://yt3.googleusercontent.com/ytc/AMLnZu9VL1q3WPHwp_cM3tr1yI-3iXbh0R9nTJsf95W93Q=s900-c-k-c0x00ffffff-no-rj" alt="Card image cap"> <!--286x180px-->
                                     <div class="card-body">
-                                      <h5 class="card-title">Supawat Seawthong</h5>
-                                      <p class="card-text" style="color:rgb(78, 78, 78) ;">ระบบสร้างเอกสารหนังสือรับรอง <br>ได้พัฒนาขึ้นเพื่อแก้ไขปัญหาความล่าช้าในการจัดทำเอกสาร ลดความ<br>ผิดพลาดและความซ้ำซ้อนในการพิมพ์ข้อมูล และอำนวยความสะดวก เพิ่มความรวดเร็ว ในการรอรับบริการของประชาชน</p>
+                                      <h5 class="card-title" align="center">Supawat Seawthong</h5>
+                                      <p class="card-text" align="center" style="color:rgb(55, 53, 53) ;">ระบบสร้างเอกสารหนังสือรับรอง <br>ได้พัฒนาขึ้นเพื่อแก้ไขปัญหาความล่าช้าในการจัดทำเอกสาร ลดความ<br>ผิดพลาดและความซ้ำซ้อนในการพิมพ์ข้อมูล และอำนวยความสะดวก เพิ่มความรวดเร็ว ในการรอรับบริการของประชาชน</p>
                                       <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdCjNQxiwGfO_9JIFyygVZKP9I7V295SfnZogIlVU6PkuVrZw/formResponse?embedded=true" class="btn btn-outline-primary">Contact Us</a>
                                     </div>
                                   </div>
@@ -489,6 +489,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
@@ -534,6 +535,14 @@
         waveSpeed: 0.60,
         zoom: 0.82
         })
+        VANTA.CLOUDS({
+        el: ".card",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00
+})
     </script>
     <!--End VantaJS-->
     <!--Mouse Over Mouse Out Event-->
