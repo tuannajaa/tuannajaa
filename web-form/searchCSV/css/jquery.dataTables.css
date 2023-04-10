@@ -446,6 +446,7 @@
     .dataTables_wrapper .dataTables_paginate {
       margin-top: 0.5em;
     }
+    
   }
   @media screen and (max-width: 640px) {
     .dataTables_wrapper .dataTables_length,
