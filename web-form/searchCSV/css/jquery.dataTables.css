@@ -26,8 +26,9 @@
   }
   table.dataTable thead th,
   table.dataTable thead td {
-    padding: 10px 5px;
     border-bottom: 1px solid rgb(0, 0, 0);
+    text-align: left;
+    vertical-align: bottom;
   }
   table.dataTable thead th:active,
   table.dataTable thead td:active {
