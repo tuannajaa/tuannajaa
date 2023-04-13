@@ -26,8 +26,8 @@
   }
   table.dataTable thead th,
   table.dataTable thead td {
-    padding: 10px 18px;
-    border-bottom: 1px solid #111;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
   table.dataTable thead th:active,
   table.dataTable thead td:active {
@@ -35,7 +35,7 @@
   }
   table.dataTable tfoot th,
   table.dataTable tfoot td {
-    padding: 10px 18px 6px 18px;
+    padding: 10px 5px 6px 18px;
     border-top: 1px solid #111;
   }
   table.dataTable thead .sorting,
@@ -71,10 +71,11 @@
   }
   table.dataTable tbody th,
   table.dataTable tbody td {
-    padding: 8px 10px;
+    padding: 8px 5px;
   }
   table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
-    border-top: 1px solid #ddd;
+    border-top: 2px solid rgb(240, 240, 240);
+    
   }
   table.dataTable.row-border tbody tr:first-child th,
   table.dataTable.row-border tbody tr:first-child td, table.dataTable.display tbody tr:first-child th,
@@ -97,13 +98,13 @@
     background-color: #f9f9f9;
   }
   table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
-    background-color: #acbad4;
+    background-color: #8b92a0;
   }
   table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
     background-color: #f6f6f6;
   }
   table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected {
-    background-color: #aab7d1;
+    background-color: #8b92a0;
   }
   table.dataTable.order-column tbody tr > .sorting_1,
   table.dataTable.order-column tbody tr > .sorting_2,
