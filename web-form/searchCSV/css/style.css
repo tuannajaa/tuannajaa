@@ -35,6 +35,17 @@
 
 }
 #csv-table td:nth-child(4){
+    width: 10%;
+    text-align: left;
+    background: #d6facc;
+}
+#csv-table td:nth-child(5){
+    width: 1%;
+    text-align:center;
+    background: #facce1;
+}
+#csv-table td:nth-child(6){
     width: 15%;
-    text-align: center;
+    text-align:left;
+    
 }
