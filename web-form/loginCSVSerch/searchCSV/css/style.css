@@ -1,0 +1,56 @@
+.dataTables_filter {
+    display: none;
+    }
+    
+#csv-table td:nth-child(1){
+    font-size: 2.8rem;
+    font-weight: bold;
+    background: #f85032;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: -1px 0 rgb(0 0 0), 0 1px rgb(0 0 0), 1px 0 rgb(0 0 0), 0 -1px rgb(0 0 0);
+    width: 1%;
+}
+#csv-table td:nth-child(2){
+    font-size: 2rem;
+    font-weight: bold;
+    background: #457fca;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: -1px 0 rgb(0 0 0), 0 1px rgb(0 0 0), 1px 0 rgb(0 0 0), 0 -1px rgb(0 0 0);
+    width: 1%;
+}
+#csv-table td:nth-child(3){
+    width: 1%;
+    font-size: 1.6rem;
+    text-align: center;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+#csv-table td:nth-child(4){
+    width: 1%;
+    text-align: left;
+    background: #d6facc;
+}
+#csv-table td:nth-child(5){
+    width: 1%;
+    text-align:center;
+    background: #facce1;
+}
+#csv-table td:nth-child(6){
+    width: 15%;
+    text-align:left;
+    
+}
+#csv-table td:nth-child(7){
+    width: 80%;
+    text-align:left;
+    
+}
