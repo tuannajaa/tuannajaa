@@ -45,11 +45,16 @@
     background: #facce1;
 }
 #csv-table td:nth-child(6){
-    width: 15%;
+    width: 1%;
     text-align:left;
     
 }
 #csv-table td:nth-child(7){
+    width: 14%;
+    text-align:left;
+    
+}
+#csv-table td:nth-child(8){
     width: 80%;
     text-align:left;
     
