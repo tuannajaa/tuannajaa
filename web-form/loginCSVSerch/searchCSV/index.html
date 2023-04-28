@@ -98,7 +98,7 @@
 
                 <div class="active-pink-3 active-pink-4 mb-4">
                     <input id="searchbox" name="searchbox" class="form-control" type="text"
-                        placeholder="พิมพ์ ชื่อ หรือ เลขบัตร" aria-label="Search">
+                        placeholder="พิมพ์ ชื่อ หรือ เลขบัตร" aria-label="Search" oninput="Visible_Table()" onfocus="Visible_Table()">
                 </div>
                 <div class="reset_button" id="reset_button">
                     <button class="button-53" role="button" onclick="ResetSearch()">ล้างข้อมูล</button>
@@ -137,6 +137,16 @@
             document.getElementById('searchbox').placeholder = 'พิมพ์ ชื่อ หรือ เลขบัตร';
             document.getElementById('searchbox').focus()
             document.getElementById('searchbox').select()
+        }
+        function Visible_Table() {
+            console.log("Text input Fucntion is Working.!!")
+            document.getElementById("csv-container").style.display = "none"
+            var sbox = document.getElementById('searchbox').value
+            var length_sbox = sbox.length
+            if(length_sbox > 3) {
+                document.getElementById("csv-container").style.display = "block"
+            }
+
         }
     </script>
 
